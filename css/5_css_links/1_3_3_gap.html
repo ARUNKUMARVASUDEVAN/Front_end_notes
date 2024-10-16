@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gap Examples</title>
+    <style>
+        body {
+            margin: 20px;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .container div {
+            width: 50px;
+            height: 50px;
+            background-color: #4caf50;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .gap-20px { gap: 20px; }
+        .gap-1em { gap: 1em; }
+        .gap-3vmin { gap: 3vmin; }
+        
+        .gap-16p { gap: 16%; }
+        .gap-100p { gap: 100%; }
+        .gap-20px-10px { gap: 20px 10px; }
+        
+        .gap-3vmin-2vmax { gap: 3vmin 2vmax; }
+        
+        .gap-16p-100p { gap: 16% 100%; }
+        .gap-21px-82p { gap: 21px 82%; }
+        .gap-calc1 { gap: calc(10% - 20px); }
+        .gap-calc2 { gap: calc(20px + 10%) calc(10% - 5px); }
+        .gap-inherit { gap: inherit; }
+        .gap-initial { gap: initial; }
+        .gap-revert { gap: revert; }
+        .gap-revert-layer { gap: revert-layer; }
+        .gap-unset { gap: unset; }
+    </style>
+</head>
+<body>
+    <div class="container gap-20px">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-1em">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-3vmin">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-0.5cm">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-16p">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-100p">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-20px-10px">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-1em-0.5em">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-3vmin-2vmax">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-0.5cm-2mm">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-16p-100p">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-21px-82p">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-calc1">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-calc2">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-inherit">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-initial">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-revert">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-revert-layer">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <div class="container gap-unset">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+</body>
+</html>
+
+
+<!--
+https://www.w3schools.com/cssref/css_units.php
+-->

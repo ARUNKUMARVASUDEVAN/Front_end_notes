@@ -1,0 +1,42 @@
+<!--
+above: Sets the reflection above the image.
+
+below: Sets the reflection below the image.
+
+right: Sets the reflection on the right side of the image.
+
+left: Sets the reflection on the left side of the image.
+
+<length>: Signifies the size of the reflection of the image.
+
+<image>: Determines the mask to be applied to the reflection of the image.
+
+-->
+
+<!--
+Syntax
+-webkit-box-reflect = [ above | below | right | left ]? ? ?
+-->
+
+<html>
+<head>
+<style>
+   img{   
+      -webkit-box-reflect: left 0px;
+      max-height: 315px;
+      max-width: 220px;
+   }
+   div{
+      height: 250px;
+      border: 1px solid black;
+   }
+</style>
+</head>
+<body>
+   <h1>CSS Image Reflection</h1>
+   <p>Image reflection can be seen below it:</p>
+   <div>
+      <img src="https://wallpapers-all.com/uploads/posts/2021-12/2_porsche_911_carrera_4s.jpg">
+   </div>
+</body>
+</html>

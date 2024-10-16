@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+   .opacity-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+   }
+   .opacity-button {
+      background-color: #0cc42b;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 90px;
+      height : 40px;
+   }
+   #heading {
+      background-color: #d7e20c;
+      width: 150px;
+      height: 60px;
+      padding: 5px;
+      transition: opacity 0.3s ease; 
+      text-align: center;
+      margin-left: 35%;
+   }
+</style>
+</head>
+<body> 
+   <p>Click the buttons to see how the opacity changes.</p> 
+   <div class="opacity-container">
+      <button class="opacity-button" onclick="changeOpacity(0)">0 opacity</button>
+      <button class="opacity-button" onclick="changeOpacity(0.3)">0.3 opacity</button>
+      <button class="opacity-button" onclick="changeOpacity(0.6)">0.6 opacity</button>
+      <button class="opacity-button" onclick="changeOpacity(0.9)">0.9 opacity</button>
+      <button class="opacity-button" onclick="changeOpacity(1)">1.0 opacity</button>
+   </div>
+      <h3 id="heading">CSS Opacity</h3>
+   <script>
+      function changeOpacity(opacityValue) {
+         var selectElement = document.getElementById("heading");
+         selectElement.style.opacity = opacityValue;
+      }
+   </script>
+</body>
+</html>    

@@ -1,0 +1,47 @@
+<!--
+conic gradient, also known as a conical gradient or angular gradient, 
+is a type of gradient in which colors are arranged in a circular or conical pattern,
+-->
+
+<!--
+conic-gradient(from 'angle' at 'position', 'color-list')
+-->
+
+<!--
+position (optional): Specifies the position of the starting point of the gradient. It can be a percentage or a keyword like center.
+angle (optional): Specifies the starting angle of the gradient in degrees.
+color-list : Defines the colors and their positions in the gradient.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      div {
+         height: 80px;
+         width: 110px;
+         border-radius: 50%; 
+      }
+      .gradient1{
+         background: conic-gradient(
+                        from 45deg at 50% 50%, 
+                        red, rgb(8, 222, 147), green, 
+                        blue, red);
+      }
+      .gradient2{
+         background: conic-gradient(
+                        from 45deg at 20% 40%, 
+                        red, yellow, green, 
+                        blue, red);
+      }
+    </style>
+</head>
+
+<body>
+    <h1>Conic Gradient Example</h1>
+    <h3>Align at center</h3>
+        <div class="gradient1"></div>
+    <h3>Align at 20-40</h3>
+        <div class="gradient2"></div>
+</body>
+</html>

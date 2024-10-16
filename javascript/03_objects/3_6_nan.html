@@ -1,0 +1,44 @@
+<!--
+JavaScript Number NaN is a static property that represents a value that is Not-A-Number. 
+Because it is a static property of the Number object, you can access it directly by using Number.NaN, instead of as a property of a variable.
+
+Number.NaN
+
+-->
+
+<html>
+<head>
+<title>JavaScript Number NaN Property</title>
+</head>
+<body>
+<script>
+   document.write("Result = ", Number.NaN);
+</script>
+</body>
+</html>
+
+<!---------------->
+
+<html>
+<head>
+<title>JavaScript Number NaN Property</title>
+</head>
+<body>
+<script>
+   function check(x){
+      if(isNaN(x)){
+         return Number.NaN;
+      }
+      else{
+         return x + " is a number...!";
+      }
+   }
+   let x = 10;
+   document.write("x = ", x);
+   document.write("<br>Result1 = ", check(x));
+   let y = NaN;
+   document.write("<br>y = ", y);
+   document.write("<br>Result2 = ", check(y));
+</script>
+</body>
+</html>

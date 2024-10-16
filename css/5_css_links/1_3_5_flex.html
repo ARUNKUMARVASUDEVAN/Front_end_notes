@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Examples</title>
+    <style>
+        body {
+            margin: 20px;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+            padding: 10px;
+            height: 100px;
+        }
+        .container div {
+            height: 50px;
+            background-color: #4caf50;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .flex-auto div { flex: auto; }
+        .flex-initial div { flex: initial; }
+        .flex-none div { flex: none; }
+        .flex-grow div { flex: 2; }
+        .flex-basis-em div { flex: 10em; }
+        .flex-basis-percent div { flex: 30%; }
+        .flex-basis-min-content div { flex: min-content; }
+        .flex-grow-basis div { flex: 1 30px; }
+        .flex-grow-shrink div { flex: 2 2; }
+        .flex-grow-shrink-basis div { flex: 2 2 10%; }
+        .flex-inherit div { flex: inherit; }
+        .flex-initial-global div { flex: initial; }
+        .flex-revert div { flex: revert; }
+        .flex-revert-layer div { flex: revert-layer; }
+        .flex-unset div { flex: unset; }
+    </style>
+</head>
+<body>
+    <div class="container flex-auto">
+        <div>auto</div><div>auto</div><div>auto</div>
+    </div>
+    <div class="container flex-initial">
+        <div>initial</div><div>initial</div><div>initial</div>
+    </div>
+    <div class="container flex-none">
+        <div>none</div><div>none</div><div>none</div>
+    </div>
+    <div class="container flex-grow">
+        <div>grow 2</div><div>grow 2</div><div>grow 2</div>
+    </div>
+    <div class="container flex-basis-em">
+        <div>10em</div><div>10em</div><div>10em</div>
+    </div>
+    <div class="container flex-basis-percent">
+        <div>30%</div><div>30%</div><div>30%</div>
+    </div>
+    <div class="container flex-basis-min-content">
+        <div>min-content</div><div>min-content</div><div>min-content</div>
+    </div>
+    <div class="container flex-grow-basis">
+        <div>1 30px</div><div>1 30px</div><div>1 30px</div>
+    </div>
+    <div class="container flex-grow-shrink">
+        <div>2 2</div><div>2 2</div><div>2 2</div>
+    </div>
+    <div class="container flex-grow-shrink-basis">
+        <div>2 2 10%</div><div>2 2 10%</div><div>2 2 10%</div>
+    </div>
+    <div class="container flex-inherit">
+        <div>inherit</div><div>inherit</div><div>inherit</div>
+    </div>
+    <div class="container flex-initial-global">
+        <div>initial</div><div>initial</div><div>initial</div>
+    </div>
+    <div class="container flex-revert">
+        <div>revert</div><div>revert</div><div>revert</div>
+    </div>
+    <div class="container flex-revert-layer">
+        <div>revert-layer</div><div>revert-layer</div><div>revert-layer</div>
+    </div>
+    <div class="container flex-unset">
+        <div>unset</div><div>unset</div><div>unset</div>
+    </div>
+</body>
+</html>

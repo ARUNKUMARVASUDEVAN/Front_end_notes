@@ -1,0 +1,45 @@
+<!--
+    Embedding using style element
+
+-->
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <style type = "text/css" media = "all">
+         body {
+            background-color: linen;
+         }
+         #black h1 {
+            color: maroon;
+            margin-right: 400px;
+         }
+         body > p {
+            color: blue;
+         }
+         h1+p{
+            color:red
+         }
+      </style>
+   </head>   
+   <body id="">
+      <h1>This is a heading</h1>
+      <h1> 2nd Black</h1>
+      <p>This is a paragraph.</p>
+      <p>HI</p>
+   </body>
+</html>
+
+<!--
+    Attributes in <style>
+type	text/css	Specifies the style sheet language as a content-type (MIME type). This is required attribute.
+media screen tty tv
+      projection
+      handheld
+      print
+      braille
+      aural
+      all
+
+                     Specifies the device the document will be displayed on. Default value is all. This is an optional attribute. 
+-->

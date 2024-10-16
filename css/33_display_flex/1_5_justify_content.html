@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            padding: 20px;
+            gap: 10px;
+        }
+        .item {
+            background-color: #e67e22;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+
+<!--
+    /* Positional alignment */
+justify-content: center;
+justify-content: start;
+justify-content: end;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: left;
+justify-content: right;
+
+/* Normal alignment */
+justify-content: normal;
+
+/* Distributed alignment */
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+justify-content: stretch;
+
+/* Overflow alignment */
+justify-content: safe center;
+justify-content: unsafe center;
+
+/* Global values */
+justify-content: inherit;
+justify-content: initial;
+justify-content: revert;
+justify-content: revert-layer;
+justify-content: unset;
+
+-->

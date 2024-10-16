@@ -1,0 +1,67 @@
+<!--
+Array.isArray() method is used to check whether the provided value is an array or not. 
+If it is an array, then this method will return "true", else it returns "false".
+
+
+Syntax:
+
+array.isArray(object);
+
+-->
+
+<html>
+<body>
+   <p id="demo"></p>
+   <script>
+      const animals = ["Lion", "Cheetah", "Tiger", "Elephant", "Dinosaur"];
+      const result = Array.isArray(animals);
+      document.getElementById("demo").innerHTML = result;
+   </script>
+</body>
+</html>
+
+<!--------------------------------------------------------------->
+
+<html>
+<body>
+   <p id="demo"></p>
+   <script>
+      const animalss = "Lion";
+      const results = Array.isArray(animals);
+      document.getElementById("demo").innerHTML = result;
+   </script>
+</body>
+</html>
+
+<!------------------------------------------------------------->
+
+<html>
+<body>
+   <p id="demo"></p>
+   <script>
+      document.write(Array.isArray([]));
+      document.write(Array.isArray([100]));
+      document.write(Array.isArray(new Array()));
+      document.write(Array.isArray(new Array("one", "two", "three", "four")));
+      document.write(Array.isArray(new Array(619)));
+   </script>
+</body>
+</html>
+
+<!-------------------------------------------------------------->
+
+<html>
+<body>
+   <p id="demo"></p>
+   <script>
+      document.write(Array.isArray());
+      document.write(Array.isArray({}));
+      document.write(Array.isArray(null));
+      document.write(Array.isArray(undefined));
+      document.write(Array.isArray(100));
+      document.write(Array.isArray("Hello"));
+      document.write(Array.isArray(true));
+      document.write(Array.isArray(false));
+   </script>
+</body>
+</html>

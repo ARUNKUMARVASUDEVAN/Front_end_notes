@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   fieldset {
+      padding: 10px;
+   }
+
+   legend {
+      font-weight: bold;
+      color: #0F8D0F;
+      margin-bottom: 10px;
+   }
+
+   input {
+      width: calc(100% - 20px);
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+   }
+</style>
+</head>
+<body>
+   <form>
+      <fieldset>
+        <legend>Login</legend>
+        <label for="username">
+            Username:
+        </label>
+        <input type="text" 
+              id="username" name="username">
+        <label for="password">
+            Password:
+        </label>
+        <input type="password" 
+              id="password" name="password">
+        <input type="submit" value="Submit">
+      </fieldset>
+   </form>    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>SVG</title>
+</head>
+
+<body>
+   <h2>HTML SVG Gradient Ellipse</h2>
+   <svg height="200">
+      <defs>
+         <radialGradient id="gradient" 
+                         cx="60%" cy="50%" 
+                         r="50%" 
+                         fx="50%" fy="50%">
+            <stop offset="10%" 
+                  style="stop-color:rgb(200,200,200);"/>
+            <stop offset="100%" 
+                  style="stop-color:rgb(0,0,255);"/>
+         </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="50" 
+               rx="100" ry="50" 
+               style="fill:url(#gradient)" />
+   </svg>
+</body>
+
+</html>

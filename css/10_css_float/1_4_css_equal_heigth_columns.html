@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+   .grid-box {
+      float: left;
+      width: 50%;
+      height: 200px;
+      padding: 30px;
+      box-sizing: border-box;
+      text-align: center;
+   }
+   .grid-container::after {
+      content: " ";
+      clear: both;
+      display: table;
+   }
+</style>
+</head>
+<body>
+   <h4>The first red color grid box is placed on the left side.</h3>
+   <div class="grid-container">
+      <div class="grid-box" style="background-color:#f0610e;">
+         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration insome form, by injected humour, or randomised words which don't look even slightly believable.</p>
+      </div>
+      <div class="grid-box" style="background-color:#86f00e;">
+         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+      </div>
+   </div>
+</body>
+</html>

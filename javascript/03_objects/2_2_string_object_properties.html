@@ -1,0 +1,123 @@
+<!----------------------------------->
+<!--
+constructor	- Returns a reference to the String function that created the object.
+length - Returns the length of the string.
+prototype -	The prototype property allows you to add properties and methods to an object.
+-->
+
+<html>
+   <head>
+      <title>JavaScript String constructor Method</title>
+   </head>
+   
+   <body>   
+      <script type = "text/javascript">
+         var str = new String( "This is string" );
+         document.write("str.constructor is:" + str.constructor); 
+      </script>      
+   </body>
+</html>
+
+<!------------------------------------------>
+<!--
+  Syntax
+  
+  string.length
+-->
+
+<html>
+<head>
+<title>JavaScript String length Property</title>
+</head>
+<body>
+<script>
+   const str = "";
+   document.write("The given string: ", str);
+   document.write("<br>Length of the given string: ", str.length);
+</script>
+</body>
+</html>
+
+<!--|||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+<html>
+<head>
+<title>JavaScript String length Property</title>
+</head>
+<body>
+<script>
+   const str = "ARUNKUMAR";
+   document.write("The given string: ", str);
+   document.write("<br>Length of the given string: ", str.length);
+</script>
+</body>
+</html>
+
+<!--|||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+<html>
+<head>
+<title>JavaScript String length Property</title>
+</head>
+<body>
+<script>
+   const str1 = "ETHER INFOTECH";
+   const str2 = "Hello";
+   const str3 = "World";
+   document.write("The given strings are : ", str1, ", ", str2, ", ", str3);
+   const len1 = str1.length; 13
+   const len2 = str2.length;5
+   const len3 = str3.length;5
+   document.write("<br>Length of ", str1, " is: ", len1);
+   document.write("<br>Length of ", str2, " is: ", len2);
+   document.write("<br>Length of ", str3, " is: ", len3);
+   if(len1 == len2){
+      document.write("<br>String ", str1, " and ", str2, " having equal length");
+   }
+   else if(len1 == len3){
+      document.write("<br>String ", str1, " and ", str3, " having equal length");
+   }
+   else if(len2 == len3){
+      document.write("<br>String ", str2, " and ", str3, " having equal length");
+   }
+   else{
+      document.write("<br>None of the strings having equal length");
+   }
+</script>
+</body>
+</html>
+
+<!--
+
+  object.prototype.name = value  
+
+Paramter:
+    It does not accept any parameter.
+
+The prototype property allows you to add properties and methods to an object.
+-->
+
+<html>
+<head>
+<title>JavaScript String length Property</title>
+</head>
+<body>
+<script>
+   function student(name, age){
+      this.name = name;
+      this.age = age;
+   }
+   const obj = new student("Rahul Verma", 22);
+   //using prototype property to set a property
+   document.write("Before adding the city property: ", obj.city);
+   String.prototype.city = null;
+   obj.city = "Lucknow";
+   document.write("<br>Name: ", obj.name);
+   document.write("<br>Age: ", obj.age);
+   document.write("<br>After adding City: ", obj.city);
+</script>
+</body>
+</html>
+
+<!--Why new    
+    function with new, JavaScript automatically creates a new object (an empty one)  -->

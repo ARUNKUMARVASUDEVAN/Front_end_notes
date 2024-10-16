@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Test Details</title>
+    <link rel="stylesheet" href="D:\Ether\html and css\student_project\module_3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Test Details</h1>
+        <form action="/submit-test-details" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="testCategory">Test Category:</label>
+                <input type="text" id="testCategory" name="testCategory" required>
+            </div>
+
+            <div class="form-group">
+                <label for="testName">Test Name:</label>
+                <input type="text" id="testName" name="testName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="testCode">Test Code:</label>
+                <input type="text" id="testCode" name="testCode" required>
+            </div>
+
+            <div class="form-group">
+                <label for="patientID">Patient ID:</label>
+                <input type="text" id="patientID" name="patientID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="testResultDate">Test Result Date:</label>
+                <input type="date" id="testResultDate" name="testResultDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="referenceValues">Reference Values:</label>
+                <input type="text" id="referenceValues" name="referenceValues" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fileUpload">Upload Test Report:</label>
+                <input type="file" id="fileUpload" name="fileUpload" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

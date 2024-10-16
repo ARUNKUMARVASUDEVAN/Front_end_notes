@@ -1,0 +1,66 @@
+<!--
+switch (expression) {
+   case condition 1: statement(s)
+   break;
+   
+   case condition 2: statement(s)
+   break;
+   ...
+   
+   case condition n: statement(s)
+   break;
+   
+   default: statement(s)
+}
+
+break − The statement keyword indicates the end of a particular case. If the 'break' statement were omitted, the interpreter would continue executing each statement in each of the following cases.
+
+default − The default keyword is used to define the default expression. When any case doesn't match the expression of the switch-case statement, it executes the default code block.
+-->
+
+<html>
+<head>
+   <title> JavaScript - Switch case statement </title>
+</head>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const output = document.getElementById("output");
+	  let grade = 'A';
+      output.innerHTML += "Entering switch block <br />";
+      switch (grade) {
+         case 'A': output.innerHTML += "Good job <br />";
+            break;
+         case 'B': output.innerHTML += "Passed <br />";
+            break;
+         case 'C': output.innerHTML += "Failed <br />";
+            break;
+         default: output.innerHTML += "Unknown grade <br />";
+      }
+      output.innerHTML += "Exiting switch block";
+   </script>
+</body>
+</html>
+
+<!-------------------Without Break------------------------------------------->
+
+<html>
+<head>
+   <title> JavaScript - Switch case statement </title>
+</head>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const outputz = document.getElementById("output");
+      let gradez = 'A';
+      output.innerHTML += "Entering switch block<br />";
+      switch (gradez) {
+         case 'A': outputz.innerHTML += "Good job <br />";
+         case 'B': outputz.innerHTML += "Passed <br />";
+         case 'C': outputz.innerHTML += "Failed <br />";
+         default: outputz.innerHTML += "Unknown grade <br />";
+      }
+      outputz.innerHTML += "Exiting switch block";
+   </script>
+</body>
+</html>

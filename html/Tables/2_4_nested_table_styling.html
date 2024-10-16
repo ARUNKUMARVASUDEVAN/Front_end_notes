@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+   /* Common style for both tables */
+      table {
+         border-collapse: collapse;
+         width: 100%;
+      }
+      td,
+      th {
+         border: 1px solid #dddddd;
+         text-align: left;
+         padding: 8px;
+      }
+      /* Styling inner table */
+      table table {
+         border: 2px solid #3498db;
+         width: 80%;
+         margin: 10px auto;
+      }
+      table table td {
+         background-color: #12aad0;
+         border: 1px solid #bdc3c7;
+      }
+   </style>
+</head>
+
+<body>
+   <table border="1">
+      <tr>
+         <th>Employees</th>
+         <th>NetWorth</th>
+      </tr>
+
+      <tr>
+         <td>
+            <table border="1" >
+               <tr>
+                  <th>Name</th>
+                  <th>Salary</th>
+               </tr>
+
+               <tr>
+                  <td>Ramesh </td>
+                  <td>5000</td>
+               </tr>
+
+               <tr>
+                  <td>Shabbir </td>
+                  <td>7000</td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+
+   </table>
+</body>
+</html>

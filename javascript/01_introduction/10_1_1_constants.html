@@ -1,0 +1,47 @@
+<!--
+JavaScript constants are the variables whose values remain unchanged throughout the execution of the program.
+You can declare constants using the const keyword.
+
+* A variable defined with const can't be redeclared, reassigned.
+* crct way const x = 10;
+* Incrct way  const y; y = 20; 
+*   const y = 20; 
+    y = 40; // This is not possible
+* Constant is block scope
+* 
+
+-->
+
+<!--Constant array -->
+<!--
+* We can declare the arrays and objects using the const keyword,
+but there is a little twist in the array and object declaration.
+* The variable with the const keyword keeps the constant reference but not the constant value. 
+* So, you can update the same array or object declared with the const keyword,
+ but you can't reassign the reference of the new array or object to the constant variable.
+-->
+<html>
+<head>
+   <title> Consant Arrays </title>
+</head>
+<body>
+   <script>
+      // Defining the constant array
+      const arr = ["door", "window", "roof", "wall",12,'*'];
+
+      arr[0]
+      // Updating arr[0]
+      document.write(arr[0]);
+
+      arr[0] = "gate";
+      // Inserting an element to the array
+      arr.push("fence");
+
+	  //arr = ["table", "chair"] // reassiging array will cause error.
+      // Printing the array
+
+      document.write(arr);
+
+   </script>
+</body>
+</html>

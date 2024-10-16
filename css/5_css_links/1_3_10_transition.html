@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .transition-margin-right-duration {
+            transition: all 4s;
+        }
+
+        .transition-margin-right-duration-delay {
+            transition: margin-right 4s 1s;
+        }
+
+        .transition-margin-right-duration-easing {
+            transition: margin-right 4s ease-in-out;
+        }
+
+        .transition-margin-right-duration-easing-delay {
+            transition: margin-right 4s ease-in-out 1s;
+        }
+
+        .transition-display-duration-behavior {
+            transition: display 4s allow-discrete;
+        }
+
+        .transition-two-properties {
+            transition: margin-right 4s, color 1s;
+        }
+
+        .transition-all-changed-properties {
+            transition: all 0.5s ease-out allow-discrete;
+        }
+
+        .transition-short-duration {
+            transition: 200ms linear 50ms;
+        }
+
+        .transition-inherit {
+            transition: inherit;
+        }
+
+        .transition-initial {
+            transition: initial;
+        }
+
+        .transition-revert {
+            transition: revert;
+        }
+
+        .transition-revert-layer {
+            transition: revert-layer;
+        }
+
+        .transition-unset {
+            transition: unset;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+
+        .box:hover {
+            margin-right: 50px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box transition-margin-right-duration">Margin 4s</div>
+    <div class="box transition-margin-right-duration-delay">Margin 4s 1s</div>
+    <div class="box transition-margin-right-duration-easing">Margin 4s Ease-in-out</div>
+    <div class="box transition-margin-right-duration-easing-delay">Margin 4s Ease-in-out 1s</div>
+    <div class="box transition-display-duration-behavior">Display 4s Allow-discrete</div>
+    <div class="box transition-two-properties">Two Properties</div>
+    <div class="box transition-all-changed-properties">All Properties</div>
+    <div class="box transition-short-duration">200ms Linear 50ms</div>
+    <div class="box transition-inherit">Inherit</div>
+    <div class="box transition-initial">Initial</div>
+    <div class="box transition-revert">Revert</div>
+    <div class="box transition-revert-layer">Revert Layer</div>
+    <div class="box transition-unset">Unset</div>
+</body>
+</html>

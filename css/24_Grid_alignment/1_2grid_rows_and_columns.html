@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 1px;
+            padding: 10px;
+            width: 55%;
+        }
+        .grid-item {
+            background-color: #4CAF50;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            color: white;
+        }
+        .row{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,1fr);
+        }
+        .column{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout Example</h1>
+    <h3>Grid Rows - 3 Rows X 1 Column</h3>
+    <div class="grid-container row">
+      <div class="grid-item item1">
+         Item 1
+      </div>
+      <div class="grid-item item2">
+         Item 2
+      </div>
+      <div class="grid-item item3">
+         Item 3
+      </div>
+    </div>
+    
+    <h3>Grid Columns - 1 Row X 3 Columns </h3>
+    <div class="grid-container column">
+      <div class="grid-item item1">
+         Item 1
+      </div>
+      <div class="grid-item item2">
+         Item 2
+      </div>
+      <div class="grid-item item3">
+         Item 3
+      </div>
+    </div>
+</body>
+</html>
+
+<!--https://www.w3schools.com/cssref/css_units.php-->

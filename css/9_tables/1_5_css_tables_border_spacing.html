@@ -1,0 +1,52 @@
+<!--
+border-spacing: 2px;: If one value is passed, the spacing is applied to both vertical and horizontal borders.
+
+border-spacing: 1cm 2em;: If two values are passed, the first value defines the horizontal spacing between cells (i.e., the space between cells in adjacent columns), and the second value defines the vertical spacing between cells (i.e., the space between cells in adjacent rows).
+-->
+
+<html>
+<head>
+<style>
+   table {
+      border-collapse: separate;
+      border-spacing: 10px 10px;
+      padding: 0 2em 1em 0;
+      border: 3px solid purple;
+   }
+   td {
+      border: red solid;
+      width: 1.5em;
+      height: 1.5em;
+      background: #d2d2d2;
+      text-align: center;
+      vertical-align: middle;
+   }
+</style>
+<body>
+   <table>
+      <thead>
+      <tr>
+         <th>Header 1</th>
+         <th>Header 2</th>
+         <th>Header 3</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+         <td>Data 1</td>
+         <td>Data 2</td>
+         <td>Data 3</td>
+         </tr>
+      <tr>
+         <td>Data 1</td>
+         <td>Data 2</td>
+         <td>Data 3</td>
+      </tr>
+   </tbody>
+   </table>
+</body>
+</html>
+
+<!--
+The border-spacing property only works when border-collapse is set to separate. If you set border-collapse to collapse, the border-spacing property will have no effect, and the borders will collapse into a single line.
+-->

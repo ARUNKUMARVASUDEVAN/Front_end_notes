@@ -1,0 +1,238 @@
+<!--
+    /* precomposed values */
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: inline-flex;
+display: grid;
+display: inline-grid;
+display: flow-root;
+
+/* box generation */
+display: none;
+display: contents;
+
+/* multi-keyword syntax */
+display: block flex;
+display: block flow;
+display: block flow-root;
+display: block grid;
+display: inline flex;
+display: inline flow;
+display: inline flow-root;
+display: inline grid;
+
+/* other values */
+display: table;
+display: table-row; /* all table elements have an equivalent CSS display value */
+display: list-item;
+
+/* Global values */
+display: inherit;
+display: initial;
+display: revert;
+display: revert-layer;
+display: unset;
+
+.container {
+  display: inline flex;
+}
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .block {
+            display: block;
+            background-color: lightblue;
+            margin-bottom: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            margin-right: 10px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            margin-right: 10px;
+        }
+
+        .flex {
+            display: flex;
+            background-color: lightgoldenrodyellow;
+            margin-bottom: 10px;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+            background-color: lightpink;
+            margin-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            background-color: lightseagreen;
+            margin-bottom: 10px;
+        }
+
+        .inline-grid {
+            display: inline-grid;
+            background-color: lightskyblue;
+            margin-bottom: 10px;
+        }
+
+        .flow-root {
+            display: flow-root;
+            background-color: lightsteelblue;
+            margin-bottom: 10px;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .contents {
+            display: contents;
+            background-color: lightyellow;
+            margin-bottom: 10px;
+        }
+
+        .block-flex {
+            display: block flex;
+            background-color: lightcyan;
+            margin-bottom: 10px;
+        }
+
+        .block-flow {
+            display: block flow;
+            background-color: lightgoldenrodyellow;
+            margin-bottom: 10px;
+        }
+
+        .block-flow-root {
+            display: block flow-root;
+            background-color: lightgray;
+            margin-bottom: 10px;
+        }
+
+        .block-grid {
+            display: block grid;
+            background-color: lightgreen;
+            margin-bottom: 10px;
+        }
+
+        .inline-flex {
+            display: inline flex;
+            background-color: lightpink;
+            margin-bottom: 10px;
+        }
+
+        .inline-flow {
+            display: inline flow;
+            background-color: lightseagreen;
+            margin-bottom: 10px;
+        }
+
+        .inline-flow-root {
+            display: inline flow-root;
+            background-color: lightsteelblue;
+            margin-bottom: 10px;
+        }
+
+        .inline-grid {
+            display: inline grid;
+            background-color: lightskyblue;
+            margin-bottom: 10px;
+        }
+
+        .table {
+            display: table;
+            background-color: lightyellow;
+            margin-bottom: 10px;
+        }
+
+        .table-row {
+            display: table-row;
+            background-color: lightpink;
+            margin-bottom: 10px;
+        }
+
+        .list-item {
+            display: list-item;
+            background-color: lightcoral;
+            margin-bottom: 10px;
+        }
+
+        .inherit {
+            display: inherit;
+            background-color: lightblue;
+            margin-bottom: 10px;
+        }
+
+        .initial {
+            display: initial;
+            background-color: lightgreen;
+            margin-bottom: 10px;
+        }
+
+        .revert {
+            display: revert;
+            background-color: lightgoldenrodyellow;
+            margin-bottom: 10px;
+        }
+
+        .revert-layer {
+            display: revert-layer;
+            background-color: lightpink;
+            margin-bottom: 10px;
+        }
+
+        .unset {
+            display: unset;
+            background-color: lightseagreen;
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Display Property Examples</title>
+</head>
+<body>
+
+    <div class="block">Block</div>
+    <span class="inline">Inline</span>
+    <div class="inline-block">Inline-Block</div>
+    <div class="flex">Flex</div>
+    <div class="inline-flex">Inline-Flex</div>
+    <div class="grid">Grid</div>
+    <div class="inline-grid">Inline-Grid</div>
+    <div class="flow-root">Flow-Root</div>
+    <div class="none">None (You shouldn't see this text)</div>
+    <div class="contents"><span>Contents</span></div>
+    <div class="block-flex">Block Flex</div>
+    <div class="block-flow">Block Flow</div>
+    <div class="block-flow-root">Block Flow-Root</div>
+    <div class="block-grid">Block Grid</div>
+    <div class="inline-flex">Inline Flex</div>
+    <div class="inline-flow">Inline Flow</div>
+    <div class="inline-flow-root">Inline Flow-Root</div>
+    <div class="inline-grid">Inline Grid</div>
+    <div class="table">Table</div>
+    <div class="table-row">Table Row</div>
+    <div class="list-item">List Item</div>
+    <div class="inherit">Inherit</div>
+    <div class="initial">Initial</div>
+    <div class="revert">Revert</div>
+    <div class="revert-layer">Revert-Layer</div>
+    <div class="unset">Unset</div>
+
+</body>
+</html>

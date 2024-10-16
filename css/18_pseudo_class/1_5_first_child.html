@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      div{
+         border: solid;
+      }
+      /* Selects all first child paragraphs */
+      p:first-child {
+         color: blue;
+      }
+    </style>
+</head>
+<body>   
+   <p>
+      This paragraph is first child of body 
+      element, will be blue.
+   </p>
+   <p>This paragraph will not be affected.</p>
+   <p>Another paragraph that won't be affected.</p>
+
+   <div>
+      <p>
+         This paragraph is first child of div 
+         element will be blue.
+      </p>
+      <p>This paragraph will not be affected.</p>
+      <p>Another paragraph that won't be affected.</p>
+   </div>
+</body>
+</html>

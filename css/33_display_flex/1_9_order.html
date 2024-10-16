@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: #f0f0f0;
+            padding: 20px;
+            gap: 10px;
+        }
+        .item {
+            background-color: #f39c12;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .item:first-child {
+            order: 2;
+        }
+        .item:last-child {
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!--
+thin	a thin border
+medium	a medium width border
+thick	a thick border
+length	any length specified (like 0.1em, 5px)
+
+-->
+
+<html>
+  <head>
+   <style>
+      h2.thin {border-width: thin;}
+      p.medium {border-width: medium;}
+      p.thick {border-width: thick;}
+      p.length {border-width: 100px;}
+      h2.thin1 {border-style: double; border-width: thin;}
+      p.medium1 {border-style: dashed; border-width: medium;}
+      p.thick1 {border-style: solid; border-width: thick;}
+      p.length1 {border-style: dotted; border-width: 10px;}
+   </style>
+  </head>
+  <body>
+      <h2>border-width without <i>border-style</i> property</h2>
+      <p class="thin">Thin border.</p>
+      <p class="medium">Medium border.</p>
+      <p class="thick">Thick border.</p>
+      <p class="length">Specific length border.</p>
+      <h2 class="thin1">border-width with <i>border-style</i> property</h2>
+      <p class="thin1">Thin width.</p>
+      <p class="medium1">Medium width.</p>
+      <p class="thick1">Thick width.</p>
+      <p class="length1">Specific length width border.</p>
+  </body>
+</html>

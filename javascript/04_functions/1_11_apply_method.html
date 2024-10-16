@@ -1,0 +1,79 @@
+<!--
+The Function apply() method in JavaScript allows us to invoke a function given a specific value for this 
+and arguments provided as an array.
+
+The Function call() and apply() methods are very similar, 
+but the main difference between them is function apply() method takes a single array
+ containing all function arguments, and the function call() method takes individual arguments.
+
+ Syntax
+
+ func.apply(thisArg, [arg1, arg2, ... argN]);
+
+
+-->
+
+<!--apply() -->
+<html>
+<head>
+    <title> JavaScript - Function apply() method </title>
+</head>
+<body>
+  <p id = "output1"> </p>
+  <p id = "output2"> </p>
+  <script>
+    function test() {
+      return "The function test is invoked!";
+    }
+    document.getElementById("output1").innerHTML = test();
+    document.getElementById("output2").innerHTML = test.apply();
+  </script>
+</body>
+</html>
+
+<!---->
+
+<html>
+<head>
+  <title> JavaScript - Function apply() method </title>
+</head>
+<body>
+  <p id = "output"> </p>
+  <script>
+    function showCar() {
+      return "The price of the " + this.name + " " + 
+        this.model + " is: " + this.price;
+    }
+    let car = {
+      name: "OD",
+      model: "Q6",
+      price: 10000000,
+    }
+    document.getElementById("output").innerHTML = showCar.apply(car);
+  </script>
+</body>
+</html>
+
+<!---->
+<html>
+<head>
+    <title> JavaScript - Function apply() method </title>
+</head>
+<body>
+<p id = "output"> </p>
+<script>
+
+    function printSum(p1, p2) {
+      return this.num1 + this.num2 + p1 + p2;
+    }
+
+    const nums = {
+      num1: 5,
+      num2: 10,
+    }
+
+    const ans = printSum.apply(nums, [40, 32]);
+    document.getElementById("output").innerHTML = "Total sum is " + ans;
+</script>
+</body>
+</html>

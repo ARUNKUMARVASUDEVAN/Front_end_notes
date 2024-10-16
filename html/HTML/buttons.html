@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Buutons</title>
+        <style>
+            button{
+                background-color: rgb(177, 0, 0);
+                color:white;
+                border: none;
+                height: 30px;
+                width: 105px;
+                border-radius: 2px;
+                cursor: pointer;
+                transition: opacity 1s;
+                
+            }
+            button:hover{
+                opacity: 0.5;
+
+            }
+
+            button:active{
+                opacity: 0.3;
+            }
+
+            .join-button{
+                background-color:white;
+                color: blue;
+                transition: color 1s ;
+    
+            }
+
+            .join-button:hover{
+                background-color:blue;
+                color: white;
+            }
+
+            .join-button:active{
+                opacity: 0.6;
+            }
+        </style>
+    </head>
+
+    <body >
+        <button>SUBSCRIBE</button>
+        <button class="join-button">JOIN</button>
+        <button style="background-color: rgb(9, 69, 250);border-radius: 20px;color: white;border: none; font-size: 15px; font-weight:8px;" >
+            Tweet
+        </button>
+    </body>
+</html>

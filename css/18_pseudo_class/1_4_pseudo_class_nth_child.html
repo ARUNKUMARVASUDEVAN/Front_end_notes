@@ -1,0 +1,53 @@
+<!--
+tag:nth-child(number/ expression / odd / even) {
+   property: value;
+} 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      div{
+         border: 2px solid;
+         margin: 7px;
+         padding: 2px;
+      }
+      /* Apply Style to 2nd child of div */
+      div:nth-child(1){
+         background-color:red;
+      }
+      
+      /* Apply Style to all odd children of li */
+      li:nth-child(odd) {
+         background-color: rgb(29, 10, 234);
+      }
+      
+      /* Apply Style to all even children of li */
+      li:nth-child(even) {
+         background-color: lightblue;
+      }
+    </style>
+</head>
+
+<body>
+    <h2>Pseudo-Class nth-child</h2>
+    <h3>2nd child of Div</h3>
+    <div>
+        <div>1st div</div>
+        <div>2nd div</div>
+        <div>3rd div</div>
+        <div>4th div</div>
+    </div>
+    
+    <h3>Selecting odd and even children</h3>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>forth item</li>
+        <li>Third item</li>
+        <li>fifth item</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!--
+The JavaScript while loop is similar to the for loop with the first and third expressions omitted.
+A for loop is generally used when the number of iteration is fixed and known but we use the while loop whne the number of iterations is not known.
+-->
+
+<html>
+<body>
+  <p> First five natural numbers:</p>
+  <div id = "demo"> </div>
+  <script>  
+    const output = document.getElementById("demo");
+    for(let i = 1; i <= 5; i++){
+      output.innerHTML += i + "<br>";
+    }
+  </script>
+</body>
+</html>
+
+<!--------------------------------------------->
+
+<html>
+<body>
+  <p> First five natural numbers:</p>
+  <div id = "demo"> </div>
+  <script>  
+    const outputs = document.getElementById("demo");
+    let i = 1;
+    for(; i <= 5; ){
+      outputs.innerHTML += i + "<br>";
+      i++
+    }
+  </script>
+</body>
+</html>
+
+
+<!---------------------------------------------------->
+
+<html>
+<body>
+  <p> First five natural numbers:</p>
+  <div id = "demo"> </div>
+  <script>  
+    const outputk = document.getElementById("demo");
+    let j = 1;
+    while(j <= 5){
+      outputk.innerHTML += i + "<br>";
+      j++
+    }
+  </script>
+</body>
+</html>

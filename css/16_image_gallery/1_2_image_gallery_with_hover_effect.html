@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+   .image-gallery {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .image-gallery .image-item {
+         width: 30%; 
+         text-align: center; 
+         transition:2s ease ;
+
+   }
+   .image-gallery img {
+      width: 100%; 
+      height: 220px; 
+   }
+   .image-gallery .image-item:hover {
+      transform: scale(1.2);
+      border: 3px solid rgb(24, 21, 21);
+      border-radius: 0px;
+   }
+   .image-description {
+      margin-top: 30px; 
+   }
+</style>
+</head>
+<body>
+<h3>Hover over the images to see the effect</h3>
+   <div class="image-gallery">
+      <div class="image-item">
+         <img src="https://live.staticflickr.com/8786/17105011382_0f3d63db36_b.jpg" alt="Red Flower">
+         <div class="image-description">Red Flower</div>
+      </div>
+      <div class="image-item">
+         <img src="https://northamerica-9392.kxcdn.com/media/files/tour/v-oSESMN4-c_0xxYScr.jpg" alt="White Flower">
+         <div class="image-description">See</div>
+      </div>
+      <div class="image-item">
+         <img src="https://i.pinimg.com/736x/52/52/85/525285f8e9ab87826eb25e48ed1f84e2--northern-lights-trips-northern-lights-finland.jpg" alt="Orange Flower">
+         <div class="image-description">Orange Flower</div>
+      </div>
+   </div>   
+</body>
+</html>
+
+<!--
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+-->
+
+<!--
+https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+-->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Examples</title>
+    <style>
+        .linear-gradient { background-image: linear-gradient(black, white); }
+        .single-image { background-image: url("https://avatars.mds.yandex.net/i?id=7bbbfb43baddad85667ba7fefed4a8f490780bd8-8497038-images-thumbs&n=13"); background-size: cover; background-repeat: no-repeat; }
+        .multiple-images {
+            background-image: radial-gradient(circle, #0000 45%, #000f 48%),
+                              radial-gradient(ellipse farthest-corner, #fc1c14 20%, #cf15cf 80%);
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+        .inherit { background-image: inherit; }
+        .initial { background-image: initial; }
+        .revert { background-image: revert; }
+        .revert-layer { background-image: revert-layer; }
+        .unset { background-image: unset; }
+        .box {
+            height: 200px;
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Image Examples</h1>
+    <div class="box linear-gradient">Linear Gradient</div>
+    <div class="box single-image">Single Image</div>
+    <div class="box multiple-images">Multiple Images</div>
+    <div class="box inherit" style="background-image: url('catfront.png');">Global value: inherit</div>
+    <div class="box initial">Global value: initial</div>
+    <div class="box revert">Global value: revert</div>
+    <div class="box revert-layer">Global value: revert-layer</div>
+    <div class="box unset">Global value: unset</div>
+</body>
+</html>

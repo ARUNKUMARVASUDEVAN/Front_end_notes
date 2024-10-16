@@ -1,0 +1,28 @@
+<!--Default Parameters-->
+<!--
+* default parameters in JavaScript are a feature that allows you to specify a default value for a function parameter.
+
+* We can initialize the parameters with the default values.
+
+function functName(param1 = defaultValue1, param2 = DefaultValue2, ..) {
+    // Use parameters here
+}
+
+
+
+-->
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      let output = document.getElementById("output");
+      function sum(p = 30, q = 40) {
+         return p + q;
+      }
+      output.innerHTML += "sum(10, 20)  ->  " + sum(10, 20) + "<br>"; // 10 + 20 = 30
+      output.innerHTML += "sum(10)  ->  " + sum(10) + "<br>"; // 10 + 40 = 50
+      output.innerHTML += "sum()  ->  " + sum() + "<br>"; // 30 + 40 = 70
+   </script>
+</body>
+</html>

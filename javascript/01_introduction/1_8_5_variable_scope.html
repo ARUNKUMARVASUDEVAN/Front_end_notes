@@ -1,0 +1,23 @@
+<!--
+* Global Variables − A global variable has global scope which means it can be defined anywhere in your JavaScript code.
+
+* Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.
+-->
+
+<html>
+<head>
+   <title> JavaScript Variable Scope Example</title>
+</head>
+<body onload = checkscope();>   
+   <script>
+	  var myVar = "global";      // Declare a global variable
+	  function checkscope( ) {
+		 var myVar = "local";    // Declare a local variable
+		 document.write(myVar);
+
+	  }
+	  
+      
+   </script>     
+</body>
+</html>

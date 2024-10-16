@@ -1,0 +1,94 @@
+<!--
+The function expression allows us to define a JavaScript function in an expression.
+
+JavaScript functions are defined using a function declaration or a function expression.
+The main difference between them is the function name.
+The function name can be omitted in function expressions.
+This helps to create anonymous functions in JavaScript. 
+-->
+
+<!--
+Syntax:
+
+function expression:
+
+function (parameter-list) {
+    statements
+};
+
+use a variable to store a JavaScript:
+
+const varName = function (parameter-list) {
+    statements
+};
+
+const sum = function (x, y) {
+    return x + y;
+};
+let z = sum(2, 3);
+-->
+
+
+<!--Named Function Expression-->
+<!--
+const sum = function addNumbers(x, y) {
+    return x + y;
+};
+let z = sum(2, 3);
+-->
+
+<!--Immediately invoked function Expression-->
+<!--
+(function greet() {
+    alert("Hello World");
+})();
+-->
+
+<!--Example-->
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const sum = function () {
+         let a = 10;
+         let b = 20;
+         document.getElementById("output").innerHTML = 
+		 "The sum of " + a + " and " + b + " is " + (a + b);
+      }
+      sum();
+   </script>
+</body>
+</html>
+
+
+<!------------------->
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const mul = function (a, b) {
+         return a * b;
+      }
+      let result = mul(4, 5);
+      document.getElementById("output").innerHTML = 
+	  "The returned value from the function is " + result;
+    </script>
+</body>
+</html>
+
+<!---------------->
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const num = function () {
+         return 2;
+      }
+      let resultz = num() * 3;
+      document.getElementById("output").innerHTML = 
+	  "The multiplication value is " + result;
+    </script>
+</body>
+</html>

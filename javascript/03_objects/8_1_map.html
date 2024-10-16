@@ -1,0 +1,152 @@
+<!--
+Map object in JavaScript is a collection of key-value pairs where the keys can be of any type, 
+including objects or functions. The order of the map elements is the same as the insertion order of the key-value pairs.
+
+Syntax:
+
+const map = new Map([iterable]);
+
+-->
+
+<!--
+clear()
+
+This method removes all elements from a Map object.
+
+delete()
+
+This method removes a specified element from a Map object by key.
+
+
+entries()
+
+This method returns a new map iterator object that contains the [key, value] pairs.
+
+	
+forEach()
+
+This method executes a callback function once per each key/value pair in a Map object.
+
+	
+get()
+
+This method is used to return a specified element from a Map object.
+
+	
+has()
+
+This method indicates whether an element with the specified key exists or not.
+
+	
+keys()
+
+This method returns a new Iterator object that contains the keys for each element in the Map object.
+
+	
+set()
+
+This method insert the key-value pair to a Map object.
+
+	
+values()
+
+This method returns a new Iterator object that containing values of the Map object.
+-->
+
+<!--Creating New Map-->
+
+<html>
+<body>
+   <div> Map elements are: </div>
+   <div id = "output"> </div>
+   <script>
+      const map = new Map([["Apple", 100], ["Banana", 20], ["Orange", 50]]);
+      for (let [key, value] of map) {
+         document.getElementById("output").innerHTML += `${key} : ${value} <br>`;
+      }
+   </script>
+</body>
+</html>
+
+
+<!--Inserting key-value pair in the Map-->
+
+<html>
+<body>
+   <div>After inserting 2 key-value pairs in the map: </div>
+   <div id = "output"> </div>
+   <script>
+      const maps = new Map();
+      maps.set("Grapes", 40);
+      maps.set("Apples", 50);
+      for (let [key, value] of maps) {
+         document.getElementById("output").innerHTML += `${key} : ${value} <br>`;
+      }
+   </script>
+</body>
+</html>
+
+<!--Accessing Map Elements-->
+<html>
+<body>
+   <div id = "output1">Name: </div>
+   <div id = "output2">Roll Id: </div>
+   <script>
+      const mapz = new Map();
+      mapz.set("name", "John");
+      mapz.set("rollId", 123);
+      document.getElementById("output1").innerHTML += mapz.get("name");
+      document.getElementById("output2").innerHTML += mapz.get("rollId");
+   </script>
+</body>
+</html>
+
+<!--Removing a Map element-->
+
+<html>
+<body>
+   <div>Map after deleting the [20,30] key-value pair: </div>
+   <div id = "demo"> </div>
+   <script>
+      const output = document.getElementById("demo");
+      const mapq = new Map([[10, 20], [20, 30], [30, 40]]);
+
+      mapq.delete(20); // Deleting a [20,30] key-value pair from the map
+
+      for (let [key, value] of mapq)
+         output.innerHTML += "Key: " + key + " Value: " + value + "<br/>";
+   </script>
+</body>
+</html>
+
+<!--size-->
+
+<html>
+<body>
+   <p id = "output">Size of the map object is: </p>
+   <script>
+      const mapw = new Map();
+      mapw.set("Grapes", 40);
+      mapw.set("Apples", 50);
+      document.getElementById("output").innerHTML += mapw.size;
+   </script>
+</body>
+</html>
+
+
+<!--Using object as a key-->
+
+<html>
+<body>
+   <p id = "output">The laptop price is: </p>
+   <script>
+      const mape = new Map();
+      const laptop = {
+         brand: "HP",
+         model: "Pavilion",
+      }
+      mape.set(laptop, 100000);
+      document.getElementById("output").innerHTML += mape.get(laptop);
+   </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+Type Conversions in JavaScript refer to the automatic or explicit process of converting data from one data type to another in JavaScript. 
+
+Implicit type conversion
+Explicit type conversion
+
+-->
+
+<!--
+Implicit Type Conversion
+When type conversion is done by JavaScript automatically, it is called implicit type conversion. 
+For example, when we use the '+' operator with the string and number operands, JavaScript converts the number to a string and concatenates it with the string.
+-->
+
+<!--
+Converting to String (Implicit conversion)
+In this example, we used the '+' operator to implicitly convert different values to the string data type.
+
+"100" + 24; // Converts 24 to string
+'100' + false; // Converts false boolean value to string
+"100" + null; // Converts null keyword to string
+
+-->
+
+<html>
+<head>
+   <title>Implicit conversion to string </title>
+</head>
+<body>
+   
+   <script>
+      document.write("100" + 24 + "<br/>");
+      document.write('100' + false + "<br/>");
+      document.write("100" + null+ "<br/>");
+      document.write("100" + undefined+ "<br/>");
+   </script>
+</body>
+</html>

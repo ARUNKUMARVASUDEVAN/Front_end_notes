@@ -1,0 +1,61 @@
+<!--
+NEGATIVE_INFINITY is a static data property that represents the negative infinity value.
+
+*   If the negative infinity is multiplied by NaN, the result will be NaN.
+*   When a negative infinity is multiplied by a positive infinity, the result will always be a negative infinity.
+*   If a negative infinity is multiplied by itself, then the result will always be positive infinity.
+*   Negative infinity, divided by positive infinity or by itself will return NaN.
+*   When Negative infinity is divided by a negative number except for negative infinity itself will always give positive infinity.
+*   If it is divided by a positive number except for the positive infinity, it will always return negative infinity.
+
+
+Number.NEGATIVE_INFINITY
+
+-->
+
+<html>
+<head>
+<title>JavaScript Number NEGATIVE_INFINITY Property</title>
+</head>
+<body>
+<script>
+   document.write("Negative infinity = ", Number.NEGATIVE_INFINITY);
+</script>
+</body>
+</html>
+
+<!-------------->
+
+<html>
+<head>
+<title>JavaScript Number NEGATIVE_INFINITY Property</title>
+</head>
+<body>
+<script>
+   document.write("Result of 'Number.NEGATIVE_INFINITY * 0' = ", Number.NEGATIVE_INFINITY * 0);
+</script>
+</body>
+</html>
+
+<!----------------------->
+
+<html>
+<head>
+<title>JavaScript Number NEGATIVE_INFINITY Property</title>
+</head>
+<body>
+<script>
+   function check(num){
+      if(num == Number.NEGATIVE_INFINITY){
+         return "Number is equal to Negative infinity...!";
+      }
+      else{
+         return num;
+      }
+   }
+   //call the function
+   document.write("Result of check(-Number.MAX_VALUE) is: ", check(-Number.MAX_VALUE));
+   document.write("<br>Result of check(-Number.MAX_VALUE * 2) is: ", check(-Number.MAX_VALUE*2));
+</script>
+</body>
+</html>

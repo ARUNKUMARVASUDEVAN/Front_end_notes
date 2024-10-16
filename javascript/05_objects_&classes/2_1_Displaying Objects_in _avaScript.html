@@ -1,0 +1,130 @@
+<!----->
+
+<html>
+<body>
+  <p id = "output">The object is: </p>
+  <script>
+    const fruit = {
+      name: "Banana",
+      price: 100,
+    }
+    document.getElementById("output").innerHTML += fruit;
+  </script>
+</body>
+</html>
+
+
+<!--
+Accessing the object properties
+
+Using the JSON.stringify() method
+
+Using the Object.entries() method
+
+Using the for...in loop
+-->
+
+<!--
+Accessing the Object Properties
+-->
+
+<html>
+<body>
+  <p id="output"> </p>
+  <script>
+    const fruits = {
+      name: "Banana",
+      price: 100,
+    }
+
+    const fruitName = fruits.name;
+    const fruitPrice = fruits["price"];
+
+    document.getElementById("output").innerHTML = 
+    "The price of the " + fruitName + " is: " + fruitPrice;
+  </script>
+</body>
+</html>
+
+
+<!--Using the JSON.stringify() Method-->
+<!--
+When object contains the dynamic properties or you don't know object properties, you can't print properties and values using the first approach. So, you need to use the JSON.stringify() method. It converts the object into a string.
+
+Syntax:
+--------
+JSON.stringify(obj);
+-->
+
+<html>
+<body>
+  <p id = "output">The fruit object is </p>
+  <script>
+    const fruitq = {
+      name: "Banana",
+      price: 100,
+    }
+    document.getElementById("output").innerHTML += JSON.stringify(fruitq);
+  </script>
+</body>
+</html>
+
+
+<!--Using the Object.enteries() Method-->
+
+<!--Syntax-->
+
+<!--Object.entries(obj);-->
+
+<html>
+<body>
+  <p> Displaying the object entries</p>
+  <p id = "output"> </p>
+  <script>
+    
+    const numbers = {
+      num1: 10,
+      num2: 20,
+      num3: 30,
+      num4: 40,
+    }
+    
+    for (const [key, value] of Object.entries(numbers)) {
+      document.getElementById("output").innerHTML += key + ": " + value + " <br>";
+    }
+    
+  </script>
+</body>
+</html>
+
+<!--
+    Using the for...in Loop
+
+Syntax
+
+for (key in obj) {
+ // Use the key to access the value
+}
+
+
+-->
+
+<html>
+<body>
+  <p> Displaying Object Entries using for...in loop:</p>
+  <p id = "output"> </p>
+  <script>
+    const languages = {
+      language1: "JavaScript",
+      language2: "Python",
+      language3: "Java",
+      language4: "HTML",
+    }
+
+    for (const key in languages) {
+      document.getElementById("output").innerHTML += 
+      key + ": " + languages [key] + " <br>";
+    }
+  </script>
+</body>
+</html>

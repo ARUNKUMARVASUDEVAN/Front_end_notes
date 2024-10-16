@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        body {
+            background-image: url('https://www.example.com/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .registration-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 400px;
+        }
+
+        .registration-form h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="date"],
+        .registration-form input[type="password"],
+        .registration-form select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        .registration-form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .registration-form label {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .registration-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .registration-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .registration-form .captcha {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .registration-form .captcha img {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 120px;
+            height: 40px;
+        }
+
+        .registration-form p {
+            text-align: center;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .registration-form p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .registration-form p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="registration-form">
+        <h2>User Registration</h2>
+        <form action="#" method="post">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="date" name="dob" required>
+            <select name="gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <div class="captcha">
+                <img src="https://dummyimage.com/120x40/ccc/000&text=Captcha" alt="CAPTCHA">
+                <input type="text" name="captcha" placeholder="Enter Captcha" required>
+            </div>
+            <label>
+                <input type="checkbox" name="terms" required> I accept the terms & conditions
+            </label>
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="email_confirmation.html">Sign In</a></p>
+    </div>
+</body>
+
+</html>

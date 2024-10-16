@@ -1,0 +1,172 @@
+<!--
+Error handling in JavaScript is a process to detect and handle errors that occurs during the execution of a program.
+Errors can be a syntax, runtime or logical errors. An error occurred during the execution of the program is called a runtime error or an exception.
+
+What is an Error?
+An error is an event that occurs during the execution of a program that prevents it from continuing normally.
+Errors can be caused by a variety of factors, such as syntax errors, runtime errors, and logical errors.
+
+
+Syntax Errors
+Syntax errors, also called parsing errors, occur at compile time in traditional programming languages and at interpret time in JavaScript.
+
+<script>
+   window.print();
+</script>
+
+
+---------------------------------
+
+Runtime Errors (Exceptions)
+
+Runtime errors, also called exceptions, occur during execution (after compilation/interpretation).
+
+<script>
+   window.printme();
+</script>
+
+Exceptions in JS
+
+ReferenceError − Trying to access an undefined variable/ method.
+
+TypeError − Attempting an operation on incompatible data types.
+
+RangeError − A value exceeds the allowed range.
+
+-----------------------------------
+Logical Errors
+
+Logic errors can be the most difficult type of errors to track down. 
+These errors are not the result of a syntax or runtime error. Instead, they occur when you make a mistake in the logic that drives your script and do not get the expected result
+
+<script>
+   let num = 10/0;
+</script>
+
+-->
+
+
+<!--
+    ---------------------------------------------------------------------------
+
+What is Error Handling?
+
+Whenever any error occurs in the JavaScript code, the JavaScript engine stops the execution of the whole code.
+If you handle such errors in the proper way, you can skip the code with errors and continue to execute the other JavaScript code.
+
+try...catch...finally statements
+
+throw statements
+
+the onerror() event handler property
+
+Custom Errors
+
+
+-->
+
+<!--------------------------
+   try...catch...finally 
+
+   <script>
+   try {
+      // Code to run
+      [break;]
+   } 
+   catch ( e ) {
+      // Code to run if an exception occurs
+      [break;]
+   }
+   [ finally {
+      // Code that is always executed regardless of 
+      // an exception occurring
+   }]
+</script>
+    ---------------------------------->
+
+
+    <html>
+        <head>
+        <script>               
+           try {
+              var a = 100;
+              alert(myFunc(a));                  
+           }
+           catch (e) {
+              alert(e);
+           }
+           finally {
+              alert("Finally block will always execute!" );
+           }
+        </script>
+        </head>
+        <body>
+           <p>Exception handling using try...catch...finally statements</p>
+        </body>
+        </html>
+<!---------------throw --------------------->
+
+<html>
+<head>
+<script>
+   function myFunc() {
+      var a = 100;
+      var b = 0;
+
+      try {
+         if ( b == 0 ) {
+            throw( "Divide by zero error." ); 
+         } else {
+            var c = a / b;
+         }
+      }
+      catch ( e ) {
+         alert("Error: " + e );
+      }
+   }
+</script>      
+</head>
+<body>
+   <p>Click the following to see the result:</p>
+   <form>
+      <input type = "button" value = "Click Me" onclick = "myFunc();" />
+   </form>
+</body>
+</html>
+
+<!-----------The onerror Event Handler Property
+    
+    The onerror event handler was the first feature to facilitate error handling in JavaScript. 
+    The onerror is an event handler property of the 'window' object, which automatically triggers when any error occurs on any element of the web page.
+
+
+window.onerror = errorhandler_func;
+OR
+<ele onerror="errorhandler_func()"> </ele>
+
+ onerror event handler provides three pieces of information
+-----------------------------------------------------------
+Error message − The same message that the browser would display for the given error
+
+URL − The file in which the error occurred
+
+Line number − The line number in the given URL that caused the error
+    ---------------------->
+
+    <html>
+        <body>
+           <p> Click the following button to see the result:</p>
+           <form>
+              <input type = "button" value = "Click Me" onclick = "myFunc();" />
+           </form>
+           <div id = "demo"> </div>
+           <script>
+              const output = document.getElementById("demo");
+              window.onerror = function (msg, url, line) {
+                 output.innerHTML = "Error: " + msg + "<br>";
+                 output.innerHTML += "URL: " + url + "<br>";
+                 output.innerHTML += "Line: " + line + "<br>";
+              }
+           </script>
+        </body>
+        </html>

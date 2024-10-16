@@ -1,0 +1,35 @@
+<!--
+
+The target attribute determines the target window or frame where the result of the script will be displayed after submitting the form. The default target is the current window. The target attribute accepts the following values
+
+Values	Description
+_self	It opens the response in the same frame as it was clicked.
+_blank	It opens the response in the new window or tab.
+_parent	Opens the response in the parent frame.
+_top	Opens the response in the full body of window.
+framename	Opens the response in the named iframe.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> The target Attribute </title>
+</head>
+
+<body>
+    <!-- Start of the form element -->
+    <form action="https://www.youtube.com" target="_blank">
+        Name:
+        <input type="text" name="your_name" required/>
+        <br><br> Email:
+        <input type="email" name="mail" required/>
+        <br><br>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>

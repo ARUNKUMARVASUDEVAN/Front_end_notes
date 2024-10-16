@@ -1,0 +1,42 @@
+<!--
+auto: When table-layout is set to auto, the browser will calculate the width of columns and cells based on their content.
+
+fixed: When table-layout is set to fixed, the browser will allocate a fixed width to each column based on the first row of the table. This means that all subsequent rows will adhere to the same column widths, regardless of their content.
+-->
+
+<html>
+<head>
+<style>
+   table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed; /* Using fixed layout */
+   }
+
+   th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+   }
+</style>
+</head>
+<body>
+   <table>
+      <tr>
+         <th>Header 1</th>
+         <th>Header 2</th>
+         <th>Header 3</th>
+      </tr>
+      <tr>
+         <td>Row 1, Column 1</td>
+         <td>Row 1, Column 2</td>
+         <td>Row 1, Column 3</td>
+      </tr>
+      <tr>
+         <td>Row 2, Column 1</td>
+         <td>Row 2, Column 2</td>
+         <td>Row 2, Column 3</td>
+      </tr>
+   </table>
+</body>
+</html>

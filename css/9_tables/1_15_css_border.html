@@ -1,0 +1,62 @@
+<!--
+border: This property sets the width, style, and color of all four sides of the table border (e.g., border: 1px solid black;).
+
+border-collapse: This property sets whether the border should be collapsed into a single border or separated between cells.
+
+border-width: This property sets the width of the border (e.g., border-width: thin|medium|thick|2px;)
+
+border-style: This property sets the style of table border (e.g., border-style: dotted|dashed|solid|double;), etc.
+
+border-color: This property sets the color of table border (e.g., (border-color: red;) or (border-top-color: red;)).
+
+border-radius: This property rounds the corners of the table border (e.g., border-radius: 5px|50%).
+-->
+
+<html>
+<head>
+<style>
+   table {
+      border-collapse: separate;
+      border-radius: 3%;
+      border-style:inset ;
+      border-color: blue;
+      width: 100%;
+   }
+   td {
+      border: 2px dashed red;
+      height: 50px;
+      vertical-align: middle;
+      text-align: center;
+   }
+</style>
+</head>
+<body>
+   <h2>Border property</h2>
+   <table>
+      <tr>
+         <th>Header 1</th>
+         <th>Header 2</th>
+         <th>Header 3</th>
+         <th>Header 4</th>
+      </tr>
+      <tr>
+         <td>Data 1</td>
+         <td>Data 2</td>
+         <td>Data 3</td>
+         <td>Data 4</td>
+      </tr>
+      <tr>
+         <td>Data 1</td>
+         <td>Data 2</td>
+         <td>Data 3</td>
+         <td>Data 4</td>
+      </tr>
+      <tr>
+         <td>Data 1</td>
+         <td>Data 2</td>
+         <td>Data 3</td>
+         <td>Data 4</td>
+      </tr>
+   </table>
+</body>
+</html>

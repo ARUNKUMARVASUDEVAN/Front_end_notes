@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Aside Tag Example</title>
+   <style>
+      body {
+         display: flex;
+         flex-direction: column;
+         background-color: #f4f4f4;
+      }
+
+      main {
+         display: flex;
+         flex: 1;
+         padding: 20px;
+      }
+      article {
+         flex: 3;
+         background: #fff;
+         padding: 20px;
+         margin-right: 20px;
+      }
+      aside {
+         
+         flex: 1;
+         background: #e00909;
+         padding: 20px;
+         border-radius: 30px;
+      }
+
+   </style>
+</head>
+
+<body>
+   <header>
+      <h1>My Blog</h1>
+   </header>
+   
+   <main>
+      <article>
+         <h3>Articles...</h3>
+      </article>
+
+      <aside>
+         <h2>Related Articles</h2>
+         <ul>
+            <li>
+               <a href="/html/index.htm">
+                  HTML Tutorial
+               </a></li>
+            <li>
+               <a href="/css/index.htm">
+                  CSS Tutorial
+               </a></li>
+            <li>
+               <a href="/python/index.htm">
+                  Python Tutorial
+               </a></li>
+         </ul>
+      </aside>
+   </main>
+</body>

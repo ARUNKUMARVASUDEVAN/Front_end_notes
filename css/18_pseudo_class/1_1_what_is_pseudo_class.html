@@ -1,0 +1,53 @@
+<!--
+Pseudo-classes often used along with CSS Selectors by inserting a colon (:) after selector. For example a : hover{}, Here selector `a` will selects all the anchor tags in document.
+
+A functional pseudo-class contains a pair of parentheses to define the arguments. For example: :lang(en).
+
+The element to which a pseudo-class is attached, is termed as an anchor element. For example: button:hover, a:focus, etc. Here button and a elements are called the anchor elements.
+
+Pseudo-classes apply style to an element as per the content of the document tree.
+
+Pseudo-classes also apply a style to an element in relation to the external factors, such as history of the navigation of the element (:visited), status of the content (:checked), or position of mouse (:hover)
+-->
+
+
+<!--
+Syntax
+
+ tag:hover {
+   property: value;
+}    
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      a{
+         background-color: lightgrey;
+         padding: 10px;
+      }
+      a:hover {
+         color: red;
+      }
+      
+      div{
+         padding: 10px;
+         border: solid 3px;
+         background-color: aqua;
+      }
+      div:hover{
+         background-color: lightgreen;
+      }
+   </style>
+</head>
+
+<body>
+   <h3>Anchor Tag Hovering</h3>
+   <a href="#">Hover over me!</a>
+   
+   <h3>Div Hovering</h3>
+   <div>Hover me</div>
+</body>
+</html>

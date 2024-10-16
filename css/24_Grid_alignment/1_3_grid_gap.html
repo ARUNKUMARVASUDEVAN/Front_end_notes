@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      .grid-container {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 100px 100px 100px;
+
+         /* Sets both row and column gaps to 20px */
+         gap: 20px; 
+         /* Make gap between rows as 10px (override) */
+         row-gap: 10px; 
+         /* Make gap between columns as 5px (override) */
+         column-gap: 50px; 
+      }
+      .grid-item {
+         background-color: #4CAF50;
+         border: 1px solid #ddd;
+         padding: 20px;
+         text-align: center;
+         font-size: 1.2em;
+         color: white;
+      }
+   </style>
+</head>
+
+<body>
+    <h1>Grid Gap Example</h1>
+    <div class="grid-container">
+      <div class="grid-item">
+         Item 1
+      </div>
+      <div class="grid-item">
+         Item 2
+      </div>
+      <div class="grid-item">
+         Item 3
+      </div>
+      <div class="grid-item">
+         Item 4
+      </div>
+      <div class="grid-item">
+         Item 5
+      </div>
+      <div class="grid-item">
+         Item 6
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!--
+arrow functions in JavaScript allow us to create a shorter and anonymous function.
+Arrow functions are written without "function" keyword. 
+-->
+
+<!--
+const varName = function(parameters) {
+    // function body
+};
+
+----------------------------------
+
+const varName = (parameters) => {
+    // function body
+};
+
+-->
+
+<!--Syntax-->
+
+<!--
+const varName = (p1, p2, ... pN) => Expression;
+OR
+const varName = (p1, p2, ...pN) => {
+    // function body
+};
+-->
+
+<!--Arrow Function with Single Statement-->
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const divide = (x, y) => x / y;
+      document.getElementById("output").innerHTML = divide(10, 5);
+   </script>
+</body>
+</html>
+
+<!--Arrow Function with Multiple Statements-->
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const divides = (x, y) => {
+         let res = x / y;
+         return res;
+      };
+      document.getElementById("output").innerHTML = divides(10, 5);
+   </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!--
+toPrecision() method is used to retrieve a string representing this number to the specified precision,
+
+toPrecision(precision)
+
+-->
+
+<html>
+<head>
+<title>JavaScript toPrecision() Method</title>
+</head>
+<body>
+<script>
+   const val = 10.34543;
+   document.write("Given value = ", val);
+   document.write("<br>Result = ", val.toPrecision());
+</script>
+</body>
+</html>
+
+<!----------->
+
+<html>
+<head>
+<title>JavaScript toPrecision() Method</title>
+</head>
+<body>
+<script>
+   const valk = 123.3454;
+   const p1 = 3;
+   const p2 = 5;
+   const p3 = 12;
+   document.write("Given value = ", valk);
+   document.write("<br>Precision values are = ", p1, ", ", p2, " and ", p3);
+   document.write("<br>Formatted result1 = ", val.toPrecision(p1));
+   document.write("<br>Formatted result2 = ", val.toPrecision(p2));
+   document.write("<br>Formatted result3 = ", val.toPrecision(p3));
+</script>
+</body>
+</html>
+
+<!---->
+<html>
+<head>
+<title>JavaScript toPrecision() Method</title>
+</head>
+<body>
+<script>
+   const valz = 123;
+   const precision = 101;
+   document.write("Given value = ", valz);
+   document.write("<br>Precision value = ", precision);
+   try {
+      document.write("<br>Result = ", val.toPrecision(precision));
+   } catch (error) {
+      document.write("<br>", error);
+   }
+</script>
+</body>
+</html>

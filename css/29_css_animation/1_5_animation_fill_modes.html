@@ -1,0 +1,58 @@
+<!--
+none: The animation will not apply any style before or after it starts. This is default.
+forwards: At end of animation element will keep the style set by the last keyframe rule.
+backwards: At end of animation element will keep the style set by the first keyframe rule.
+both: The animation will follow the rules for both forwards and backwards.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box {
+            padding: 10px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            margin: 20px;
+            animation-duration: 2s;
+            animation-name: changeColor;
+        }
+
+        /* Animation Definition */
+        @keyframes changeColor {
+            0% {
+                background-color: blue;
+            }
+            100% {
+                background-color: red ;
+            }
+        }
+
+        /* Animation Fill Modes */
+        .none {
+            animation-fill-mode: none;
+        }
+
+        .forwards {
+            animation-fill-mode: forwards;
+        }
+
+        .backwards {
+            animation-fill-mode: backwards;
+            animation-delay: 2s;
+        }
+
+        .both {
+            animation-fill-mode: both;
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box none">None</div>
+    <div class="box forwards">Forwards</div>
+    <div class="box backwards">Backwards</div>
+    <div class="box both">Both</div>
+</body>
+</html>

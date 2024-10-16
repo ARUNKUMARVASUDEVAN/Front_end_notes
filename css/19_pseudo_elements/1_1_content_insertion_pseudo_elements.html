@@ -1,0 +1,27 @@
+<!--
+pseudo-elements ::before and ::after are used to insert text contents or images before and after any element
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p::before {
+            content: "NOTE:";
+            font-weight: bold;
+        }
+        p::after {
+            content: url(https://imgd.aeplcdn.com/370x208/n/cw/ec/45299/jimny-exterior-right-front-three-quarter-27.jpeg?isig=0&q=80);
+        }       
+    </style>
+</head>
+
+<body>
+    <p>
+        We inserted intro at start and emoji at end.
+    </p>
+
+    <p>Hi</p>
+</body>
+</html>

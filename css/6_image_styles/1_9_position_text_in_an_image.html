@@ -1,0 +1,69 @@
+<!--
+position property can be used to position text in different locations inside an image.
+
+First we need to set position property for image container as `position: relative` and position property of text as `position: absolute`. Now you can position of text elements using top, left, right and bottom properties.
+-->
+
+<html>
+<head>
+<style>
+   .container {
+      position: relative;
+      border: 2px solid #ef2c2c;
+   }
+   .center {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+   }
+   .top-left {
+      position: absolute;
+      top: 2px;
+      left: 60px;
+   }
+   .top-right {
+      position: absolute;
+      top: 12px;
+      right: 30px;
+   }
+   .bottom-left {
+      position: absolute;
+      bottom: 12px;
+      left: 30px;
+   }
+   .bottom-right {
+      position: absolute;
+      bottom: 12px;
+      right: 30px;
+   }
+   img {
+      width: 100%;
+      opacity: 0.7;
+   }
+</style>
+</head>
+<body>
+   <div class="container">
+      <img src="https://wallpapercave.com/wp/wp8371239.jpg" 
+            width="1000px" height="350px">
+
+      <h3 class="center">
+         Text at Center
+      </h3>
+      <h3 class="top-left">
+         Text at Top Left
+      </h3>
+      <h3 class="top-right">
+         Text at Top Right
+      </h3>
+      <h3 class="bottom-left">
+         Text at Bottom Left</h3>
+      <h3 class="bottom-right">
+         Text at Bottom Right
+      </h3>
+   </div>
+</body>
+</html>
+
+<!--https://developer.mozilla.org/en-US/docs/Web/CSS/position-->

@@ -1,0 +1,54 @@
+<!--
+WeakMap object in JavaScript is a collection of key-value pairs where the keys are weakly referenced.
+The WeakMap keys must be objects or non-registered symbols, and values are of any arbitrary JavaScript type.
+
+Syntax
+
+const weak_map = new WeakMap();
+
+WeakMap Methods:
+---------------
+
+delete()
+
+To delete a single key-value pair from the WeakMap.
+
+	
+get()
+
+To get values related to the specific object.
+
+	
+has()
+
+Check whether a particular object exists as a key exists in the WeakMap.
+
+	
+set()
+
+To insert the key-value pair in the WeakMap.
+
+
+-->
+
+
+<!--Inserting key-value pair to the WeakMap-->
+
+<!-- WeakMaps are not iterable in JavaScript.-->
+
+<html>
+<body>
+   <p id = "output">The laptop price is: </p>
+   <script>
+      const wm = new WeakMap();
+      const laptop = {
+         brand: "HP",
+         model: "Pavilion",
+      }
+      wm.set(laptop, 100000);
+      document.getElementById("output").innerHTML += wm.get(laptop);
+   </script>
+</body>
+</html>
+
+<!--Deleting key-value pair from the WeakMap-->

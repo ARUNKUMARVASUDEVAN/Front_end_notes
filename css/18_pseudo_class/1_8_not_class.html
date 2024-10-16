@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS :not() Example</title>
+    <style>
+      /*Style all paragraph except class special*/
+      p:not(.special) {
+         color: red;
+      }
+      
+      /*Style all special paragraph except id superSpecial*/
+      .special:not(#superSpecial){
+         background-color: lightgrey;
+      }
+    </style>
+</head>
+
+<body>
+    <p>This is a normal paragraph.</p>
+    <p class="special" id="superSpecial">
+      This is a super special paragraph.
+   </p>
+    <p>This is another normal paragraph.</p>
+    <p class="special">
+      This is special paragraph.
+   </p>
+</body>
+</html>

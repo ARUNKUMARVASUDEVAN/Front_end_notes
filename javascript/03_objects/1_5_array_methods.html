@@ -1,0 +1,59 @@
+<!--Array .from()
+
+the Array.from() method is a static method. 
+It creates a new, shadow-copied array from an array-like object or iterable object
+
+
+Syntax:
+
+Array.from(arrayLike, mapFn, thisArg)
+
+*   arrayLike − An array-like or iterable object to convert to an array.
+*   mapFn (optional) − A mapping function to call on each element.
+*   thisArg (optional) − The value to use as this when executing mapFn.
+-->
+
+<html>
+<body>
+   <script>
+      const str = 'Ether';
+      const arr = Array.from(str);
+      document.write(arr);
+   </script>
+</body>
+</html>
+
+<!----------------------------------------------------------->
+
+<html>
+<body>
+   <script>
+      const arrayLikeObj = { 0: 'apple', 1: 'banana', 2: 'cherry', length: 3 };
+      const arr1 = Array.from(arrayLikeObj);
+      document.write(arr);
+   </script>
+</body>
+</html>
+
+<!----------------------------------------------------------->
+
+<html>
+<body>
+   <script>
+      const set = new Set(['apple', 'banana', 'cherry','banana']);
+      const arr2 = Array.from(set);
+      document.write(arr);
+   </script>
+</body>
+</html>
+
+<!----------------------------------------------------------->
+
+<html>
+<body>
+   <script>
+      const arr3 = Array.from({ length: 5 }, (v, i) => i * 2);
+      document.write(arr);
+   </script>
+</body>
+</html>

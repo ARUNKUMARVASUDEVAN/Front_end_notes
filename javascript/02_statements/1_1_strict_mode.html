@@ -1,0 +1,153 @@
+<!--
+The 'use strict' literal expression is used to add the strict mode in the JavaScript code.
+It removes the silent errors from the code, such as you can't use the variable without declaration, you can't modify the readable property of the object, etc.
+
+Why to use the strict mode
+* Error Prevention --− The strict mode prevents the common errors which developers make while writing the JavaScript code,
+     such as initializing the variable without declaration or using the reserved keywords as an identifier.
+* Safer Code −-- The strict mode prevents the creation of global variables accidentally.
+     Also, it doesn't allow to use of statements like 'with', which can lead to vulnerability in the code.
+* Future Compatibility --− You can align your code with the future versions of JavaScript by using the script mode. For example, the current version of JavaScript doesn't contain keywords like 'public' but is reserved for future versions.
+     So, the strict mode won't allow you to use it as an identifier from now.
+
+-->
+
+<!--Strict mode in global scope
+
+
+<html>
+<head>
+   <title> Using the strict mode gloablly </title>
+</head>
+<body>
+   <script>
+      "use strict";
+      
+      let y = 50; // This is valid
+      document.write("The value of the X is: " + y);
+      x = 100; // This is not valid
+      document.write("The value of the X is: " + x);
+   </script>
+</body>
+</html>
+
+-->
+
+<!--Local Scope
+
+<html>
+<head>
+    <title> Using the strict mode gloablly </title>
+</head>
+<body>
+    <script>
+        x = 100; // This is valid
+        document.write("The value of the X is - " + x);
+        function test() {
+            "use strict";
+            y = 50; // This is not valid
+            document.write("The value of the y is: " + x);
+        }
+        test();
+    </script>
+</body>
+</html>
+
+Mistakes that you should't make in the strict mode
+
+
+* <script>
+   'use strict';
+   num = 70.90; // This is invalid
+</script>
+
+
+2. Similarly, you can't use the object without declaring it.
+
+*<script>
+   'use strict';
+   numObj = {a: 89, b: 10.23}; // This is invalid
+</script>
+
+* <script>
+   'use strict';
+   let women = { name: "Aasha", age: 29 };
+   delete women; // This is invalid
+  </script>
+
+
+*  <script>
+   'use strict';
+   function func() { }
+   delete func; // This is invalid
+    </script>
+
+*<script>
+   'use strict';
+   function func(param1, param1, param2) {
+      // Function with 2 param1 is not allowed!
+   }
+</script>
+
+*   <script>
+   'use strict';
+   let octal = 010; // Throws an error
+    </script>
+
+* You can't use escape characters.
+  <script>
+   'use strict';
+   let octal = \010; // Throws an error
+    </script>
+
+* You can't write to the readable property of the object.
+    <script>
+    'use strict';
+    let person = {};
+
+    Object.defineProperty(person, 'name', { value: "abc", writable: false });
+    obj1.name = "JavaScript"; // throws an error
+    </script>
+
+*  You can't assign values to the getters function.
+    
+    <script>
+   'use strict';
+   let person = { get name() { return "JavaScript"; } };
+   obj1.name = "JavaScript"; // throws an error
+    </script>
+
+*  In the strict mode, when you use the 'this' keyword inside the function, 
+    it refers to the reference object through which the function is invoked.
+    If the reference object is not specified, it refers to the undefined value.
+
+<script>
+   'use strict';
+   function test() {
+      console.log(this); // Undefined
+   }
+   test();
+</script>
+
+*   You can't use the 'with' statement in the strict mode.
+ <script>
+   'use strict';
+   with (Math) {x = sin(2)}; // This will throw an error
+</script>
+
+* You can't use the eval() function to declare the variables for the security reason.
+
+<script>
+   'use strict';
+   eval("a = 8")
+</script>
+
+* You can't use the keywords as an identifier that are reserved for the future.
+
+        implements
+        interface
+        package
+        private
+        protected
+
+-->

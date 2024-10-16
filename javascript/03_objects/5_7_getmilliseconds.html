@@ -1,0 +1,31 @@
+<!--
+getMilliseconds() method is a built-in function that belongs to the Date object. 
+It is used to retrieve the milliseconds value of a date object, which represents the number of milliseconds elapsed since the last second.
+
+Syntax
+
+getMilliseconds();
+-->
+
+<html>
+<body>
+<script>
+   const currentDate = new Date();
+   const milliseconds = currentDate.getMilliseconds();
+   document.write(milliseconds);
+</script>
+</body>
+</html>
+
+<!---------->
+
+<html>
+<body>
+<script>
+   const specificDate = new Date('2023-10-26 12:30:45.154');
+   const millisecondz = specificDate.getMilliseconds();
+   document.write(millisecondz);
+</script>
+</body>
+</html>
+

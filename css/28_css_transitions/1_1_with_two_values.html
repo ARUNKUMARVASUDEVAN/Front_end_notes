@@ -1,0 +1,46 @@
+<!--
+transition-property
+
+transition-duration
+
+transition-timing-function
+
+transition-delay
+
+transition-behavior (This property is on an experimental basis and may not be supported).
+-->
+
+<!--
+<length> − A specific length value such as pixels (px), centimeters (cm), inches (in), etc.
+-->
+
+<!--
+Syntax
+
+transition: margin-right 4s;
+transition: margin-right 4s 1s;
+transition: margin-right 4s ease-in-out;
+transition: margin-right 4s ease-in-out 1s;
+transition: display 4s allow-discrete;
+transition: margin-right 4s, color 1s;
+-->
+<html>
+<head>
+<style>
+   .box {
+      font-size: 14px;
+      width: 100px;
+      padding: 5px;
+      transition: padding 2s ease-in;
+      background-color: lightskyblue;
+   }
+   .box:hover {
+      background-color: greenyellow;
+      padding: 15px;
+   }
+</style>
+</head>
+<body>
+   <div class="box">Hover over me</div>
+</body>
+</html>

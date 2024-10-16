@@ -1,0 +1,42 @@
+<!--
+The autocomplete attribute of HTML predicts and suggests the subsequent input based on the initial characters entered in the input field. This attribute primarily has two states namely on and off.
+
+Values	Description
+on	    By default, the autocomplete attribute is set to on, enabling the autocomplete functionality.
+off	    The autocomplete attribute can be toggled to off to disable this feature as per the requirements of the web application.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form with Autocomplete</title>
+</head>
+
+<body>
+    <h2>Form with Autocomplete Attribute</h2>
+
+    <form action="https://www.youtube.com/" 
+          method="POST" autocomplete="on"
+          novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" 
+               name="name" >
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               autocomplete="on">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p>
+        Submit the form with some values, Next time 
+        when you try to submit browser will suggest 
+        previous submitted values.
+    </p>
+</body>
+
+</html>

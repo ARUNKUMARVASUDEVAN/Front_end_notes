@@ -1,0 +1,105 @@
+<!--
+
+ JavaScript Number object represents numerical data as floating-point numbers. 
+ It contains different properties (constants) and methods for working on numbers. In general, you do not need to worry about Number objects because the browser automatically converts number literals to instances of the number class.
+
+ Other types of data such as strings, etc., can be converted to numbers using Number() function
+
+ JavaScript does not make a distinction between integer values and floating-point values. JavaScript
+
+Syntax:
+
+const val = new Number(number);
+
+let num1 = 24;
+let num2 = 35.65;
+-->
+
+<!--
+Properties
+
+EPSILON
+
+It represents the difference between 1 and the smallest floating point number greater than 1.
+
+	
+MAX_SAFE_INTEGER
+
+It returns the maximum safe integer value.
+
+
+MAX_VALUE
+
+The largest possible value a number in JavaScript can have 1.7976931348623157E+308.
+
+	
+MIN_SAFE_INTEGER
+
+It returns the minimum safe integer value.
+
+	
+MIN_VALUE
+
+The smallest possible value a number in JavaScript can have 5E-324.
+
+	
+NaN
+
+Equal to a value that is not a number.
+
+	
+NEGATIVE_INFINITY
+
+A value that is less than MIN_VALUE.
+
+	
+POSITIVE_INFINITY
+
+A value that is greater than MAX_VALUE
+
+	
+prototype
+
+A static property of the Number object. Use the prototype property to assign new properties and methods to the Number object in the current document.
+
+	
+constructor
+
+Returns the function that created this object's instance. By default this is the Number object.
+-->
+
+<!--Epsilon-->
+<!-- Number.EPSILON property represents the difference between 1 and the smallest floating point number greater than 1.
+       Number.EPSILON -->
+
+       <html>
+        <head>
+        <title>JavaScript Number.EPSILON Property</title>
+        </head>
+        <body>
+        <script>
+           var result = Number.EPSILON;
+           document.write("Value of the epsilon: ", result);
+        </script>
+        </body>
+        </html>
+
+<!---->
+<html>
+<head>
+<title>JavaScript Number.EPSILON Property</title>
+</head>
+<body>
+<script>
+   function equal(x, y) {
+      return (x-y) < Number.EPSILON;
+   }
+   let x = 10.1;
+   let y = 10.2;
+   document.write("x = ", x, ", y = ", y);
+   //callig the function
+   document.write("<br>The result of '(x-y) < Number.EPSILON': ", equal(x, y));
+   document.write("<br>The result of '(x = x+y, y) < Number.EPSILON': ", equal(x+y, y));
+</script>
+</body>
+</html>

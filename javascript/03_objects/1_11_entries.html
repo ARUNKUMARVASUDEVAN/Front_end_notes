@@ -1,0 +1,34 @@
+<!--
+Array.entries() method creates a new Array iterator object that retunrs key-value pairs for each index in the specified array
+
+Syntax:
+
+array.entries();
+
+
+-->
+
+<html>
+<body>
+   <script>
+      const animals = ["Lion", "Cheetah", "Tiger", "Elephant", "Dinosaur"];
+
+      for (const i of animals.entries()) {
+         document.write(`Number : ${i}`)
+      }
+   </script>
+</body>
+</html>
+<!------------------------>
+
+<html>
+<body>
+   <script>
+      const animalz = ["Lion", "Cheetah", "Tiger", "Elephant", "Dinosaur"];
+
+      for (const [index, animal] of animals.entries()) {
+         document.write(`Index: ${index}, Name: ${animal}<br>`);
+      }
+   </script>
+</body>
+</html>

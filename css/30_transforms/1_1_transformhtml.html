@@ -1,0 +1,109 @@
+<!--
+transform property is used to apply 2d and 3d transformations to an element
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Examples</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+        .none { transform: none; }
+        .matrix { transform: matrix(1, 0, 0, 1, 50, 50); }
+        .matrix3d { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, 50, 50, 1); }
+        .translate { transform: translate(50px, 100px); }
+        .translate3d { transform: translate3d(50px, 50px, 50px); }
+        .translateX { transform: translateX(50px); }
+        .translateY { transform: translateY(50px); }
+        .translateZ { transform: translateZ(50px); }
+        .scale { transform: scale(1.5, 1.2); }
+        .scale3d { transform: scale3d(1.5, 1.5, 1.5); }
+        .scaleX { transform: scaleX(1.5); }
+        .scaleY { transform: scaleY(1.5); }
+        .scaleZ { transform: scaleZ(1.5); }
+        .rotate { transform: rotate(45deg); }
+        .rotate3d { transform: rotate3d(1, 1, 0, 45deg); }
+        .rotateX { transform: rotateX(45deg); }
+        .rotateY { transform: rotateY(45deg); }
+        .rotateZ { transform: rotateZ(45deg); }
+        .skew { transform: skew(20deg, 10deg); }
+        .skewX { transform: skewX(20deg); }
+        .skewY { transform: skewY(20deg); }
+        .perspective {
+            perspective: 500px;
+            transform: rotateX(45deg);
+        }
+        .initial { transform: initial; }
+        .inherit { transform: inherit; }
+    </style>
+</head>
+<body>
+    <div class="box none">none</div>
+    <br>
+    <div class="box matrix">matrix</div>
+    <br>
+    <div class="box matrix3d">matrix3d</div>
+    <br>
+    <div class="box translate">translate</div>
+    <br>
+    <div class="box translate3d">translate3d</div>
+    <br>
+    <div class="box translateX">translateX</div>
+    <br>
+    <div class="box translateY">translateY</div>
+    <br>
+    <div class="box translateZ">translateZ</div>
+    <br>
+    <div class="box scale">scale</div>
+    <br>
+    <div class="box scale3d">scale3d</div>
+    <br>
+    <div class="box scaleX">scaleX</div>
+    <br>
+    <div class="box scaleY">scaleY</div>
+    <br>
+    <div class="box scaleZ">scaleZ</div>
+    <br>
+    <div class="box rotate">rotate</div>
+    <br>
+    <div class="box rotate3d">rotate3d</div>
+    <br>
+    <div class="box rotateX">rotateX</div>
+    <br>
+    <div class="box rotateY">rotateY</div>
+    <br>
+    <div class="box rotateZ">rotateZ</div>
+    <br>
+    <div class="box skew">skew</div>
+    <br>
+    <div class="box skewX">skewX</div>
+    <br>
+    <div class="box skewY">skewY</div>
+    <div class="box perspective">perspective</div>
+    <div class="box initial">initial</div>
+    <div class="box inherit">inherit</div>
+</body>
+</html>

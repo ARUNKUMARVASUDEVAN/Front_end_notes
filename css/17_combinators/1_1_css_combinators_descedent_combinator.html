@@ -1,0 +1,29 @@
+<!--
+    combinators are symbols or characters that specify the relationship between different HTML elements that you want to style
+-->
+
+<html>
+<head>
+<title>Descendant Combinator Example</title>
+<style>
+   .parent {
+      background-color: lightblue;
+      padding: 20px;
+   }
+   .parent   p {
+      color: red;
+      font-weight: bold;
+   }
+</style>
+</head>
+<body>
+   <div class="parent">
+      <h1>This is the parent element</h1>
+      <p>This is a paragraph inside the parent element.</p>
+      <p>This is a paragraph inside the parent element.</p>
+   </div>
+   <div>
+      <p>This is a paragraph outside the parent element.</p>
+   </div>
+</body>
+</html>

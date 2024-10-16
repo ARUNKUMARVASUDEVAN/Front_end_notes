@@ -1,0 +1,136 @@
+<!--
+A function in JavaScript is a group of reusable code that can be called anywhere in your program. It eliminates the need of writing the same code again and again.
+It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.
+
+
+most common way to define a function in JavaScript is by using the function keyword,
+followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces
+
+Syntax:
+
+function functionName(parameter-list) {
+    statements
+}
+
+This type of function definition is called function declaration or function statement
+
+-------------------
+
+function sayHello() {
+    alert("Hello there");
+}
+
+
+------*--------------
+Functions Expression
+
+ The function expression is similar to the anonymous function declaration
+
+Syntax:
+
+const varName = function (parameter-list) {
+    statements
+};
+
+
+Example:
+
+const myFunc = function (x, y){ 
+   return x + y;
+};
+
+The return statement stops the execution of a function and returns a value.
+-->
+
+
+<!--Calling a Function-->
+
+
+<html>
+<head>
+   <script type="text/javascript">
+      function sayHello() {
+         alert("Hello there!");
+      }
+   </script>
+</head>
+<body>
+   <p>Click the following button to call the function</p>
+   <form>
+      <input type="button" onclick="sayHello()" value="Say Hello">
+   </form>
+   <p> Use different text in the write method and then try... </p>
+</body>
+</html>
+
+
+<!--Function Parameters-->
+
+<!--
+there is a facility to pass different parameters while calling a function.
+ These passed parameters can be captured inside the function and any manipulation can be done over those parameters.
+  A function can take multiple parameters separated by comma.
+-->
+
+<html>
+   <head>   
+      <script type = "text/javascript">
+         function sayHello(name, age) {
+            document.write (name + " is " + age + " years old.");
+         }
+      </script>      
+   </head>   
+   <body>
+      <p>Click the following button to call the function</p>      
+      <form>
+         <input type = "button" onclick = "sayHello('Zara', 7)" value = "Say Hello">
+      </form>      
+      <p>Use different parameters inside the function and then try...</p>
+   </body>
+</html>
+
+
+<!----Return Statement---->
+<!--
+function can have an optional return statement.
+This is required if you want to return a value from a function. 
+This statement should be the last statement in a function.
+
+
+-->
+
+<html>
+<head>
+  <script type="text/javascript">
+      function concatenate(first, last) {
+         var full;
+         full = first + last;
+         return full;
+      }
+      function secondFunction() {
+         var result;
+         result = concatenate('Zara ', 'Ali');
+         alert(result);
+      }
+   </script>
+</head>
+<body>
+   <p>Click the following button to call the function</p>
+   <form>
+      <input type="button" onclick="secondFunction()" value="Call Function">
+   </form>
+   <p>Use different parameters inside the function and then try...</p>
+</body>
+</html>
+
+<!--Functions as Variable values-->
+
+<html>
+<body>
+   <div id = "output"> </div>
+   <script>
+      const myFunc = function (){ return "Hello ";};
+      document.getElementById("output").innerHTML = myFunc() + "Users.";
+  </script>      
+</body>
+</html>

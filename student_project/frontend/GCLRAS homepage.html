@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="https://c8.alamy.com/comp/2ATNTRD/logo-design-template-for-clinic-hospital-medical-center-doctoreps-10-2ATNTRD.jpg" type="image/icon type">
+
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: repeat-y;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            height: 600px;
+            
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0%;
+            padding: 80%;
+            align-items: Center;
+            padding: 10px 20px;
+            background-color: #fdffff00;
+            border-bottom: 3px solid #fdffff00;
+           
+        }
+        header .logo-slogan {
+            margin-left: 100px;
+            display: flex ;
+            align-items: center;
+            font-family: Georgia, Times, serif; font-size: 16px; font-weight: bold; font-style: italic;
+        }
+        header.slogan {
+            margin-top: 500px;
+            font-size: 1.25rem;
+            margin: 10px ;
+            color: #666;
+        }
+        header .logo-slogan img {
+            height: 50px;
+            margin-right: 5px;
+        }
+        header .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 0px;
+            background-color: #007bff;
+            color: white;
+            border-radius:30px;
+            justify-content: right;
+            transition: 0.1s ease;
+        }
+
+        header .buttons a:hover{
+            opacity: 0.7;
+        }
+        nav .sidebar{
+            position:relative;
+            width:20%;
+            height:100px;
+            display: flex;
+            padding:10px;
+            justify-content: center;
+            background:linear-gradient(155deg,#fffefe,#fffefe);
+            border-radius:5px;
+        }
+        nav a {
+            position:relative;
+            width:40px;
+            height:40px;
+            list-style: none;
+            z-index:1;
+            color: rgb(3, 0, 0);
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            justify-content: center;
+        }
+        nav a:hover {
+            background-color: transparent;
+            top: 0%;
+            width: 20px;
+            height:20px;
+            border:none;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            transition: 0.3s ease;
+            transform:translateY(-1px);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            top: 20px;
+            
+        }
+        .gallery .image-container {
+            margin: 10px;
+            text-align: center;
+
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 60px;
+            transition: 0.3s ease-in;
+            
+        }
+        .gallery img:hover{
+            width: 250px;
+            height: 200px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color:rgba(105, 97, 97, 0.5);
+            border-top: 2px solid #ddddddef;
+            bottom: 0px;
+            position: absolute;
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-image: url(https://t3.ftcdn.net/jpg/07/51/52/42/240_F_751524291_Xx9lsKRviloW1FHDulupbqHsyLPVBbmQ.jpg);">
+
+<header>
+    <div class="logo-slogan" style="margin-left: 10px;">
+        <img src="https://seeklogo.com/images/H/hospital-clinic-plus-logo-7916383C7A-seeklogo.com.png" alt="Logo">
+        <h1>Clinix Portal</h1><br>
+        
+    </div>
+<header>
+    <div class="slogan" style="margin-left: 300 px;">
+            <h5>"Streamlining Lab Reporting with Precision and Speed"</h5>
+        
+    </div>
+</header>
+    <div class="buttons">
+        <a href="#">Feedback</a>
+    </div>
+</header>
+
+<hr style="color: lightblue;">
+
+<div class="container">
+
+        <nav style="width: 20%; margin-top: 35px;">
+            <a href="#"><strong>Home</strong></a>
+            <a href="#"><strong>About</strong> </a>
+            <a href="#"><Strong>Services</Strong></a>
+            <a href="#"><strong>Contact</strong></a>
+        </nav>
+
+        <div class="gallery" style="width: 50%;">
+            <div class="image-container">
+                <a href="D:\Ether\html and css\student_project\User_registration_page.html"><img src="https://t3.ftcdn.net/jpg/05/10/73/82/240_F_510738288_VHmnNNAA6agNcrrnDLtmGRIT34mRJW1n.jpg" alt="Image 2" ></a>
+                <p style="color: black;" ></p><b>User Registration</b></p>
+                
+            </div>
+                <div class="image-container">
+                    <a href="D:\Ether\html and css\student_project\authentication.html"><img src="https://t3.ftcdn.net/jpg/04/83/70/32/240_F_483703217_N0SoVX5VIObFNQBJKaf1gYqBEsjGS9H4.jpg" alt="Image 1"></a>
+                    <p style="color: black;"><b>Authentication</b></p>
+                </div><br>
+            <div class="image-container">
+                <a href="D:\Ether\html and css\student_project\module_3.html"><img src="https://t3.ftcdn.net/jpg/04/37/20/48/240_F_437204881_lLTZd3i7FXPHw0qViC8abHMIwcwbTu14.jpg" alt="Image 3"></a>
+                <p style="color: black;"><b>Upload test Information</b></p>
+            </div>
+            <br><br><br><br>
+            <div class="image-container">
+                <a href="D:\Ether\html and css\student_project\test_request.html"><img src="https://img.freepik.com/premium-vector/online-test-checking-answers-examination-test-quiz-student-test-employee-questionnaire-flat-vector-illustration-banner_128772-1833.jpg?ga=GA1.1.332886410.1722472391&semt=ais_hybrid" alt="Image 4"></a>
+                <p style="color: black;"><b>Test Request</b></p>
+            </div>
+            <div class="image-container">
+                <a href="D:\Ether\html and css\student_project\upload_test_information.html"><img src="https://img.freepik.com/free-photo/white-cloud-with-download-icon-cloud-computing-technology-sign-symbol-3d-rendering_56104-1285.jpg?size=626&ext=jpg&ga=GA1.1.332886410.1722472391&semt=ais_hybrid alt="Image 5"></a>
+                <p style="color: black;"><b>Upload Result</b></p>
+            </div>
+            <div class="image-container">
+                <a href="D:\Ether\html and css\student_project\test_report.html"><img src="https://t3.ftcdn.net/jpg/04/95/26/86/240_F_495268607_u27S3KxZ6tDDz06XuwVLGDMOm6mKnsKb.jpg" alt="Image 6"></a>
+                <p style="color: black;"><b>Test Report</b></p>
+            </div>
+        </div>
+</div>
+
+<footer>
+    <p style="color: rgb(0, 0, 0);"> &#169; Copy right recieved</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

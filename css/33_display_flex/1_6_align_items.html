@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            height: 300px;
+            gap: 10px;
+        }
+        .item {
+            background-color: #1abc9c;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+
+<!--
+    /* Basic keywords */
+align-items: normal;
+align-items: stretch;
+
+/* Positional alignment */
+/* align-items does not take left and right values */
+align-items: center;
+align-items: start;
+align-items: end;
+align-items: flex-start;
+align-items: flex-end;
+align-items: self-start;
+align-items: self-end;
+align-items: anchor-center;
+
+/* Baseline alignment */
+align-items: baseline;
+align-items: first baseline;
+align-items: last baseline; /* Overflow alignment (for positional alignment only) */
+align-items: safe center;
+align-items: unsafe center;
+
+/* Global values */
+align-items: inherit;
+align-items: initial;
+align-items: revert;
+align-items: revert-layer;
+align-items: unset;
+
+-->

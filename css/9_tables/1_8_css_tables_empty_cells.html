@@ -1,0 +1,41 @@
+<!--
+show: It indicates that empty cells should be shown with borders and spacing as if they contained content. It is the default value.
+
+hide: It indicates that empty cells should be hidden and not take up any space. Borders and spacing for empty cells will not be displayed, contributing to a more compact layout.
+-->
+
+<html>
+<head>
+<style>
+   table {
+      width: 350px;
+      border-collapse: separate;
+      empty-cells:hide;
+   }
+   td,th {
+      padding: 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #999999;
+   }
+</style>
+</head>
+<body>
+   <table>
+      <thead>
+         <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td></td>
+         </tr>
+      </tbody>
+   </table>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!--
+Array.copyWithin() method is used to copy array elements from one position to another in the specified array
+
+
+copyWithin(target, start, end)
+
+target − The index where the copied elements should be pasted.
+start − The index where the copying should start (default value is 0).
+end (optional) − The index where the copying should end (default value is array length).
+
+-->
+
+
+<html>
+<body>
+   <script>
+      const array = ['apple', 'banana', 'cherry', 'date', 'grapes'];
+      array.copyWithin(3, 0);
+      document.write(array);
+   </script>
+</body>
+</html>
+
+<!------------------------------------->
+
+<html>
+<body>
+   <script>
+      const array1 = ['apple', 'banana', 'cherry', 'date', 'grapes'];
+      array.copyWithin(-3, -2);
+      document.write(array);
+   </script>
+</body>
+</html>
+
+<!---------------------------------------->
+
+<html>
+<body>
+   <script>
+      const array2 = ['apple', 'banana', 'cherry', 'date', 'grapes'];
+      array.copyWithin(0, 1, 4);
+      document.write(array);
+   </script>
+</body>
+</html>

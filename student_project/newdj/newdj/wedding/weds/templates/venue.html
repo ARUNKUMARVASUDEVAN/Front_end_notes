@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'ven.css' %}">
+    <title>Venue form</title>
+</head>
+
+<body class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <h1>Book Now</h1>
+            <p>The perfect place for our happily ever after.</p>
+        </div>
+        <div class="main-form">
+            <form action="index.php" method="get">
+                <div>
+                    <span>Venue Name</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <span>Standing Capacity</span>
+                    <input type="text" name="people" id="people" required> 
+                </div>
+                <div>
+                    <span>Seating Capacity</span>
+                    <input type="text" name="seat" id="seat" required> 
+                </div>
+                <div>
+                    <span>Address</span>
+                    <input type="text" name="address" id="address" required> 
+                </div>
+                <div>
+                    <span>Country</span>
+                    <select name="people" id="people" required>
+                        <option value="">India</option>
+                        <option value="1">Australia</option>
+                        <option value="2">Maldives</option>
+                        <option value="3">Us</option>
+                        <option value="4">Asia</option>
+                        <option value="5">Dubai</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Pincode</span>
+                    <input type="pincode" name="pincode" id="pincode" required>
+                </div>
+                <div>
+                    <span>Booking Type</span>
+                    <select name="booking" id="booking" required>
+                        <option value="1">First Half</option>
+                        <option value="2">Second Half</option>
+                        <option value="3">Full Time</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Phone Number</span>
+                    <input type="number" name="number" id="number" required>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

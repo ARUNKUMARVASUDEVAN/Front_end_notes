@@ -1,0 +1,60 @@
+<!--
+@keyframes` rule is used to define keyframes for animation 
+specifying how the animated element look at various stage of animation.
+-->
+
+<!--
+.box{
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+At 0% of total duration of animation( ie, 0 seconds) the background color will be red.
+At 50% of total time( ie, 2.5 seconds) the background color changes to green.
+At 100% of total duration( ie, 5 seconds) color changes to blue.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            border-radius: 50%;
+            position: absolute;
+            left: 0; 
+
+            animation-name: moveRight;
+            /* Set duration */
+            animation-duration: 2s;
+            /* Set delay for animation */
+            animation-delay: 0.2s; 
+        }
+
+        @keyframes moveRight {
+            to {
+                left: calc(100% - 5px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

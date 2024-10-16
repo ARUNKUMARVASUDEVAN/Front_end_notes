@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            height: 200px;
+        }
+        dialog {
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        dialog::backdrop {
+            /* Semi-transparent black */
+            background-color: rgba(236, 12, 12, 0.2); 
+        }
+    </style>
+</head>
+
+<body>
+    <h3> Backdrop Example </h3>
+
+    <dialog id="myDialog">
+        <p> This is a dialog with a styled backdrop. </p>
+        <button id="closeButton"> Close </button>
+    </dialog>
+
+    <button id="openButton">Open Dialog</button>
+
+    <script>
+        const dialog = document.getElementById('myDialog');
+        const openButton = document.getElementById('openButton');
+        const closeButton = document.getElementById('closeButton');
+
+        openButton.addEventListener('click', () => {
+            dialog.showModal();
+        });
+
+        closeButton.addEventListener('click', () => {
+            dialog.close();
+        });
+    </script>
+</body>
+</html>

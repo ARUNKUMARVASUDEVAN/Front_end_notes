@@ -1,0 +1,46 @@
+<!--
+radial gradient is a type of gradient that consists of colors radiating outward from a central point.
+-->
+
+<!--
+radial-gradient(shape size position, color1, color2..);
+-->
+
+<!--
+The shape parameter defines the shape of the gradient (circle or ellipse).
+The size parameter specifies the size of the shape.
+The position parameter sets the center of the gradient
+-->
+
+<html>
+<head>
+   <style>
+      div {
+         height: 100px;
+         width: 100%;
+      }
+
+      .gradient {
+         background: radial-gradient(green, yellow);
+      } 
+      .center-gradient {
+         background:
+            radial-gradient(
+               at 40% 50%,
+               green 3px,
+               yellow 600px,
+               magenta 200px
+            );
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Radial gradient</h1>
+   <h3>Simple Radial Gradient</h3>
+       <div class="gradient"></div>
+
+   <h3>Center Positioned Radial Gradient</h3>   
+       <div class="center-gradient"></div>
+</body>
+</html>

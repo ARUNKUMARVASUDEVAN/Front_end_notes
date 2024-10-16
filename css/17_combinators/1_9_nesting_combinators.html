@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Nesting of Combinators</title>
+<style>
+   /* Parent selector */
+   .parent {
+      background-color: lightblue;
+      padding: 20px;
+   }
+   /* Child selector */
+   .parent .child {
+      background-color: lightgreen;
+      padding: 10px;
+   }
+   /* Descendant selector */
+   .parent span {
+      color: red;
+      }
+   /* Adjacent sibling selector */
+   .parent + .sibling {
+      font-weight: bold;
+   }
+   /* General sibling selector */
+   .parent ~ .sibling {
+      text-decoration: underline;
+   }
+</style>
+</head>
+<body>
+   <div class="parent">
+      <div class="child">
+         <span>This is a child element</span>
+      </div>
+   </div>
+   <div class="sibling">This is a sibling element</div>
+</body>
+</html>

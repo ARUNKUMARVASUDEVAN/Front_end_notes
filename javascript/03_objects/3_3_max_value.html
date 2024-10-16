@@ -1,0 +1,42 @@
+<!--
+JavaScript Number MAX_VALUE property returns the maximum numeric value possible in JavaScript. If a value is larger than the MAX_VALUE, 
+it will be represented as 'infinity' and lose its actual numeric value.
+
+Number.MAX_VALUE
+-->
+
+<html>
+<head>
+<title>JavaScript MAX_VALUE</title>
+</head>
+<body>
+<script>
+   document.write("MAX_VALUE = ", Number.MAX_VALUE);
+</script>
+</body>
+
+
+<!----------->
+
+<html>
+<head>
+<title>JavaScript MAX_VALUE</title>
+</head>
+<body>
+<script>
+   function multi(a, b){
+      if((a * b)> Number.MAX_VALUE){
+         return "Infinity....!";
+      }
+      else{
+         return a * b;
+      }
+   }
+   var m_val = 1.7976931348623157E+308;
+   var n1 = 1;
+   var n2 = 2;
+   document.write("value of ", m_val , " x ", n1 , " = ", multi(m_val, n1));
+   document.write("<br>value of ", m_val , " x ", n2 , " = ", multi(m_val, n2));
+</script>
+</body>
+</html>

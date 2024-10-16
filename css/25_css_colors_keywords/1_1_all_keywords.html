@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Keywords</title>
+    <style>
+        .black { background-color: black; color: white; }
+        .silver { background-color: silver; color: black; }
+        .gray { background-color: gray; color: white; }
+        .white { background-color: white; color: black; }
+        .maroon { background-color: maroon; color: white; }
+        .red { background-color: red; color: white; }
+        .purple { background-color: purple; color: white; }
+        .fuchsia { background-color: fuchsia; color: black; }
+        .green { background-color: green; color: white; }
+        .lime { background-color: lime; color: black; }
+        .olive { background-color: olive; color: white; }
+        .yellow { background-color: yellow; color: black; }
+        .navy { background-color: navy; color: white; }
+        .blue { background-color: blue; color: white; }
+        .teal { background-color: teal; color: white; }
+        .aqua { background-color: aqua; color: black; }
+        .orange { background-color: orange; color: black; }
+        .aliceblue { background-color: aliceblue; color: black; }
+        .antiquewhite { background-color: antiquewhite; color: black; }
+        .aquamarine { background-color: aquamarine; color: black; }
+        .azure { background-color: azure; color: black; }
+        .beige { background-color: beige; color: black; }
+        .bisque { background-color: bisque; color: black; }
+        .blanchedalmond { background-color: blanchedalmond; color: black; }
+        .blueviolet { background-color: blueviolet; color: white; }
+        .brown { background-color: brown; color: white; }
+        .burlywood { background-color: burlywood; color: black; }
+        .cadetblue { background-color: cadetblue; color: white; }
+        .chartreuse { background-color: chartreuse; color: black; }
+        .chocolate { background-color: chocolate; color: white; }
+        .coral { background-color: coral; color: black; }
+        .cornflowerblue { background-color: cornflowerblue; color: white; }
+        .cornsilk { background-color: cornsilk; color: black; }
+        .crimson { background-color: crimson; color: white; }
+        .cyan { background-color: cyan; color: black; }
+        .darkblue { background-color: darkblue; color: white; }
+        .darkcyan { background-color: darkcyan; color: white; }
+        .darkgoldenrod { background-color: darkgoldenrod; color: white; }
+        .darkgray { background-color: darkgray; color: black; }
+        .darkgreen { background-color: darkgreen; color: white; }
+        .darkkhaki { background-color: darkkhaki; color: black; }
+        .darkmagenta { background-color: darkmagenta; color: white; }
+        .darkolivegreen { background-color: darkolivegreen; color: white; }
+        .darkorange { background-color: darkorange; color: black; }
+        .darkorchid { background-color: darkorchid; color: white; }
+        .darkred { background-color: darkred; color: white; }
+        .darksalmon { background-color: darksalmon; color: black; }
+        .darkseagreen { background-color: darkseagreen; color: black; }
+        .darkslateblue { background-color: darkslateblue; color: white; }
+        .darkslategray { background-color: darkslategray; color: white; }
+        .darkturquoise { background-color: darkturquoise; color: black; }
+        .darkviolet { background-color: darkviolet; color: white; }
+        .deeppink { background-color: deeppink; color: white; }
+        .deepskyblue { background-color: deepskyblue; color: white; }
+        .dimgray { background-color: dimgray; color: white; }
+        .dodgerblue { background-color: dodgerblue; color: white; }
+        .firebrick { background-color: firebrick; color: white; }
+        .floralwhite { background-color: floralwhite; color: black; }
+        .forestgreen { background-color: forestgreen; color: white; }
+        .gainsboro { background-color: gainsboro; color: black; }
+        .ghostwhite { background-color: ghostwhite; color: black; }
+        .gold { background-color: gold; color: black; }
+        .goldenrod { background-color: goldenrod; color: black; }
+        .greenyellow { background-color: greenyellow; color: black; }
+        .honeydew { background-color: honeydew; color: black; }
+        .hotpink { background-color: hotpink; color: black; }
+        .indianred { background-color: indianred; color: white; }
+        .indigo { background-color: indigo; color: white; }
+        .ivory { background-color: ivory; color: black; }
+        .khaki { background-color: khaki; color: black; }
+        .lavender { background-color: lavender; color: black; }
+        .lavenderblush { background-color: lavenderblush; color: black; }
+        .lawngreen { background-color: lawngreen; color: black; }
+        .lemonchiffon { background-color: lemonchiffon; color: black; }
+        .lightblue { background-color: lightblue; color: black; }
+        .lightcoral { background-color: lightcoral; color: black; }
+        .lightcyan { background-color: lightcyan; color: black; }
+        .lightgoldenrodyellow { background-color: lightgoldenrodyellow; color: black; }
+        .lightgray { background-color: lightgray; color: black; }
+        .lightgreen { background-color: lightgreen; color: black; }
+        .lightpink { background-color: lightpink; color: black; }
+        .lightsalmon { background-color: lightsalmon; color: black; }
+        .lightseagreen { background-color: lightseagreen; color: black; }
+        .lightskyblue { background-color: lightskyblue; color: black; }
+        .lightslategray { background-color: lightslategray; color: black; }
+        .lightsteelblue { background-color: lightsteelblue; color: black; }
+        .lightyellow { background-color: lightyellow; color: black; }
+        .limegreen { background-color: limegreen; color: black; }
+        .linen { background-color: linen; color: black; }
+        .magenta { background-color: magenta; color: black; }
+        .mediumaquamarine { background-color: mediumaquamarine; color: black; }
+        .mediumblue { background-color: mediumblue; color: white; }
+        .mediumorchid { background-color: mediumorchid; color: white; }
+        .mediumpurple { background-color: mediumpurple; color: white; }
+        .mediumseagreen { background-color: mediumseagreen; color: white; }
+        .mediumslateblue { background-color: mediumslateblue; color: white; }
+        .mediumspringgreen { background-color: mediumspringgreen; color: black; }
+        .mediumturquoise { background-color: mediumturquoise; color: black; }
+        .mediumvioletred { background-color: mediumvioletred; color: white; }
+        .midnightblue { background-color: midnightblue; color: white; }
+        .mintcream { background-color: mintcream; color: black; }
+        .mistyrose { background-color: mistyrose; color: black; }
+        .moccasin { background-color: moccasin; color: black; }
+        .navajowhite { background-color: navajowhite; color: black; }
+        .oldlace { background-color: oldlace; color: black; }
+        .olivedrab { background-color: olivedrab; color: white; }
+        .orangered { background-color: orangered; color: white; }
+        .orchid { background-color: orchid; color: black; }
+        .palegoldenrod { background-color: palegoldenrod; color: black; }
+        .palegreen { background-color: palegreen; color: black; }
+        .paleturquoise { background-color: paleturquoise; color: black; }
+        .palevioletred { background-color: palevioletred; color: black; }
+        .papayawhip { background-color: papayawhip; color: black; }
+        .peachpuff { background-color: peachpuff; color: black; }
+        .peru { background-color: peru; color: white; }
+        .pink { background-color: pink; color: black; }
+        .plum { background-color: plum; color: black; }
+        .powderblue { background-color: powderblue; color: black; }
+        .rosybrown { background-color: rosybrown; color: white; }
+        .royalblue { background-color: royalblue; color: white; }
+        .saddlebrown { background-color: saddlebrown; color: white; }
+        .salmon { background-color: salmon; color: black; }
+        .sandybrown { background-color: sandybrown; color: black; }
+        .seagreen { background-color: seagreen; color: white; }
+        .seashell { background-color: seashell; color: black; }
+        .sienna { background-color: sienna; color: white; }
+        .skyblue { background-color: skyblue; color: black; }
+        .slateblue { background-color: slateblue; color: white; }
+        .slategray { background-color: slategray; color: white; }
+        .snow { background-color: snow; color: black; }
+        .springgreen { background-color: springgreen; color: black; }
+        .steelblue { background-color: steelblue; color: white; }
+        .tan { background-color: tan; color: black; }
+        .thistle { background-color: thistle; color: black; }
+        .tomato { background-color: tomato; color: black; }
+        .turquoise { background-color: turquoise; color: black; }
+        .violet { background-color: violet; color: black; }
+        .wheat { background-color: wheat; color: black; }
+        .whitesmoke { background-color: whitesmoke; color: black; }
+        .yellowgreen { background-color: yellowgreen; color: black; }
+    </style>
+</head>
+<body>
+    <div class="black">Black</div>
+    <div class="silver">Silver</div>
+    <div class="gray">Gray</div>
+    <div class="white">White</div>
+    <div class="maroon">Maroon</div>
+    <div class="red">Red</div>
+    <div class="purple">Purple</div>
+    <div class="fuchsia">Fuchsia</div>
+    <div class="green">Green</div>
+    <div class="lime">Lime</div>
+    <div class="olive">Olive</div>
+    <div class="yellow">Yellow</div>
+    <div class="navy">Navy</div>
+    <div class="blue">Blue</div>
+    <div class="teal">Teal</div>
+    <div class="aqua">Aqua</div>
+    <div class="orange">Orange</div>
+    <div class="aliceblue">Aliceblue</div>
+    <div class="antiquewhite">Antiquewhite</div>
+    <div class="aquamarine">Aquamarine</div>
+    <div class="azure">Azure</div>
+    <div class="beige">Beige</div>
+    <div class="bisque">Bisque</div>
+    <div class="blanchedalmond">Blanchedalmond</div>
+    <div class="blueviolet">Blueviolet</div>
+    <div class="brown">Brown</div>
+    <div class="burlywood">Burlywood</div>
+    <div class="cadetblue">Cadetblue</div>
+    <div class="chartreuse">Chartreuse</div>
+    <div class="chocolate">Chocolate</div>
+    <div class="coral">Coral</div>
+    <div class="cornflowerblue">Cornflowerblue</div>
+    <div class="cornsilk">Cornsilk</div>
+    <div class="crimson">Crimson</div>
+    <div class="cyan">Cyan</div>
+    <div class="darkblue">Darkblue</div>
+    <div class="darkcyan">Darkcyan</div>
+    <div class="darkgoldenrod">Darkgoldenrod</div>
+    <div class="darkgray">Darkgray</div>
+    <div class="darkgreen">Darkgreen</div>
+    <div class="darkkhaki">Darkkhaki</div>
+    <div class="darkmagenta">Darkmagenta</div>
+    <div class="darkolivegreen">Darkolivegreen</div>
+    <div class="darkorange">Darkorange</div>
+    <div class="darkorchid">Darkorchid</div>
+    <div class="darkred">Darkred</div>
+    <div class="darksalmon">Darksalmon</div>
+    <div class="darkseagreen">Darkseagreen</div>
+    <div class="darkslateblue">Darkslateblue</div>
+    <div class="darkslategray">Darkslategray</div>
+    <div class="darkturquoise">Darkturquoise</div>
+    <div class="darkviolet">Darkviolet</div>
+    <div class="deeppink">Deeppink</div>
+    <div class="deepskyblue">Deepskyblue</div>
+    <div class="dimgray">Dimgray</div>
+    <div class="dodgerblue">Dodgerblue</div>
+    <div class="firebrick">Firebrick</div>
+    <div class="floralwhite">Floralwhite</div>
+    <div class="forestgreen">Forestgreen</div>
+    <div class="gainsboro">Gainsboro</div>
+    <div class="ghostwhite">Ghostwhite</div>
+    <div class="gold">Gold</div>
+    <div class="goldenrod">Goldenrod</div>
+    <div class="greenyellow">Greenyellow</div>
+    <div class="honeydew">Honeydew</div>
+    <div class="hotpink">Hotpink</div>
+    <div class="indianred">Indianred</div>
+    <div class="indigo">Indigo</div>
+    <div class="ivory">Ivory</div>
+    <div class="khaki">Khaki</div>
+    <div class="lavender">Lavender</div>
+    <div class="lavenderblush">Lavenderblush</div>
+    <div class="lawngreen">Lawngreen</div>
+    <div class="lemonchiffon">Lemonchiffon</div>
+    <div class="lightblue">Lightblue</div>
+    <div class="lightcoral">Lightcoral</div>
+    <div class="lightcyan">Lightcyan</div>
+    <div class="lightgoldenrodyellow">Lightgoldenrodyellow</div>
+    <div class="lightgray">Lightgray</div>
+    <div class="lightgreen">Lightgreen</div>
+    <div class="lightpink">Lightpink</div>
+    <div class="lightsalmon">Lightsalmon</div>
+    <div class="lightseagreen">Lightseagreen</div>
+    <div class="lightskyblue">Lightskyblue</div>
+    <div class="lightslategray">Lightslategray</div>
+    <div class="lightsteelblue">Lightsteelblue</div>
+    <div class="lightyellow">Lightyellow</div>
+    <div class="limegreen">Limegreen</div>
+    <div class="linen">Linen</div>
+    <div class="magenta">Magenta</div>
+    <div class="mediumaquamarine">Mediumaquamarine</div>
+    <div class="mediumblue">Mediumblue</div>
+    <div class="mediumorchid">Mediumorchid</div>
+    <div class="mediumpurple">Mediumpurple</div>
+    <div class="mediumseagreen">Mediumseagreen</div>
+    <div class="mediumslateblue">Mediumslateblue</div>
+    <div class="mediumspringgreen">Mediumspringgreen</div>
+    <div class="mediumturquoise">Mediumturquoise</div>
+    <div class="mediumvioletred">Mediumvioletred</div>
+    <div class="midnightblue">Midnightblue</div>
+    <div class="mintcream">Mintcream</div>
+    <div class="mistyrose">Mistyrose</div>
+    <div class="moccasin">Moccasin</div>
+    <div class="navajowhite">Navajowhite</div>
+    <div class="oldlace">Oldlace</div>
+    <div class="olivedrab">Olivedrab</div>
+    <div class="orangered">Orangered</div>
+    <div class="orchid">Orchid</div>
+    <div class="palegoldenrod">Palegoldenrod</div>
+    <div class="palegreen">Palegreen</div>
+    <div class="paleturquoise">Paleturquoise</div>
+    <div class="palevioletred">Palevioletred</div>
+    <div class="papayawhip">Papayawhip</div>
+    <div class="peachpuff">Peachpuff</div>
+    <div class="peru">Peru</div>
+    <div class="pink">Pink</div>
+    <div class="plum">Plum</div>
+    <div class="powderblue">Powderblue</div>
+    <div class="rosybrown">Rosybrown</div>
+    <div class="royalblue">Royalblue</div>
+    <div class="saddlebrown">Saddlebrown</div>
+    <div class="salmon">Salmon</div>
+    <div class="sandybrown">Sandybrown</div>
+    <div class="seagreen">Seagreen</div>
+    <div class="seashell">Seashell</div>
+    <div class="sienna">Sienna</div>
+    <div class="skyblue">Skyblue</div>
+    <div class="slateblue">Slateblue</div>
+    <div class="slategray">Slategray</div>
+    <div class="snow">Snow</div>
+    <div class="springgreen">Springgreen</div>
+    <div class="steelblue">Steelblue</div>
+    <div class="tan">Tan</div>
+    <div class="thistle">Thistle</div>
+    <div class="tomato">Tomato</div>
+    <div class="turquoise">Turquoise</div>
+    <div class="violet">Violet</div>
+    <div class="wheat">Wheat</div>
+    <div class="whitesmoke">Whitesmoke</div>
+    <div class="yellowgreen">Yellowgreen</div>
+</body>
+</html>

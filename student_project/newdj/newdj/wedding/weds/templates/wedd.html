@@ -1,0 +1,420 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'wedd.css' %}">
+</head>
+<body>
+  
+    <header>
+        <a href="#" class="logo"><span>D</span>ream<span>D</span>ay</a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#aboutus" onclick="toggleMenu()">About Us</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#ourservices" onclick="toggleMenu()">Our Services</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+            <li><a href="#contactus" onclick="toggleMenu()">Contact Us</a></li>
+            <li><a href="#login" onclick="toggleMenu()"><button class="btnLogin-popup">Login</button></a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Wedding Planning</h2><br>
+            <p>Creating dreams, one perfect wedding at a time.</p><br><br>
+            <a href="#ourservices" class="btn">Explore</a>
+        </div>
+
+
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+        
+            <!-- Login Form -->
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        
+            <!-- Register Form -->
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        {{ signup_form.username }}
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        {{ signup_form.email }}
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        {{ signup_form.password1 }}
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        {{ signup_form.password2 }}
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn-login">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+
+
+    </div>
+</section>
+
+    
+
+    
+    <section class="aboutus" id="aboutus">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titletext"><span>A</span>bout Us</h2>
+                <p>We are here to help you make your memorable day more special.
+                    Now you just need to sit back, relax and enjoy your wedding in the
+                    most fun way possible! We are overpoweringly dedicated to helping people 
+                    celebrate their life. We are known as the most professional destination 
+                    wedding planners and are here to inspire and assist people to have the 
+                    wedding of their romantic and wildest dreams. We take care of each and 
+                    everything from beginning to end and provide our customers with a great 
+                    sense of satisfaction, confidence, entertainment, and unforgettable and 
+                    exciting moments that will last for longer. We are the highest in the 
+                    List of Top luxury wedding planners. <br><br/></p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="{% static 'ring img1.jpg'%}">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <div class="head" >
+            <h2 class="titletext" ><span>P</span>ortfolio</h2>
+        </div>
+        <div class="img-cont">
+            <div class="image">
+                <img src="{% static 'img1.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img2.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img3.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img4.avif'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'water img1.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img5.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img6.webp'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img7.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'water img2.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img8.webp'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img9.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'water img3.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img10.webp'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img11.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img12.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img13.avif'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img14.jpg'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img15.250'%}">
+            </div>
+            <div class="image">
+                <img src="{% static 'img16.jpeg'%}">
+            </div>
+            <div id="ourservices"></div>
+        </div>
+    </section>
+
+        <section class="ourservices" id="ourservices">
+            <div class="servtitle" >
+                <h2 class="titletext">Our <span>S</span>ervices</h2>
+                <p>We are here to make your day much more remarkable! </p>
+            </div>
+            <div class="servcontent">
+                <div class="box">
+                    <div class="imgageBx">
+                        <img src="{% static 'venue img.jpg'%}">
+                    </div>
+                    <div class="text">
+                        <h3>VENUE MANAGEMENT</h3>
+                        <p>
+                            We are an established Wedding Planners and we have expertise in managing 
+                            luxurious and royal weddings at any venue you decide. We strive on making your 
+                            wedding day the most cherished and memorable experience of your life by offering 
+                            the top class menu.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgageBx">
+                        <img src="{% static 'water img0.jpg'%}">
+                    </div>
+                    <div class="text">
+                        <h3>UNDERWATER WEDDING CERMONY</h3>
+                        <p>You can experience the magical feeling of saying “I do” to each other even in an 
+                            underwater wedding. But it's really impossible to hear your loved one's vows underwater. 
+                            Therefore customized underwater dive slates are made decorated with flowers, and 
+                            it's all yours as a token of your day.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgageBx">
+                        <img src="{% static 'catering img.jpg'%}">
+                    </div>
+                    <div class="text">
+                        <h3>CATERING</h3>
+                        <p>When it comes to Indian weddings we know how to impress your guests. We, the best 
+                            wedding planners, considering traditional wedding food, 
+                            keeping the cultural taste in mind along with several other tasty options are also 
+                            served so that the taste of your wedding food lasts in the memories of your guests for very long.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="imgageBx">
+                        <img src="{% static 'makeup img.png'%}">
+                    </div>
+                    <div class="text">
+                        <h3>MAKEUP ARTIST</h3>
+                        <p>We arrange top and professional makeup artists for brides, giving them awesome looks, 
+                            as they adopt stylish and new makeup techniques and use quality products. One can get 
+                            an astonishing look and feel with our talented makeup artists. They know each and 
+                            everything how to change your look, giving you a bridal feel.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgageBx">
+                        <img src="{% static 'style img.jpeg'%}">
+                    </div>
+                    <div class="text">
+                        <h3>STYLING</h3>
+                        <p>Styling is also the most common factor for a bridal. With the top theme wedding 
+                            planners, you can get your old style turned into a modern and sophisticated one.
+                            By applying new styling techniques and methods, we can help you match the latest 
+                            wedding trends and become an eye-catching person.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="imgageBx">
+                       <img src="{% static 'eng img.jpg'%}">
+                    </div>
+                    <div class="text">
+                        <h3>ENGAGEMENT</h3>
+                        <p>If you are thinking of getting engaged or already engaged, then you have come to the right place. 
+                            Here we offer wedding planning services that specialize in planning the weddings right from 
+                            the starting; we organize the engagements and make them delightful and stress-free experience. 
+                            Shoots are also provided at the right Wedding Venues.</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h1>Booking Here for Our Services</h1>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                            <span><a href="cf.html">Catering</a></span>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa-solid fa-water"></i>
+                            </div>
+                            <span><a href="uw.html">UnderWater</a></span>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <span><a href="venue.html">Venue</a></span>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa-solid fa-face-grin-stars"></i>
+                            </div>
+                            <span><a href="makeup.html">Makeup</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </section>
+
+        <div class="servtitle" id="testimonials">
+            <h2 class="titletext"> <span>T</span>estimonials</h2>
+            <p>What they say about us!</p>
+        </div>
+        <div class="grid" >
+            
+        <div class="serv_cont">
+            
+            <div class="card">
+                <div class="img">
+                    <img src = "{% static 'reviewimg2.jpg'%}">
+                </div>
+                <div class="top-text">
+                    <div class="name">Agnes</div>
+                </div>
+                <div class="bottom-text">
+                    <div class="serv-text">I got my wedding planned by the best team to choose for planning all my wedding arrangements! 
+                From beautiful decor to perfect entertainment & hospitality for my guests all the services were well planned and executed. 
+                A great thanks to the team for their effort
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src = "{% static 'reviewimg1.webp'%}">
+                </div>
+                <div class="top-text">
+                    <div class="name">Stuart</div>
+                </div>
+                <div class="bottom-text">
+                    <div class="serv-text">They did complete wedding planning in my sisters wedding.. 
+                From decoration to dj music, entries if the groom n bride.. 
+                All the small functions decorations and everything.. it was breathtaking,.
+                 they took care of every detail.. 
+                Made their wedding memorable and perfect.. 
+                Really loved her work.. highly recommended planners..
+                 they have very beautiful designs.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src = "{% static 'reviewimg3.jpg'%}">
+                </div>
+                <div class="top-text">
+                    <div class="name">Zara</div>
+                </div>
+                <div class="bottom-text">
+                    <div class="serv-text">I had recently attended my best friends wedding & it was by 
+                    The Perfect Weddings I have already started discussing my own functions with them 
+                    & They are the perfect curator in New Delhi right now! Super classy taste, just what 
+                    I need for my dream fairy tale wedding!Keep it up guys
+                    </div>
+                </div>
+            </div>
+           <div id="contactus"></div>
+        </div></div>
+
+        <section>
+            <div class="cont-servtitle" >
+                <h2 class="head" > <span>G</span>et in Touch!</h2>
+            </div>
+            <div class="container-contact">
+                <div class="contact-box">
+                    <div class="leftside"></div>
+                    <div class="rightside">
+                        <h2>Contact Us</h2><form method="POST">
+                        <form method="POST">
+                            <input type="text" class="field" placeholder="Your Name">
+                            <input type="email" class="field" placeholder="Your Email">
+                            <input type="text" class="field" placeholder="Your Mobile Number">
+                            <textarea class="field area" placeholder="Drop us a line!"></textarea>
+                            <button class="btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div></section>
+
+            <script src="{% static 'Wedproject.js' %}"></script>
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+            <script type="text/javascript">
+                window.addEventListener('scroll',function(){
+                    const header = document.querySelector('header');
+                    header.classList.toggle("sticky",window.scrollY > 0);
+                });/*JS function for sticky navbar*/
+        
+                function toggleMenu(){
+                    const menuToggle = document.querySelector('.menuToggle');
+                    const navigation = document.querySelector('.navigation');
+                    menuToggle.classList.toggle('active');
+                   navigation.classList.toggle('active');
+                } /*JS function for responsive nav bar*/
+        
+                var left_cover = document.getElementById("left-cover");
+                var left_form = document.getElementById("left-form");
+        
+                var right_cover = document.getElementById("right-cover");
+                var right_form = document.getElementById("right-form");
+        
+                function switchSignup() {   
+                    right_form.classList.add("fade-in-element");
+                    left_cover.classList.add("fade-in-element");
+                    left_form.classList.add("form-hide");
+                    left_cover.classList.remove("cover-hide");
+                    right_form.classList.remove("form-hide");
+                    right_cover.classList.add("cover-hide");}
+            </script>
+            
+</body>
+</html>

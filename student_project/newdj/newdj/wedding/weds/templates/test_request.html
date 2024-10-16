@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Request</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+  
+<form method="post" action="." enctype="multipart/form-data">
+    {% csrf_token %}
+
+     <!-- Approval Status Display -->
+     {% if form.instance.is_approved %}
+     <p class="text-green-600">Status: Approved</p>
+    {% else %}
+        <p class="text-yellow-600">Status: Pending Approval</p>
+    {% endif %}
+    <div class="'space-y-4">
+        {{ form.as_p }}
+    </div>
+    {% if form.errors or form.non_field_errors %}
+    <div class="mb-4 p-4 bg-red-100 text-red-700 rounded-lg">
+        {% for field in form %}
+            {{ field.errors }}
+        {% endfor %}
+        {{ form.non_field_errors }}
+    </div>
+    {% endif %}
+    <button type="submit" class="w-full py-3 px-6 bg-teal-500 hover:bg-teal-700 rounded-lg text-white text-lg font-bold">Submit</button>
+
+</form>

@@ -1,0 +1,53 @@
+<!--
+
+for (ele of iterable) {
+    // loop body
+}
+
+ele − It is a current element of the iterable.
+
+of − It is a JavaScript operator.
+
+iterable − It is iterable like an object, array, string, etc.
+
+-->
+
+<!------------------------------------------------------->
+
+<!--For...of Loop with Arrays-->
+
+<html>
+<head>
+    <title> JavaScript - for...of loop </title>
+</head>
+<body>
+    <p id="output"> </p>
+    <script>
+        const output = document.getElementById("output");
+        const arr = ["JavaScript", "Python", "C", "C++", "HTML", "CSS"];
+        for (let ele of arr) {
+            output.innerHTML += ele + "<br>";
+        }
+    </script>
+</body>
+</html>
+
+<!------------------------------------------------------->
+
+<!--For...of Loop with Set-->
+
+<html>
+<head>
+   <title> JavaScript - for...of loop </title>
+</head>
+<body>
+   <p id="output"> </p>
+   <script>
+      const outputk = document.getElementById("output");
+      const nums = new Set([10, 20, 30, 30, 30, 40, 50, 60]);
+      for (let num of nums) {
+         outputk.innerHTML += num + ", ";
+      }
+   </script>
+</body>
+</html>

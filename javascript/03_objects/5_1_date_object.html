@@ -1,0 +1,79 @@
+<!--
+Date object is a datatype built into the JavaScript language
+
+Once a Date object is created, a number of methods allow you to operate on it. 
+Most methods simply allow you to get and set the year, month, day, hour, minute, second, and millisecond fields of the object using either local time or UTC (universal, or GMT) time.
+
+
+Syntax
+
+new Date( )
+new Date(milliseconds)
+new Date(datestring)
+new Date(year,month,date[,hour,minute,second,millisecond ])
+
+
+Parameters
+
+No Argument − With no arguments, the Date() constructor creates a Date object set to the current date and time.
+milliseconds − When one numeric argument is passed, it is taken as the internal numeric representation of the date in milliseconds, as returned by the getTime() method. For example, passing the argument 5000 creates a date that represents five seconds past midnight on 1/1/70.
+datestring − When one string argument is passed, it is a string representation of a date in the format accepted by the Date.parse() method.
+7 agruments − To use the last form of the constructor shown above. Here is a description of each argument −
+year − Integer value representing the year. For compatibility (in order to avoid the Y2K problem), you should always specify the year in full; use 1998 rather than 98.
+month − Integer value representing the month, beginning with 0 for January to 11 for December.
+date − Integer value representing the day of the month.
+hour − Integer value representing the hour of the day (24-hour scale).
+minute − Integer value representing the minute segment of a time reading.
+second − Integer value representing the second segment of a time reading.
+millisecond − Integer value representing the millisecond segment of a time reading.
+
+
+-->
+
+<!--Static Methods-->
+
+<!--Date.parse()-->
+
+<!--
+    Date.parse() method in JavaScript is a static method which is used to parse a string representation of a date and time and convert it into the number of milliseconds since January 1, 1970, 00:00:00 UTC (also known as the Unix Epoch)
+
+
+date.parse(dateString);
+-->
+
+<html>
+<body>
+<script>
+   const currentDate = new Date();
+   const timestamp = Date.parse(currentDate);
+
+   document.write(timestamp);
+</script>
+</body>
+</html>
+
+<!----------------------->
+
+<html>
+<body>
+<script>
+   const dateString = '2023-12-27 12:30:00';
+   const timestamps = Date.parse(dateString);
+
+   document.write(timestamps);
+</script>
+</body>
+</html>
+
+<!---------------------->
+
+<html>
+<body>
+<script>
+   const invalidDateString = 'This is not a date';
+   const timestampk = Date.parse(invalidDateString);
+
+   document.write(timestamp);
+</script>
+</body>
+</html>

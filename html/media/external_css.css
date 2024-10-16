@@ -1,0 +1,51 @@
+/* Basic paragraph styling */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f21212;
+    margin-bottom: 20px;
+}
+
+/* Paragraph text alignment */
+p.center {
+    text-align: center;
+}
+
+p.right {
+    text-align: right;
+}
+
+p.justify {
+    text-align: justify;
+}
+
+/* Paragraph with custom padding and border */
+p.padded {
+    padding: 10px 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Paragraph with drop cap */
+p.dropcap:first-letter {
+    float: left;
+    font-size: 3em;
+    line-height: 1;
+    padding-right: 8px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+/* Paragraph with indented first line */
+p.indent {
+    text-indent: 30px;
+}
+
+/* Responsive font size */
+@media (max-width: 600px) {
+    p {
+        font-size: 14px;
+    }
+}

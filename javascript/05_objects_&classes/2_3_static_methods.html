@@ -1,0 +1,27 @@
+<!--
+A static method in JavaScript is defined using the static keyword followed by the method name. 
+You can execute the static method by taking the class name as a reference rather than an instance of the class.
+-->
+
+<html>
+<body>
+	<p id = "demo"> </p>
+	<script>
+		const output = document.getElementById("demo");
+
+		class Table {
+			static printSize() {
+				return "The size of the table is: 20 x 20 <br>";
+			}
+
+			getColor() {
+				return "Black";
+			}
+		}
+
+		output.innerHTML = Table.printSize(); // Static method execution
+		const tableObj = new Table();
+		output.innerHTML += "The color of the table is: " + tableObj.getColor();
+	</script>
+</body>
+</html>

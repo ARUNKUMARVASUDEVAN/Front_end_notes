@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      .parent {
+      /* Sets the text color to blue */
+         color: blue; 
+         border: 2px solid black;
+         padding: 20px;
+      }
+      .child {
+      /* Inherits text color from parent for border */
+         border: 2px solid currentColor; 
+         padding: 10px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        Parent Element
+        <div class="child">
+            Child Element
+        </div>
+    </div>
+</body>
+</html>

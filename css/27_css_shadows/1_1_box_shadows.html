@@ -1,0 +1,84 @@
+<!--
+The box-shadow property applies shadow effects to an element's frame
+-->
+
+<!--
+box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color];
+
+
+Horizontal Offset: Required. Specifies the horizontal distance of the shadow. Positive values move the shadow to the right, negative values to the left.
+Vertical Offset: Required. Specifies the vertical distance of the shadow. Positive values move the shadow down, negative values up.
+Blur Radius: Optional. Defines the blur effect. The higher the number, the more blurred the shadow.
+Spread Radius: Optional. Determines the size of the shadow. Positive values will cause the shadow to expand and grow bigger, negative values will shrink the shadow.
+Color: Optional. Specifies the color of the shadow. If not set, it will use the color of the text.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Shadow Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            margin-bottom: 40px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+
+        .box-shadow-1 {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .box-shadow-2 {
+            box-shadow: -5px 5px 15px rgba(0, 0, 255, 0.5);
+        }
+
+        .box-shadow-3 {
+            box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.5), -10px -10px 20px rgba(0, 255, 0, 0.5);
+        }
+
+        .box-shadow-4 {
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .box-shadow-5 {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .box-shadow-6 {
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), -5px -5px 5px rgba(255, 255, 255, 0.7);
+        }
+
+        .box-shadow-7 {
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), 20px 20px 20px rgba(0, 0, 0, 0.1), 30px 30px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Box Shadow Examples</h2>
+        <div class="box box-shadow-1">Shadow 1</div>
+        <div class="box box-shadow-2">Shadow 2</div>
+        <div class="box box-shadow-3">Shadow 3</div>
+        <div class="box box-shadow-4">Shadow 4 (Inset)</div>
+        <div class="box box-shadow-5">Shadow 5 (Soft)</div>
+        <div class="box box-shadow-6">Shadow 6 (Multiple)</div>
+        <div class="box box-shadow-7">Shadow 7 (Layered)</div>
+    </div>
+</body>
+</html>

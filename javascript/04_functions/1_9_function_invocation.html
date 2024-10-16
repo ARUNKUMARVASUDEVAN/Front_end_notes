@@ -1,0 +1,53 @@
+<!--
+The function invocation in JavaScript is the process of executing a function. A JavaScript function can be invoked using the function name followed by a pair of parentheses. \
+When you write a function code in JavaScript, it defines the function with expressions and statements.
+-->
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>    
+      function merge(str1, str2) {
+         return str1 + str2;
+      }
+      document.getElementById("output").innerHTML = merge("Hello", " World!");  
+   </script>
+</body>
+</html>
+
+<!--
+Syntax:
+const varName = new funcName(arguments);
+-->
+
+<html>
+<body>
+   <p id = "output"> The ODCar object is: </p>
+   <script>
+      function Car(name, model, year) {
+         this.name = name;
+         this.model = model;
+         this.year = year;
+      }
+      const ODCar = new Car("OD", "Q6", 2020);
+      document.getElementById("output").innerHTML += JSON.stringify(ODCar);
+   </script>
+</body>
+</html>
+
+<!---->
+
+<html>
+<body>
+   <p id = "output">The age of John is: </p>
+   <script>
+      const obj = {
+         name: "John",
+         getAge: () => {
+            return 10;
+         }
+      }
+      document.getElementById("output").innerHTML +=  obj.getAge();
+   </script>
+</body>
+</html>

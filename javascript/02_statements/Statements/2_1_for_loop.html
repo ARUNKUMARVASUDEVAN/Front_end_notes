@@ -1,0 +1,110 @@
+<!--
+JavaScript for loop is used to execute a block of code repeteatedly, until a specified condition evaluates to false. 
+It can be used for iteration if the number of iteration is fixed and known.
+
+*   Initialization − The loop initialization expression is where we initialize our counter to a starting value. The initialization statement is executed before the loop begins.
+
+*   Condition − The condition expression which will test if a given condition is true or not. If the condition is true, then the code given inside the loop will be executed. Otherwise, the control will come out of the loop.
+
+*   Iteration − The iteration expression is where you can increase or decrease your counter.
+
+---------------------------------------------------------------------------------------------
+Syntax
+
+for (initialization; condition; iteration) {
+   Statement(s) to be executed if condition is true
+}
+
+-->
+
+<html>
+<head>
+    <title> JavaScript - for loop </title>
+</head>
+<body>
+    <p id = "output"> </p>
+    <script>        
+        const output = document.getElementById("output");
+        output.innerHTML = "Starting Loop <br>";
+        let count;
+        for (let count = 0; count < 10; count++) {
+            output.innerHTML += "Current Count : " + count + "<br/>";
+        }
+        output.innerHTML += "Loop stopped!";
+    </script>
+</body>
+</html>
+
+<!------------------------------------------------------------------------->
+
+<!--Initialization as a optional-->
+
+<html>
+<head>
+    <title> Initialization is optional in for loop </title>
+</head>
+<body>
+    <p id = "output"> </p>
+    <script>
+        let output = document.getElementById("output");
+        var p = 0;
+        for (; p < 5; p++) {
+            output.innerHTML += "P -> " + p + "<br/>";
+        }
+        output.innerHTML += "Outside the loop! <br>";
+        output.innerHTML += "P -> " + p + "<br/>";
+    </script>
+</body>
+</html>
+
+
+<!--------------------------------------------------------------------------->
+
+<!--Conditional statement is optional-->
+
+
+<html>
+<head>
+    <title> Conditional statement is optional in for loop </title>
+</head>
+<body>
+    <p id = "output"> </p>
+    <script>
+        let output = document.getElementById("output");
+
+        let arr = [10, 3, 76, 23, 890, 123, 54]
+        var p = 0;
+        for (; ; p++) {
+            if (p >= arr.length) {
+                break;
+            }
+            output.innerHTML += "arr[" + p + "] -> " + arr[p] + "<br/>";
+        }
+    </script>
+</body>
+</html>
+
+<!---------------------------------------------------------------------------->
+
+<!--Iteration statement is optional-->
+
+<html>
+<head>
+    <title> Iteration statement is optional </title>
+</head>
+<body>
+    <p id = "output"> </p>
+    <script>
+        let output = document.getElementById("output");
+        let str = "Ether infotech";
+        var p = 0;
+        for (; ;) {
+            if (p >= str.length) {
+                break;
+            }
+            output.innerHTML += "str[" + p + "]  -> " + str[p] + "<br/>";
+            p++;
+        }
+    </script>
+</body>
+</html>

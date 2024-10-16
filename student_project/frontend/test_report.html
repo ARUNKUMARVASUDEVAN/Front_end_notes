@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            width: 60%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .form-header {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+        }
+
+        .form-section {
+            margin-bottom: 40px;
+        }
+
+        .form-section h3 {
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .form-section label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-section input[type="text"],
+        .form-section select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            width: 48%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .button-container button.email {
+            background-color: #28a745;
+        }
+
+        .email-prompt {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .email-prompt label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .email-prompt input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .email-prompt button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">Test Report</div>
+        
+        <div class="form-section report-generation">
+            <h3>Report Generation</h3>
+            <label for="select-test">Select Test</label>
+            <select id="select-test" name="select-test">
+                <option value="">-- Select Test --</option>
+                <option value="test1">Test 1</option>
+                <option value="test2">Test 2</option>
+                <option value="test3">Test 3</option>
+            </select>
+            <button type="button" onclick="generateReport()">Generate Report</button>
+        </div>
+
+        <div class="form-section report-categorization">
+            <h3>Report Categorization</h3>
+            <label for="add-comments">Add Comments</label>
+            <input type="text" id="add-comments" name="add-comments" placeholder="Enter Comments">
+            
+            <label for="format-report">Format Report</label>
+            <select id="format-report" name="format-report">
+                <option value="pdf">PDF</option>
+                <option value="word">Word Document</option>
+            </select>
+            <button type="button">Customize Report</button>
+        </div>
+
+        <div class="form-section report-distribution">
+            <h3>Report Distribution</h3>
+            <div class="button-container">
+                <button type="button" onclick="downloadReport()">Download Report</button>
+                <button type="button" class="email" onclick="showEmailPrompt()">Email Report</button>
+            </div>
+        </div>
+
+        <div class="email-prompt" id="email-prompt">
+            <label for="email-address">Enter Email Address</label>
+            <input type="email" id="email-address" name="email-address" placeholder="Enter Email">
+            <button type="button" onclick="sendEmail()">Send Report</button>
+        </div>
+    </div>
+
+    <script>
+        function generateReport() {
+            alert('Report is being generated...');
+        }
+
+        function downloadReport() {
+            alert('The report will be downloaded as a PDF file.');
+        }
+
+        function showEmailPrompt() {
+            document.getElementById('email-prompt').style.display = 'block';
+        }
+
+        function sendEmail() {
+            const emailAddress = document.getElementById('email-address').value;
+            if (emailAddress) {
+                alert(`Report will be sent to ${emailAddress}.`);
+            } else {
+                alert('Please enter an email address.');
+            }
+        }
+    </script>
+</body>
+</html>

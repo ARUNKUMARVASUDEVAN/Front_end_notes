@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+   .dropdown {
+      position: relative; 
+      display: inline-block;
+      height:200px;
+   }
+   .dropdown-button {
+      background-color: #40a944; 
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer; color: #ffffff; margin: 0; width:155px;
+   }
+   .dropdown-menu {
+      display: none; position: absolute; background-color: #fff;
+      border: 1px solid #ccc; margin: 0; min-width: 160px;
+      padding: 12px 16px; z-index: 3;
+   }
+   .dropdown-button, .dropdown:hover .dropdown-menu {
+      display: block;
+   }
+</style>
+</head>
+<body>
+   <div class="dropdown">
+      <span class="dropdown-button">Select an Option</span>
+      <div class="dropdown-menu">
+         <p>Option 1</p>
+         <p>Option 2</p>
+         <p>Option 3</p>
+      </div>
+   </div>
+</body>
+</html>

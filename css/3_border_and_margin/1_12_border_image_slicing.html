@@ -1,0 +1,52 @@
+<!--
+   border: 20px solid;
+   border-image-source: url('URL');
+   border-image-slice: 25%;   
+-->
+
+<!--
+    Specify width of the image to be se as a borders
+
+    border: 20px solid;
+   border-image-source: url('URL');
+   border-image-width: 15px;
+   border-image-slice: 33.33%;
+-->
+
+<!--
+order to avoid the overlapping of the image borders and the content, you can use the property border-image-outset.
+
+border: 20px solid;
+padding: 1em;
+border-image-source: url('URL');
+border-image-width: 1;
+border-image-slice: 10;
+border-image-outset: 8px;
+-->
+
+
+<!--
+    border-image-repeat
+   border: 20px solid;
+   padding: 1em;
+   border-image-source: url('URL');
+   border-image-repeat: repeat;
+
+   It can also take the value as round, apart from stretch and repeat.
+-->
+
+<html>
+<head>
+<style>
+   .box {
+      width: 200px;
+      height: 200px;
+      border: 20px dashed;
+      border-image: url(https://www.adobe.com/express/discover/quotes/media_1f97d5383bbffd09e92d6160131e58b1a46245635.png?width=2000&format=webply&optimize=medium) 4 round;
+   }
+</style>
+</head>
+<body>
+   <div class="box"></div>
+</body>
+</html>

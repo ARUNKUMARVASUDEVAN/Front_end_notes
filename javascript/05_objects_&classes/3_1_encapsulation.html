@@ -1,0 +1,158 @@
+<!--
+What is Encapsulation
+
+Encapsulation in JavaScript is a way to keep the related properties and methods under a single namespace by bundling them.
+It can be a function, a class or an object. In JavaScript, the encapsulation can be implemented using closures, classes and getters and setters.
+It is used to hide the data from the outside world and give access to required data only to improve the integrity and security of the data.
+
+
+What is the need for encapsulation:
+------------------------------------
+
+const car = {
+   Brand: "Honda city",
+   model: "sx",
+   year: 2016,
+}
+
+can access the properties of the car object, as shown below
+* car.Brand
+
+anyone can change the value of any property of the car object, as shown below.
+* car.Brand=true;
+
+
+Different Ways to Achieve Encapsulation in JavaScript:
+
+*   Using the function closures
+
+*   Using the ES6 classes
+
+*   Using the Getters and Setters
+-->
+
+
+<!--Achieving Encapsulation Using the Function Closures-->
+
+<!--
+A JavaScript function closure is a concept allowing the inner function to access the variable defined in the outer function even after the outer function is executed. 
+The variables defined in the outer function can't be accessed outside its functional scope but can be accessed using the inner scope.
+
+Example:|
+---------
+In the below code, shoppingCart() function is an outer function that contains the variables and function. The outer function has its private scope.
+
+The carItems[] array is used to store the shopping cart's items.
+
+The add() function can access the carItems[] array and add items.
+
+The remove() function checks whether the cartItems[] contains the items you need to remove. If yes, it removes the item. Otherwise, it prints the message that you can't remove the item.
+
+The shoppingCart() function returns the object containing the add() and remove() functions.
+
+After creating a new instance of the shoppingCart() function, you can use the add() and remove() functions to manipulate the shopping cart data.
+
+-->
+
+<html>
+<body>
+  <p id = "output"> </p>
+  <script>
+    let output = document.getElementById("output");
+    function shoppingCart() {
+      const cartItems = [];
+      function add(item) {
+        cartItems.push(item);
+        output.innerHTML += `${item.name} added to the cart. <br>`;
+      }
+      function remove(itemName) {
+        const index = cartItems.findIndex(item => item.name === itemName);
+        if (index !== -1) {
+          const removedItem = cartItems.splice(index, 1)[0];
+          output.innerHTML += `${removedItem.name} removed from the cart. <br>`;
+        } else {
+          output.innerHTML += `Item ${itemName} not found in the cart. <br>`;
+        }
+      }
+      return {
+        add,
+        remove,
+      };
+    }
+
+    // Defining items
+    const item1 = { name: 'Car', price: 1000000 };
+    const item2 = { name: 'Bike', price: 100000 };
+    // Create a new Shopping cart
+    const cart = shoppingCart();
+    // Adding items to the cart
+    cart.add(item1);
+    cart.add(item2);
+    // Remove bike from the cart
+    cart.remove('Bike');
+  </script>
+</body>
+</html>
+
+
+<!--Exercises-->
+<!--
+
+Bank Account Management System:
+Create a bankAccount function that manages a balance. Implement methods to deposit money, withdraw money, and check the balance. Ensure the balance can only be modified through these methods.
+
+Library Book Management:
+Design a library function that manages a collection of books. Implement methods to add a book, remove a book, and view all books. Ensure that the book collection is only accessible through these methods.
+
+Student Grade System:
+Create a gradeSystem function to manage student grades. Implement methods to add a grade, remove a grade, and calculate the average grade. Keep the grades private and only accessible through these methods.
+
+Movie Collection Manager:
+Write a movieCollection function that manages a collection of movies. Include methods to add a movie, remove a movie, and list all movies. Ensure that the movies are only accessible and modifiable through these methods.
+
+Task Manager:
+Develop a taskManager function that handles a list of tasks. Implement methods to add a task, mark a task as completed, and list all tasks with their statuses. Keep the task list private and only manipulable via the provided methods.
+
+-->
+
+
+
+<!--Achieving Encapsulation Using ES6 Classes and Private Variables-->
+
+<!--
+Private Variables (Fields) in JavaScript
+To define the private class variables, you can write a variable name followed by the ‘#’ sign.
+
+class car {
+    #name= "TATA";
+}
+
+-->
+
+<html>
+<body>
+  <div id = "output1">The car mileage is:  </div>
+  <div id = "output2">After updating the car mileage is:  </div>
+  <script>
+    class Car {
+      #brand = "TATA"; // Private field
+      #name = "Nexon"; // Private field
+      #milage = 16;    // Private field
+
+      getMilage() {
+        return this.#milage; // Accessing private field
+      }
+
+    setMilage(milage) {
+      this.#milage = milage; // Modifying private field
+    }
+    }
+
+    let carobj = new Car();
+    document.getElementById("output1").innerHTML += carobj.getMilage();
+    carobj.setMilage(20);
+    document.getElementById("output2").innerHTML += carobj.getMilage();
+    // carobj.#milage);  will throw an error.
+  </script>
+</body>
+</html>

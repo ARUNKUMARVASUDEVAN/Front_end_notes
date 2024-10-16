@@ -1,0 +1,44 @@
+<!--
+You can also define the methods inside the class, which can be accessed using the class instance.
+
+Syntax:
+
+class car {
+   methodName(params) {
+		// Method body
+	}
+}
+obj.methodName();
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p id = "output"> </p>
+	<script>
+		class Car {
+			constructor(brand, model, price, year) {
+				this.brand = brand;
+				this.model = model;
+				this.price = price;
+				this.year = year;
+			}
+
+			updateprice(newPrice) {
+			this.price = newPrice;
+			}
+
+		}
+    
+		const myCar = new Car("BMW", "X5", 9800000, 2019);
+		document.getElementById("output").innerHTML += 
+		"The car price is : " + myCar.price + "<br>";
+    
+		myCar.updateprice(8800000); // updating price
+    
+		document.getElementById("output").innerHTML += 
+		"After updating the car price is : " + myCar.price + "<br>";
+    
+	</script>
+</body>
+</html>

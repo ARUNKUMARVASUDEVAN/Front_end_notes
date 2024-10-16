@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+   /* Define the counter style */
+   @counter-style cyclic-counter {
+      system: cyclic;
+      symbols: Ⓐ Ⓑ Ⓒ Ⓓ ;
+   }
+   /* Apply the counter style to the elements */
+   .democounter {
+      counter-reset: my-counter;
+      
+   }
+   .democounter-item::before {
+      counter-increment: my-counter;
+      content: counter(my-counter, cyclic-counter);
+      color: red;
+   }
+</style>
+</head>
+<body>
+   <div class="democounter">
+   <div class="democounter-item">Item 1</div>
+   <div class="democounter-item">Item 2</div>
+   <div class="democounter-item">Item 3</div>
+   <div class="democounter-item">Item 4</div>
+   <div class="democounter-item">Item 5</div>
+   <div class="democounter-item">Item 6</div>
+   <div class="democounter-item">Item 7</div>
+   <div class="democounter-item">Item 8</div>
+   <div class="democounter-item">Item 9</div>
+   <div class="democounter-item">Item 10</div>
+   </div>
+</body>
+</html>
+
+<!--
+/* Keyword values */
+system: cyclic;
+system: numeric;
+system: alphabetic;
+system: symbolic;
+system: additive;
+system: fixed;
+
+/* Other values */
+system: fixed 3;
+system: extends decimal;
+system: extends circled-letters;
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system
+-->
+

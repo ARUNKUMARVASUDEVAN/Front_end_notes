@@ -1,0 +1,95 @@
+<!--
+Java Script is flexible ,We can place javascript code anywhere in HTML
+
+* Script in <head>...</head> section.
+
+* Script in <body>...</body> section.
+
+* Script in <body>...</body> and <head>...</head> sections.
+
+* Script in an external file and then include in <head>...</head> section
+
+-->
+
+<!--<script>
+    // JavaScript code
+</script>-->
+
+
+<!--JS in head tag -->
+<!--
+<html>
+<head>
+   <script>
+      function sayHello() {
+	     alert("Hello World")
+
+	  }
+     
+   </script>
+</head>
+
+<body>
+   <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+   
+</body>
+</html>-->
+
+
+
+<!--body Section
+
+<html>
+<head>
+</head>
+<body>   
+   <script>
+      document.write("Hello World")
+   </script>  
+   <p>This is web page body </p>   
+</body>
+</html>
+-->
+
+
+<!-- JavaScript in <body> and <head> Sections
+
+<html>
+<head>
+   <script type = "text/javascript">
+      function sayHello() {
+	     alert("Hello World")
+	  }
+   </script>
+</head>
+  
+<body>
+   <script type = "text/javascript">
+      document.write("Hello World")
+   </script>
+   <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+</body>
+</html>
+-->
+
+
+<!--JavaScript in External File-->
+
+
+    <html>
+<head>
+   <script type = "text/javascript" src = "1_3_external.js" ></script>
+</head>
+<body>	
+</body>
+</html>
+
+
+<!--We can add Multiple scripts-->
+
+<head>
+  <script src = "filename1.js" ></script>
+  <script src = "filename2.js" ></script>
+  <script src = "filename3.js" ></script>
+</head>
+

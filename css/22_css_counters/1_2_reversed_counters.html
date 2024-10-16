@@ -1,0 +1,21 @@
+
+<html>
+<head>
+<style>
+   body {
+   counter-reset: reversed(
+   section);
+   }
+   p::before {
+   counter-increment: section  ;
+   content: "Section " counter(section) ": "; 
+   }
+</style>
+</head>
+<body>
+   <p>This is fourth paragraph</p>
+   <p>This is Third paragraph</p>
+   <p>This is second paragraph</p>
+   <p>This is first paragraph</p>
+</body>
+</html>

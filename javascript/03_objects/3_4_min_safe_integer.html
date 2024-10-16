@@ -1,0 +1,66 @@
+<!--
+ MIN_SAFE_INTEGER is a static data property, that represents the minimum safe integer. 
+
+ "-9007199254740991" or "-(253-1)".
+
+it is a property of the Number object, so you can use it as a Number.
+MIN_SAFE_INTEGER, rather than as a property of a number value 
+
+
+Number.MIN_SAFE_INTEGER
+
+-->
+
+<html>
+<head>
+<title>JavaScript Number MIN_SAFE_INTEGER Property</title>
+</head>
+<body>
+<script>
+   document.write("Minimum safe integer: " , Number.MIN_SAFE_INTEGER);
+</script>
+</body>
+</html>
+
+
+<!--------------->
+
+<html>
+<head>
+<title>JavaScript Number MIN_SAFE_INTEGER Property</title>
+</head>
+<body>
+<script>
+   let n = 5;
+   document.write("n = ", n);
+   document.write("<br>Minimum safe integer = ", n.MIN_SAFE_INTEGER);
+</script>
+</body>
+</html>
+
+<!----------------------->
+<html>
+<head>
+<title>JavaScript Number MIN_SAFE_INTEGER Property</title>
+</head>
+<body>
+<script>
+   let val = 5;
+   document.write("val = ", val);
+   document.write("<br>Minimum safe integer without adding = ", Number.MIN_SAFE_INTEGER);
+   document.write("<br>Minimum safe integer after adding 5 = ", Number.MIN_SAFE_INTEGER + val);
+   //lets compare the value of m1 and m2
+   const m1 = Number.MIN_SAFE_INTEGER + 1;
+   const m2 = Number.MIN_SAFE_INTEGER + 2;
+   document.write("<br>m1 = ", m1);
+   document.write("<br>m2 = ", m2);
+   document.write("<br>m1 === m2: ");
+   if(m1 === m2){
+      document.write("True");
+   }
+   else{
+      document.write("False");
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!--
+order to make the table look striped, where alternative rows are colored, you can use the nth-child() selector and add a background-color, to all the odds / even rows of the table
+-->
+
+<html>
+<head>
+<style>
+   table {
+      border-collapse: collapse;
+      width: 100%;
+   }
+
+   th, td {
+      text-align: left;
+      padding: 8px;
+   }
+
+   tr:nth-child(odd) {
+      background-color: rgb(230,125,111);
+      }
+</style>
+</head>
+<body>
+   <h2>Striped table</h2>
+   <table>
+      <tr>
+         <th>Header 1</th>
+         <th>Header 2</th>
+         <th>Header 3</th>
+         <th>Header 4</th>
+      </tr>
+      <tr>
+         <td>Data 1</td>
+         <td>Data 2</td>
+         <td>Data 3</td>
+         <td>Data 4</td>
+      </tr>
+      <tr>
+         <td>Data 1</td>
+         <td>Data 2</td>
+         <td>Data 3</td>
+         <td>Data 4</td>
+      </tr>
+      <tr>
+         <td>Data 1</td>
+         <td>Data 2</td>
+         <td>Data 3</td>
+         <td>Data 4</td>
+      </tr>
+      <tr>
+         <td>Data 1</td>
+         <td>Data 2</td>
+         <td>Data 3</td>
+         <td>Data 4</td>
+      </tr>
+   </table>
+</body>
+</html>

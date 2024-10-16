@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'makeup.css' %}">
+    <title>makeup form</title>
+</head>
+
+<body class="main_bg">
+
+    <div class="form">
+        <div class="form-text">
+            <h1>Book Now</h1>
+            <p>Beauty is power. The Right makeup Enhances that; It's a women's secret.</p>
+        </div>
+        <div class="main-form">
+            <form action="index.php" method="get">
+                <div>
+                    <span>Name</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <span>Email</span>
+                    <input type="email" name="email" id="email" required> 
+                </div>
+                <div>
+                    <span>Phone Number</span>
+                    <input type="number" name="number" id="number" required>
+                </div>
+                <div>
+                    <span>Home Address</span>
+                    <input type="text" name="address" id="address" required> 
+                </div>
+                <div>
+                    <span>Pincode</span>
+                    <input type="pincode" name="pincode" id="pincode" required>
+                </div>
+                <div>
+                    <span>Wedding date</span>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div>
+                    <span>Hair Services</span>
+                    <select name="Hair" id="hair" required>
+                        <option value="">Bride</option>
+                        <option value="1">Wedding Party</option>
+                        <option value="2">Flower girl</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Makeup Services</span>
+                    <select name="makeup" id="makeup" required>
+                        <option value="">Bride</option>
+                        <option value="1">Wedding Party</option>
+                        <option value="2">Flower girl</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <span>Package Type</span>
+                    <select name="booking" id="booking" required>
+                        <option value="1">Ultimate Package</option>
+                        <option value="2">Gold Package</option>
+                        <option value="3">Silver Package</option>
+                        <option value="4">Bronze Package</option>
+                    </select>
+                </div>
+                
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

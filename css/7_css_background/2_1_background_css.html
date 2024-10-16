@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Examples</title>
+    <style>
+        .red { background-color: red; }
+        .indigo { background-color: indigo; }
+        .hex-opaque { background-color: #9dd20e; }
+        .hex-opaque-shorthand { background-color: #bf0; }
+        .hex-transparent { background-color: #11ffee00; }
+        .hex-transparent-shorthand { background-color: #1fe0; }
+        .hex-fully-opaque { background-color: #11ffeeff; }
+        .hex-fully-opaque-shorthand { background-color: #1fef; }
+        .rgb-opaque { background-color: rgb(255 255 128); }
+        .rgb-transparent { background-color: rgb(117 190 218 / 50%); }
+        .hsl-opaque { background-color: hsl(50 33% 25%); }
+        .hsl-semi-opaque { background-color: hsl(50 33% 25% / 75%); }
+        .currentcolor { background-color: currentcolor; color: blue; }
+        .transparent { background-color: transparent; }
+        .inherit { background-color: inherit; }
+        .initial { background-color: initial; }
+        .revert { background-color: revert; }
+        .revert-layer { background-color: revert-layer; }
+        .unset { background-color: unset; }
+        body {
+            color: black; /* For currentcolor demonstration */
+        }
+        .box {
+            padding: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Color Examples</h1>
+    <div class="box red">Keyword value: red</div>
+    <div class="box indigo">Keyword value: indigo</div>
+    <div class="box hex-opaque">Hexadecimal value: #bbff00</div>
+    <div class="box hex-opaque-shorthand">Hexadecimal value shorthand: #bf0</div>
+    <div class="box hex-transparent">Hexadecimal value fully transparent: #11ffee00</div>
+    <div class="box hex-transparent-shorthand">Hexadecimal value fully transparent shorthand: #1fe0</div>
+    <div class="box hex-fully-opaque">Hexadecimal value fully opaque: #11ffeeff</div>
+    <div class="box hex-fully-opaque-shorthand">Hexadecimal value fully opaque shorthand: #1fef</div>
+    <div class="box rgb-opaque">RGB value fully opaque: rgb(255 255 128)</div>
+    <div class="box rgb-transparent">RGB value 50% transparent: rgb(117 190 218 / 50%)</div>
+    <div class="box hsl-opaque">HSL value fully opaque: hsl(50 33% 25%)</div>
+    <div class="box hsl-semi-opaque">HSL value 75% opaque: hsl(50 33% 25% / 75%)</div>
+    <div class="box currentcolor">Special keyword value: currentcolor</div>
+    <div class="box transparent">Special keyword value: transparent</div>
+    <div class="box inherit" style="background-color: yellow;">Global value: inherit</div>
+    <div class="box initial">Global value: initial</div>
+    <div class="box revert">Global value: revert</div>
+    <div class="box revert-layer">Global value: revert-layer</div>
+    <div class="box unset">Global value: unset</div>
+</body>
+</html>

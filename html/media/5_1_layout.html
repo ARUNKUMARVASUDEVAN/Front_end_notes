@@ -1,0 +1,68 @@
+<!--
+
+Elements	Description
+header	    The header tag is used to add a header section in HTML web page. All the content inside this tag will be on top of the webpage.
+nav	        It represents a section of a page within the webpage, where it has hyperlinks to other pages or parts within the page (just like the menu bar).
+section	    It defines a major part of the web page where all the important content will be displayed.
+footer	    The footer tag defines the footer section of the webpage. This section contains copyright information and other important details. It will be always at the bottom of the webpage.
+article	    It specifies an independent self-containing content such as a forum post, magazine, any blog post and so on.
+aside	    It specifies a section of content that is directly or indirectly related to the main content (like a sidebar).
+summary	    It specifies a caption for the <details> element.
+details	    It specifies a tag for additional information. It requires the <summary>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      .header {
+         background-color: #16aeea;
+         text-align: center;
+         padding: 40px;
+         font-size: 2em;
+         font-weight: bold;
+      }
+      .container {
+         display: flex;
+      }
+      .sidebar {
+         width: 20%;
+         background-color: #f10909;
+         padding: 20px;
+      }
+      .content {
+         width: 80%;
+         background-color: #f9f9f9;
+         padding: 20px;
+      }
+      .footer {
+         background-color: #b3e0f2;
+         text-align: center;
+         padding: 10px;
+         position: fixed;
+         width: 100%;
+         bottom: 30px;
+      }
+   </style>
+</head>
+<body>
+      <div class="header">
+         Title
+      </div>
+      <div class="container">
+         <div class="sidebar">
+            <a href="#">Home</a><br>
+            <a href="#">Learn HTML</a><br>
+            <a href="#">About Us</a>
+         </div>
+         <div class="content">
+            <h1>Home</h1>
+            <p>This is a home page.</p>
+         </div>
+      </div>
+      <div class="footer">
+         Footer
+      </div>
+</body>
+</html>

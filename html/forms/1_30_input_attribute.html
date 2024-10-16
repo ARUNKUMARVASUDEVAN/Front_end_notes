@@ -1,0 +1,74 @@
+<!--
+Attribute	Description
+type	    HTML input type attribute of the HTML input tag specifies the type of input element to display.
+name	    HTML input name attribute is used to specify the name of an element.
+value	    HTML input value attribute is used to define the initial value of the input field when the page loads.
+size	    HTML input size attribute the width of the input field in terms of the number of characters.
+maxlength	HTML input maxlength attribute is used to specify maximum characters limit for input text.
+readonly	HTML input readonly attribute is used to specify input fields with uneditable texts.
+disabled	HTML input disabled is a boolean attribute that is used to make form elements non-interactive.
+min	        HTML input min attribute specifies the minimum value that an input field can accept.
+max	        HTML input max attribute specifies the maximum value that an input field can accept.
+accept	    HTML input accept attribute is used to define what file extension type the server will accept.
+multiple	HTML input multiple attribute is a Boolean attribute, that allows form controls to accept more than one value.
+placeholder	HTML input placeholder attribute is used to define a short hint that helps the user with data entry.
+required	HTML input required attribute is used to specify input field must be filled before submitting form.
+autofocus	HTML input autofocus attribute is a boolean attribute that is used to specify that an element should be autofocused after the page has loaded.
+list	    HTML input list attribute is used to specify a list of predefined options that the user can select from..
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Input Type Attribute Examples</title>
+</head>
+
+<body>
+<h1>HTML Input Type Attribute Examples</h1>
+
+<form>
+   <!-- Text Input -->
+   <label for="text">Text:</label>
+   <input type="text" 
+          id="text" 
+          name="text" 
+          value="Default Text">
+   <br><br>
+
+   <!-- Password Input -->
+   <label for="password">Password:</label>
+   <input type="password" 
+          id="password" 
+          name="password" 
+          value="password123">
+   <br><br>
+
+   <!-- Range Input -->
+   <label for="range">Range:</label>
+   <input type="range" 
+          id="range" 
+          name="range" 
+          min="0" 
+          max="100" 
+          value="50">
+   <br><br>
+
+   <!-- Datetime-local Input -->
+   <label for="datetime">Datetime-local:</label>
+   <input type="datetime-local" 
+          id="datetime" 
+          name="datetime" 
+          value="2023-06-01T12:00">
+   <br><br>
+
+   <!-- Submit Button -->
+   <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

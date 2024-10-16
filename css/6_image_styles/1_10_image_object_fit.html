@@ -1,0 +1,32 @@
+<!--
+object-fit property specifies how the image should be resized if its aspect ratio is not maintained.
+-->
+
+<html>
+<head>
+<style>
+   img {
+      border: 2px solid black; 
+      margin-bottom: 5px; 
+      height: 200px; 
+      width: 200px;
+   }
+</style>
+</head>
+<body>
+    <div>
+        <h3>object-fit: fill</h3>
+        <img style="object-fit: fill;" 
+             src="https://avatars.mds.yandex.net/i?id=4b9407bc9837a7ed409ee7879673a3e766e2b6d6-8281157-images-thumbs&n=13" 
+             alt="object-fit: fill">
+    </div>
+    <div>
+    <h3>object-fit: cover</h3>
+    <img style="object-fit: cover;" 
+         src="https://avatars.mds.yandex.net/i?id=d55ae4b3868edcbac1d9716bf76165f1a942729af9008af3-12421870-images-thumbs&n=13" 
+         alt="object-fit: cover">
+    </div>
+</body>
+</html>
+
+<!--https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit-->

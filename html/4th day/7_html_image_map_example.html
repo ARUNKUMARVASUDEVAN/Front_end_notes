@@ -1,0 +1,26 @@
+<!--Steps 
+    Prepare your image: Begin with an image you want to turn into an image map. For this example, let's use an image named ".jpg."
+Step 2 - Define the image map: Use the <map> tag to define the image map, and give it a unique name using the name attribute.
+Step 3 - Define clickable areas: Within the <map> element, you can define clickable areas using <area> tags. Specify the shape (rect, circle, or poly), the coordinates, and the URL to link to. Here's an example with a clickable rectangle.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Map Example</title>
+</head>
+
+<body>
+    <img src=
+"D:\Ether\html_and_css\html\4th day\mad_max.jpg" 
+         usemap="#image_map">
+    <map name="image_map">
+      <!-- Define your clickable areas here -->
+      <area shape="circle" coords="100,500,200" 
+            href="https://www.youtube.com/watch?v=zExV0cJ5yQM">
+      
+   </map>
+</body>
+
+</html>

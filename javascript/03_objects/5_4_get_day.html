@@ -1,0 +1,49 @@
+<!--
+Date.getDay() method is used to retrieve the "day of the week" (in local time)
+
+Syntax:
+
+getDay();
+-->
+
+<html>
+<body>
+<script>
+   const CurrentDate = new Date();
+   const DayOfWeek = CurrentDate.getDay();
+   document.write(DayOfWeek);
+</script>
+</body>
+</html>
+
+<!----->
+
+<html>
+<body>
+<script>
+   const SpecificDate = new Date('2023-12-23');
+   const DayOfWeeks = SpecificDate.getDay();
+   document.write(DayOfWeeks);
+</script>
+</body>
+</html>
+
+<!------>
+
+<html>
+<body>
+<script>
+function isWeekend() {
+   const currentDate = new Date('2023-12-23');
+   const dayOfWeek = currentDate.getDay();
+
+   if (dayOfWeek === 0 || dayOfWeek === 6) {
+      document.write("It's the weekend");
+   } else {
+      document.write("It's a weekday.");
+   }
+}
+isWeekend();
+</script>
+</body>
+</html>

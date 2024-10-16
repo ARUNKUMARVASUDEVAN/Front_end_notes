@@ -1,0 +1,63 @@
+<!--
+Horizontal alignment: This refers to the positioning of elements along the horizontal axis, which typically runs from left to right. Common horizontal alignment options include:
+
+Left alignment: Elements are aligned to the left side of a container or layout.
+
+Center alignment: Elements are positioned in the center of a container or layout horizontally.
+
+Right alignment: Elements are aligned to the right side of a container or layout.
+
+Vertical alignment: This refers to the positioning of elements along the vertical axis, which typically runs from top to bottom. Common vertical alignment options include:
+
+Top alignment: Elements are aligned to the top of a container or layout.
+
+Middle or Center alignment: Elements are centered vertically within a container or layout.
+
+Bottom alignment: Elements are aligned to the bottom of a container or layout.    
+-->
+
+
+
+<html>
+<head>
+<style>
+   .right-alignment {
+      position: absolute;
+      right: 0px;
+      width: 100px;
+      border: 3px solid #0d1601;
+      background-color: rgb(244, 244, 135);
+      padding: 10px;
+   }
+   .left-alignment {
+      position: relative;
+      left: 0px;
+      width: 100px;
+      border: 3px solid #0c1401;
+      background-color: blanchedalmond;
+      padding: 10px;
+   }
+   .center-alignment {
+      margin: auto;
+      border: 3px solid black;
+      padding: 5px;
+      background-color: rgb(241, 97, 126);
+      width: 120px;
+   }
+</style>
+</head>
+<body>
+   <div class="right-alignment">
+      <h3>Right align</h3>
+      <strong>Right align with position:absolute</strong>
+   </div>
+   <div class="left-alignment">
+      <h3>Left align</h3>
+      <strong>Left align with position:relative</strong>
+   </div>
+   <div class="center-alignment">
+   <h3>Center align</h3>
+   <strong>Vertically & horizontally centered using position:relative and margin:auto.</strong>
+  </div>
+</body>
+</html>

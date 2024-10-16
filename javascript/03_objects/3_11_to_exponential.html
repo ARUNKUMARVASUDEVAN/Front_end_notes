@@ -1,0 +1,56 @@
+<!--
+toExponential() method returns a string representing this number in exponential notation
+
+If the optional parameter 'fractionDigits' is not in the range of [0, 100], this method throws a 'RangeError' exception.
+
+toExponential(fractionDigits)
+-->
+
+<html>
+<head>
+<title>JavaScript toExponential() Method</title>
+</head>
+<body>
+<script>
+   const val = 5;
+   document.write("Given value = ", val);
+   document.write("<br>Number in exponential notation = ", val.toExponential());
+</script>
+</body>
+</html>
+
+<!----->
+<html>
+<head>
+<title>JavaScript toExponential() Method</title>
+</head>
+<body>
+<script>
+   const valz = 5.454312;
+   const fractionDigits = 3;
+   document.write("Given value = ", valz);
+   document.write("<br>Fraction digits value = ", fractionDigits);
+   document.write("<br>Number in exponential notation = ", valz.toExponential(fractionDigits));
+</script>
+</body>
+</html>
+
+<!----->
+<html>
+<head>
+<title>JavaScript toExponential() Method</title>
+</head>
+<body>
+<script>
+   const valk = 5.34565432;
+   const fractionDigitsk = -1;
+   document.write("Given value = ", valk);
+   document.write("<br> Fraction Digits value = ", fractionDigitsk);
+   try {
+      document.write("<br>Number in exponential notation = ", valk.toExponential(-1));
+   } catch (error) {
+      document.write("<br>",error);
+   }
+</script>
+</body>
+</html>

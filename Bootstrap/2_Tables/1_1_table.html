@@ -1,0 +1,59 @@
+<!--
+<table> -   Wrapping element for displaying data in a tabular format
+
+<thead>-    Container element for table header rows (<tr>) to label table columns.
+
+<tbody>-    Container element for table rows (<tr>) in the body of the table.
+
+<tr>-   Container element for a set of table cells (<td> or <th>) that appears on a single row.
+
+<td>-   Default table cell.
+
+<th>-   Special table cell for column (or row, depending on scope and placement) labels. Must be used within a <thead>
+
+<caption>   -Defines a table caption
+-->
+
+<!DOCTYPE html >
+    <html lang="en">
+    <head >
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" ></script>
+        <title >Bootstrap - Table</title >
+    </head >
+    <body >
+        <table class="table" >
+        <thead >
+            <tr >
+                <th scope="col" >Sr.No.</th >
+                <th scope="col" >Name</th >
+                <th scope="col" >Role</th >
+                <th scope="col" >Salary</th >
+                </tr >
+        </thead >
+        <tbody >
+            <tr >
+                <th scope="row" >1</th >
+                <td >Jhon</td >
+                <td >Software Developer</td >
+                <td >40000</td >
+            </tr >
+            <tr >
+                <th scope="row" >2</th >
+                <td >David</td >
+                <td >Tester</td >
+                <td >50000</td >
+            </tr >
+            <tr >
+                <th scope="row" >3</th >
+                <td >Mary</td >
+                <td >Data Analyst</td >
+                <td >35000</td >
+            </tr >
+        </tbody >
+        </table >
+    </body >
+    </html >

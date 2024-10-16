@@ -1,0 +1,105 @@
+<!--
+CSS allows to create Overlay effect images when hovered over them. We achieve this using transform property.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0s ease 0.2;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.middle {
+  transition: 2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container2:hover .image {
+  opacity: 0.3;
+}
+
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.text2 {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.imgg:hover {
+  transform: scaleX(-1);
+}
+
+
+</style>
+</head>
+<body>
+    <h2>Fade in Overlay</h2>
+    <div class="container">
+        <img src="https://www.airpano.com/photogallery/images_1550/151_440497.jpg" 
+            alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">
+                Hello World
+            </div>
+        </div>
+    </div>
+
+    <h2>Fade in a Box</h2>
+    <div class="container2">
+        <img src="https://i.pinimg.com/originals/19/01/5f/19015ff3a36acf12d9d040bed1fb6b1a.jpg" 
+            alt="Avatar" class="image">
+        <div class="middle">
+        <div class="text2">
+            Sign In
+        </div>
+        </div>
+    </div>
+
+    <h2>Hover to Flip an Image</h2>
+    <img src="https://avatars.mds.yandex.net/i?id=c69bcd359b03bec24872514944517aa95af20924-9709143-images-thumbs&ref=rim&n=33&w=444&h=250" 
+        class="image imgg" >
+
+</body>
+</html>

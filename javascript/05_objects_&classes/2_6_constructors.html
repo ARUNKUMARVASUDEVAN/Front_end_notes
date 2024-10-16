@@ -1,0 +1,67 @@
+<!--
+object constructor in JavaScript is a function that creates an instance of a class, which is typically called an object.
+ A constructor is called when you declare an object using the new keyword.
+  The purpose of a constructor is to create an object and set values if there are any object properties present.
+-->
+
+<html>
+<body>
+  <p id = "output"> </p>
+  <script>
+  
+    function Tree() {
+      this.name = "palm";
+      this.age = 5;
+    }
+    const tree1 = new Tree();
+    document.getElementById("output").innerHTML = 
+    "name = " + tree1.name + ", age = " + tree1.age;
+    
+  </script>
+</body>
+</html>
+
+<!-------------------->
+<html>
+<body>
+  <p id = "output1">The bike1 object is : </p>
+  <p id = "output2">The bike2 object is :  </p>
+  <script>
+
+    function Bike(name, speed, gear) {
+      this.name = name;
+      this.speed = speed;
+      this.gear = gear;
+    }
+    
+    const bike1 = new Bike("Honda", 100, 4);
+    const bike2 = new Bike("Yamaha", 100, 6);
+    document.getElementById("output1").innerHTML += JSON.stringify(bike1);
+    document.getElementById("output2").innerHTML += JSON.stringify(bike2);
+    
+  </script>
+</body>
+</html>
+
+<!----------------->
+
+<html>
+<body>
+  <p id = "output1">The bike1 details is: </p>
+  <p id = "output2">The bike2 details is: </p>
+  <script>
+    function Bike(name, speed, gear) {
+      this.name = name;
+      this.speed = speed;
+      this.gear = gear;
+    }
+    Bike.prototype.BikeDetails = function () {
+      return this.name + ", " + this.speed + ", " + this.gear + "<br>";
+    };
+    const bike11 = new Bike("Honda", 100, 4);
+    const bike21 = new Bike("Yamaha", 200, 6);
+    document.getElementById("output1").innerHTML += bike11.BikeDetails();
+    document.getElementById("output2").innerHTML += bike21.BikeDetails();
+  </script>
+</body>
+</html>

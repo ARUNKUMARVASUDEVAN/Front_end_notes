@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+   /* Selects all the tags that set english as language */
+   q:lang(en) {
+      quotes: '""';
+      color: blue;
+   }
+   /* Selects all the tags that set french as language */
+   q:lang(fr) {
+      quotes: '« ' ' »';
+   }
+</style>
+</head>
+<body>
+   <h2>:lang() selector example</h2>
+   <q lang="en">
+      This language is set as english, Here 
+      css use double(" ") quotes
+   </q>
+
+   <br>
+
+   <q lang="fr">
+      This language is set as French, Here 
+      css use guillemet(« ») quotes
+   </q>
+
+</body>
+</html>

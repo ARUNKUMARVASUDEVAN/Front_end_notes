@@ -1,0 +1,91 @@
+<!--
+none	NA	NA
+disc  (default)	    A filled-in circle	
+circle	An empty    circle	
+square	A filled-in square	
+decimal	Number	1, 2, 3, 4, 5, ...
+decimal-leading-zero	0 before the number	01, 02, 03, 04, 05, ...
+lower-alpha	Lowercase alphanumeric characters	a, b, c, d, e, ...
+upper-alpha	Uppercase alphanumeric characters	A, B, C, D, E, ...
+lower-roman	Lowercase Roman numerals	i, ii, iii, iv, v, ...
+upper-roman	Uppercase Roman numerals	I, II, III, IV, V, ...
+lower-greek	The marker is lower-greek	alpha, beta, gamma, ...
+lower-latin	The marker is lower-latin	a, b, c, d, e, ...
+upper-latin	The marker is upper-latin	A, B, C, D, E, ...
+hebrew	The marker is traditional Hebrew numbering	 
+armenian	The marker is traditional Armenian numbering	 
+georgian	The marker is traditional Georgian numbering	 
+cjk-ideographic	The marker is plain ideographic numbers	 
+hiragana	The marker is Japanese numbering - hiragana	a, i, u, e, o, ka, ki
+katakana	The marker is Japanese numbering - katakana	A, I, U, E, O, KA, KI
+hiragana-iroha	The marker is Japanese numbering (hiragana-iroha)	i, ro, ha, ni, ho, he, to
+katakana-iroha	The marker is Japanese numbering (katakana-iroha)	I, RO, HA, NI, HO, HE, TO
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style Examples</title>
+    <style>
+        .none { list-style-type: none; }
+        .disc { list-style-type: disc; }
+        .circle { list-style-type: circle; }
+        .square { list-style-type: square; }
+        .decimal { list-style-type: decimal; }
+        .decimal-leading-zero { list-style-type: decimal-leading-zero; }
+        .lower-alpha { list-style-type: lower-alpha; }
+        .upper-alpha { list-style-type: upper-alpha; }
+        .lower-roman { list-style-type: lower-roman; }
+        .upper-roman { list-style-type: upper-roman; }
+        .lower-greek { list-style-type: lower-greek; }
+        .lower-latin { list-style-type: lower-latin; }
+        .upper-latin { list-style-type: upper-latin; }
+        .hebrew { list-style-type: hebrew; }
+        .armenian { list-style-type: armenian; }
+        .georgian { list-style-type: georgian; }
+        .cjk-ideographic { list-style-type: cjk-ideographic; }
+        .hiragana { list-style-type: hiragana; }
+        .katakana { list-style-type: katakana; }
+        .hiragana-iroha { list-style-type: hiragana-iroha; }
+        .katakana-iroha { list-style-type: katakana-iroha; }
+        .box {
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>List Style Examples</h1>
+    <div class="box">
+        <h2>Unordered Lists</h2>
+        <ul class="none"><li>None</li><li>None</li></ul>
+        <ul class="disc"><li>Disc (default)</li><li>Disc</li></ul>
+        <ul class="circle"><li>Circle</li><li>Circle</li></ul>
+        <ul class="square"><li>Square</li><li>Square</li></ul>
+    </div>
+    <div class="box">
+        <h2>Ordered Lists</h2>
+        <ol class="decimal"><li>Decimal</li><li>Decimal</li></ol>
+        <ol class="decimal-leading-zero"><li>Decimal Leading Zero</li><li>Decimal Leading Zero</li></ol>
+        <ol class="lower-alpha"><li>Lower Alpha</li><li>Lower Alpha</li></ol>
+        <ol class="upper-alpha"><li>Upper Alpha</li><li>Upper Alpha</li></ol>
+        <ol class="lower-roman"><li>Lower Roman</li><li>Lower Roman</li></ol>
+        <ol class="upper-roman"><li>Upper Roman</li><li>Upper Roman</li></ol>
+        <ol class="lower-greek"><li>Lower Greek</li><li>Lower Greek</li></ol>
+        <ol class="lower-latin"><li>Lower Latin</li><li>Lower Latin</li></ol>
+        <ol class="upper-latin"><li>Upper Latin</li><li>Upper Latin</li></ol>
+        <ol class="hebrew"><li>Hebrew</li><li>Hebrew</li></ol>
+        <ol class="armenian"><li>Armenian</li><li>Armenian</li></ol>
+        <ol class="georgian"><li>Georgian</li><li>Georgian</li></ol>
+        <ol class="cjk-ideographic"><li>CJK Ideographic</li><li>CJK Ideographic</li></ol>
+        <ol class="hiragana"><li>Hiragana</li><li>Hiragana</li></ol>
+        <ol class="katakana"><li>Katakana</li><li>Katakana</li></ol>
+        <ol class="hiragana-iroha"><li>Hiragana Iroha</li><li>Hiragana Iroha</li></ol>
+        <ol class="katakana-iroha"><li>Katakana Iroha</li><li>Katakana Iroha</li></ol>
+    </div>
+</body>
+</html>

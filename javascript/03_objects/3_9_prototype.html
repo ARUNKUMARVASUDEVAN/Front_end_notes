@@ -1,0 +1,27 @@
+<!--
+prototype property allows you to add properties and methods to any object (Number, Boolean, String and Date etc.).
+
+object.prototype.name = value
+-->
+
+<html>
+<head>
+<title>JavaScript String length Property</title>
+</head>
+<body>
+<script>
+   function student(name, age){
+      this.name = name;
+      this.age = age;
+   }
+   const obj = new student("Rahul Verma", 22);
+   //using prototype property to set a property
+   document.write("Before adding the city property: ", obj.city);
+   String.prototype.city = null;
+   obj.city = "Lucknow";
+   document.write("<br>Name: ", obj.name);
+   document.write("<br>Age: ", obj.age);
+   document.write("<br>After adding City: ", obj.city);
+</script>
+</body>
+</html>

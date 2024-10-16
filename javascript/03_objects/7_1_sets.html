@@ -1,0 +1,204 @@
+<!--
+Set object is a collection of unique values. 
+Each value can only occur once in a Set. A Set can hold any value of any data type
+
+*   Sets can only hold unique values, while Arrays can hold duplicate values.
+*   Sets are not ordered, while Arrays are ordered.
+*   Sets are faster to add and remove items from than Arrays.
+
+Syntax:
+let set1 = new Set([iterable]);
+
+-->
+
+<html>
+<body>
+   <p>The set elements are: </p>
+   <p id = "output"></p>
+   <script>
+  
+      const num_set = new Set([10, 20, 20, 20]);
+
+      for (let value of num_set.values()) {
+         document.getElementById("output").innerHTML += value + "<br> ";
+      }
+    
+   </script>
+</body>
+</html>
+
+
+<!--Inserting Elements-->
+
+<html>
+<body>
+   <p>Set elements after adding element/s to it: </p>
+   <div id = "output1"> </div>
+   <script>
+
+      const num_sets = new Set();
+      num_sets.add(60);
+      num_sets.add(50);
+      num_sets.add(50);
+
+      for (let value of num_sets.values()) {
+         document.getElementById("output1").innerHTML += value + "<br> ";
+      }
+   </script>
+</body>
+</html>
+
+
+<!--Remove set Element-->
+
+<html>
+<body>
+   <p> After deleting elements from the set: </p>
+   <div id = "output"> </div>
+   <script>
+
+      let num_setz = new Set([100, 200, 300, 400, 500]);
+
+      num_setz.delete(200);
+      num_setz.delete(400);
+
+      for (let value of num_setz.values()) {
+         document.getElementById("output").innerHTML += value + "<br> ";
+      }
+   </script>
+</body>
+</html>
+
+<!--Checking if the set containing specific value-->
+<html>
+<body>
+   <p id = "output">The set contains 100?: </p>
+   <script>
+      const num_setk = new Set([100, 200, 300, 400, 500]);
+      document.getElementById("output").innerHTML += num_setk.has(100);
+   </script>
+</body>
+</html>
+
+
+<!--set operations--->
+
+<!--Union-->
+<html>
+<body>
+   <p>The Union of set1 and set2 is: </p>
+   <div id = "output"> </div>
+   <script>
+
+      const set1 = new Set(["BMW", "Audi", "TATA"]);
+      const set2 = new Set(["BMW", "TaTa", "Honda", "Suzuki"]);
+
+      const union = new Set([...set1, ...set2]); // Taking union
+
+      for (let value of union.values()) {
+         document.getElementById("output").innerHTML += value + "<br> ";
+      }
+   </script>
+</body>
+</html>
+
+<!--Intersection-->
+<!--intersection of two sets contains the unique elements which exist in set1 and set2 both.-->
+
+<html>
+<body>
+   <p> The intersection of set1 and set2 is: </p>
+   <p id = "output"> </p>
+   <script>
+
+      const set11 = new Set(["BMW", "Audi", "TATA"]);
+      const set21 = new Set(["BMW", "TATA", "Honda", "Suzuki"]);
+
+      const inter = new Set();
+      for (let car of set11) {
+         if (set21.has(car)) {
+            inter.add(car);
+         }
+      }
+
+      for (let value of inter.values()) {
+         document.getElementById("output").innerHTML += value + "<br> ";
+      }
+
+   </script>
+</body>
+</html>
+
+<!--Difference-->
+
+<html>
+<body>
+   <p>The difference of set1 and set2 is: </p>
+   <div id = "output"> </div>
+   <script>
+
+      const set12 = new Set(["BMW", "Audi", "TATA"]);
+      const set22 = new Set(["BMW", "TATA", "Honda", "Suzuki"]);
+
+      const diff = new Set(set12);
+      for (let car of set22) {
+         diff.delete(car);
+      }
+
+      for (let value of diff.values()) {
+         document.getElementById("output").innerHTML += value + "<br> ";
+      }
+   </script>
+</body>
+</html>
+
+<!--Functions-->
+<!--
+add()
+
+This method insert elements into the set.
+
+clear()
+
+This method removes removes all elements of the set.
+
+	
+delete()
+
+This method deletes a single element of the set.
+
+	
+difference()
+
+This method returns elements in first set but not in the second set.
+
+	
+entries()
+
+To get an iterator containing all set entries.
+
+	
+forEach()
+
+This method executes a provided function once for each value in this set.
+
+	
+has()
+
+This method indicates whether an element with the specified value exists or not.
+
+	
+intersection()
+
+This method returns the common elements in both sets.
+
+	
+keys()
+
+This method is an alias for values() method.
+
+	
+values()
+
+This method returns a new Set iterator object that containing values for each element in a Set object.
+-->

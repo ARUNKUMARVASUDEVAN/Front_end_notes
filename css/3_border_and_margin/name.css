@@ -1,0 +1,6 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 20px dashed;
+    border-image: url(https://www.adobe.com/express/discover/quotes/media_1f97d5383bbffd09e92d6160131e58b1a46245635.png?width=2000&format=webply&optimize=medium) 10  round;
+ }

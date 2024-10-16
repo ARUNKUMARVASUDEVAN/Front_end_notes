@@ -1,0 +1,54 @@
+<!--
+Single Values: Here you can provide a single value to the padding property that same value will be applicable on four sides of the the element.
+Two Values: Here you have to provide two values that will be used as top, bottom and right, left padding value.
+Three Values: In this way you can provide three values that will define top, left, right and bottom value. Like if you set padding: 20px 40px 10px. In this case top padding will be 20px, right and left paddings will be 40px and bottom padding will be 10px.
+Four Values: If you provide four values to the padding property it will generate top padding from first value, right padding from 2nd value and so on.
+
+-->
+
+<!--
+padding: "value" // Single Value
+padding: "value value" // Two Values
+padding: "value value value" // Three Values
+padding: "value value value value" // Four Values  
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Padding</title>
+    <style>
+        div{
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        
+        p {
+            background-color: lightgreen;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ether</h1>
+    <h3>CSS Padding</h3>
+    <div>
+        <p style="padding: 40px">
+            <span>Padding property with Single Value</span>
+        </p>
+        <p style="padding: 20px 40px">
+            <span>Padding property with two Values</span>
+        </p>
+        <p style="padding: 10px 15px 200px">
+            <span>Padding property with three Values</span>
+        </p>
+        <p style="padding: 5px 10px 15px 20px">
+            <span>Padding property with four Values</span>
+        </p>
+    </div>
+    
+</body>
+
+</html>

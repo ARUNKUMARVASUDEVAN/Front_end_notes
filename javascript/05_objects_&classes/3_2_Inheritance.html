@@ -1,0 +1,250 @@
+<!--
+inheritance in JavaScript allows the child class to inherit the properties and methods of the parent class.
+
+Parent class − It is a class whose properties are inherited by other classes.
+
+Child class − It is a class that inherits the properties of the other class.
+
+
+-------------------
+Single class Inheritance:
+
+You can use the 'extends' keyword to inherit the parent class properties into the child class.
+
+class childClass extends parentClass {
+    // Child class body
+}
+
+
+
+-->
+
+<html>
+<body>
+   <div id = "output1">The brand of the bike is: </div>
+   <div id = "output2">Total gears in the bike is: </div>
+   <script>
+      // Parent class
+      class Bike {
+         constructor() {
+            this.gear = 5;
+         }
+
+         getGears() {
+            return this.gear;
+         }
+      }
+      // Child class
+      class suzuki extends Bike {
+         constructor() {
+            super();
+            this.brand = "Yamaha"
+         }
+
+         getBrand() {
+            return this.brand;
+         }
+      }
+
+      const suzukiBike = new suzuki();
+      document.getElementById("output1").innerHTML += suzukiBike.getBrand();
+      document.getElementById("output2").innerHTML += suzukiBike.getGears();
+   </script>
+</body>
+</html>
+
+<!--how to initialize the properties of the parent class from the child class
+
+     super() 
+The super() keyword is used to invoke the method or access the properties of the parent class in the child class.
+By default, the super() keyword invokes the constructor function of the parent class.
+You can also pass the parameters to the super() keyword to pass it to the constructor of the parent class.
+-->
+
+<html>
+<body>
+   <div id = "output1">The brand of the bike is: </div>
+   <div id = "output2">Total gears in the bike is: </div>
+   <script>
+      // Parent class
+      class Bike {
+         constructor(gears) {
+            this.gears = gears;
+        }
+      }
+      // Child class
+      class suzuki extends Bike {
+         constructor(brand, gears) {
+            super(gears);
+            this.brand = brand;
+         }
+      }
+      const suzukiBikes = new suzuki("Suzuki", 4);
+      document.getElementById("output1").innerHTML += suzukiBikes.brand;
+      document.getElementById("output2").innerHTML += suzukiBikes.gears;
+
+   </script>
+</body>
+</html>
+
+
+<!--Multilevel Inheritance-->
+<!--
+Multilevel inheritance is a type of inheritance in JavaScript.
+In multilevel inheritance, one class inherits the properties of another class, and other classes inherit current class properties
+
+class A {
+}
+class B extends A {
+}
+class C extends B {
+}
+-->
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      // Parent class
+      class Bike {
+         constructor(gears) {
+            this.gears = gears;
+         }
+      }
+      // Child class
+      class Honda extends Bike {
+         constructor(brand, gears) {
+            super(gears);
+            this.brand = brand;
+         }
+      }
+      class Shine extends Honda {
+         constructor(model, brand, gears) {
+            super(brand, gears);
+            this.model = model;
+         }
+      }
+      const newBike = new Shine("Shine", "Honda", 5);
+      document.getElementById("output").innerHTML = `The ${newBike.model} model of the ${newBike.brand} brand has total ${newBike.gears} gears.`;
+   </script>
+
+
+<!--Hierarchial Inheritance-->
+<!--
+Syntax
+
+class A {
+}
+class B extends A {
+}
+Class C extends A {
+}
+
+JavaScript hierarchical inheritance, one class is inherited by multiple classes.
+-->
+
+<html>
+<body>
+   <p id = "output1"> Honda Bike Object: </p>
+   <p id = "output2"> Suzuki Bike Object: </p>
+   <script>
+      // Parent class
+      class Bike {
+         constructor(gears) {
+            this.gears = gears;
+         }
+      }
+      // Child class
+      class Honda extends Bike {
+         constructor(model, gears) {
+            super(gears);
+            this.model = model;
+         }
+      }
+      // Child class
+      class Suzuki extends Bike {
+         constructor(model, color, gears) {
+            super(gears);
+            this.model = model;
+            this.color = color;
+         }
+      }
+      const h_Bike = new Honda("Shine", 5);
+      const s_Bike = new Suzuki("Zx6", "Blue", 6);
+      document.getElementById("output1").innerHTML += JSON.stringify(h_Bike);
+      document.getElementById("output2").innerHTML += JSON.stringify(s_Bike);
+   </script>
+</body>
+</html>
+
+
+<!--Inheriting Static Members of the Class-->
+<!--
+you can invoke the static methods of the parent class using the super keyword in the child class. 
+Outside the child class, you can use the child class name to invoke the static methods of the parent and child class.
+
+-->
+
+<html>
+<body>
+   <p id = "output">The bike name is: </p>
+   <script>
+      // Parent class
+      class Bike {
+         constructor(gears) {
+            this.gears = gears;
+         }
+
+         static getDefaultBrand() {
+            return "Yamaha";
+         }
+      }
+      // Child class
+      class Honda extends Bike {
+         constructor(model, gears) {
+            super(gears);
+            this.model = model;
+         }
+         static BikeName() {
+            return super.getDefaultBrand() + ", X6";
+         }
+      }
+      document.getElementById("output").innerHTML += Honda.BikeName();
+   </script>
+</body>
+</html>
+
+
+<!--Excercises :
+
+*   Create a Vehicle parent class with a fuelType property. Create a Car child class that inherits Vehicle and adds a brand property. Display both properties.
+*   Extend the Bike class to create a MountainBike class. Add an additional property suspensionType. Display all properties.
+*   Create a Person class with a name property and a greet() method. Extend it with an Employee class that adds a position property. Call the greet() method from the child class.
+*   Create a Smartphone class with a brand property. Extend it to create an Android class that adds an OS property. Display the brand and OS.
+*   Write a parent class Animal with a sound() method. Create a child class Dog that overrides the sound() method. Test the overridden method.
+*   Create a multilevel hierarchy with Device, Laptop, and GamingLaptop classes, each adding specific properties. Display all properties.
+*   Implement multilevel inheritance using Animal -> Mammal -> Human. Add relevant properties at each level and display them.
+*   Design a Company class with a name property, extend it to Department, and then extend Department to Employee. Display the full hierarchy details.
+*   Create a Shape class, extend it to Polygon, and then further extend Polygon to Triangle. Add relevant properties at each level and display them.
+*   Build a hierarchy with Appliance -> KitchenAppliance -> Blender. Each level should introduce new methods or properties.
+*   Create a Vehicle class and extend it with Car, Truck, and Bike classes. Add unique properties to each child class and display them.
+*   Design a Product class and extend it into Electronics and Clothing. Show the inherited and unique properties for each.
+*   Create a Gadget class with a power property and extend it into Phone and Tablet classes. Add unique properties to each child.
+*   Build a Bird class and extend it into Parrot and Penguin. Add distinct methods in each child class and test them.
+*   Design a Tool class and extend it into HandTool and PowerTool. Each child should have specific methods demonstrating the difference.
+*   Create a Library class with a static getOpeningHours() method. Inherit it into PublicLibrary and call the static method using the child class.
+*   Implement a MathOperations class with a static add() method. Extend it with AdvancedMath and use the super keyword to call the static method.
+*   Write a User class with a static getUserCount() method. Extend this into Admin and call the static method inside a child method.
+*   Develop a Utility class with a static generateID() method. Extend it into Toolbox and use generateID() in the child class.
+*   Create a Bank class with a static method getInterestRate(). Extend this into SavingsAccount and call the static method.
+*   Implement a multilevel inheritance setup where the base class has a static method and call it from the lowest level.
+*   Design a Computer class, extend it into PC and Laptop, and show usage of static methods in both children.
+*   Create a Transport class and extend it to Bike and Car. Override a method in one child and demonstrate different outputs.
+*   Develop a Food class and extend it into Fruit and Vegetable. Add common and unique methods to showcase inheritance.
+*   Write a Game class with a method start(). Extend it into BoardGame and VideoGame, and override start() in VideoGame.
+*   Create a basic inheritance chain for a PetShop class system with multiple types of pets inheriting common properties.
+*   Implement a Media class and extend it into Book and Movie, showing inheritance and distinct properties.
+*   Write a class hierarchy involving Furniture -> Chair -> OfficeChair with added properties at each level.
+*   Design a NetworkDevice class, extend it into Router and Switch, and demonstrate hierarchical inheritance.
+*   Create an Account class and extend it into CheckingAccount and SavingsAccount, highlighting the inherited and new methods.
+-->

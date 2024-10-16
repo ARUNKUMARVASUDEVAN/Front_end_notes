@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>
+         Responsive Flexbox Layout
+      </title>
+   <style>
+      * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+      }
+
+      body {
+            font-family: sans-serif;
+            line-height: 1.6;
+      }
+
+      .header, .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+      }
+
+      .container {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 80vh;
+      }
+
+      .sidebar {
+            background: #f4f4f4;
+            
+            min-width: 200px;
+            padding: 1rem;
+      }
+
+      .main-content {
+            background: #fff;
+            flex: 3;
+            padding: 1rem;
+            min-width: 300px;
+      }
+
+      .footer {
+            margin-top: auto;
+      }
+
+      @media (max-width: 768px) {
+            .container {
+               flex-direction: column;
+            }
+      }
+
+   </style>
+</head>
+
+<body>
+      <header class="header">
+         <h1>Header</h1>
+      </header>
+
+      <div class="container">
+         <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Sidebar content goes here.</p>
+         </aside>
+
+         <main class="main-content">
+            <h2>Main Content</h2>
+            <p>Main content goes here.</p>
+            <p>
+               Resize output window to see 
+               responsiveness.
+            </p>
+         </main>
+      </div>
+
+      <footer class="footer">
+         <p>Footer</p>
+      </footer>
+</body>
+</html>

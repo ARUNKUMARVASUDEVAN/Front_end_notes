@@ -1,0 +1,71 @@
+<!--
+the 'this' keyword contains the reference to the object.
+It represents the context(its like scope) of the function or current code
+-->
+<!--
+The 'this' keyword refers to the window object in the global scope.
+
+When you use the 'this' keyword inside the function, it also represents the 'window' object.
+
+The 'this' keyword refers to an undefined in the strict mode in the function.
+
+The 'this' keyword refers to the object when you use it in the object method.
+
+In the event handler, the 'this' keyword refers to the element on which the event is executed.
+
+The 'this' keyword in methods like call(), apply() can refer to different objects.
+
+Syntax:
+
+this.property
+OR
+this.method();
+
+
+-->
+
+<!--Global Context (Outside Any Function):-->
+<!--In the global execution context (outside of any function), this refers to the global object, which is window in browsers or global in Node.js.-->
+-------------------------
+<!--console.log(this);-->
+
+
+<!---------Inside a Function:------------------>
+
+<!--In a regular function (non-strict mode), 
+    this refers to the global object. 
+    In strict mode, this is undefined.-->
+
+<html>
+    <head>
+        <script>
+            function show(a) {
+            console.log(this.a);  }
+
+        </script>
+    </head>
+</html>
+
+
+<!-------------Inside a Method---------------------->
+<!--
+When a function is called as a method of an object,
+this refers to the object the method is called on.
+-->
+
+<html>
+    <head>
+        <script>
+            name=po
+            const obj = {
+            name: "Arun",
+            greet() {
+                console.log(this.name); 
+            }
+            };
+            obj.greet(); 
+
+        </script>
+    </head>
+</html>
+

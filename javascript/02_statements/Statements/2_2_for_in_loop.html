@@ -1,0 +1,105 @@
+<!--
+*   for...in loop in JavaScript is used to loop through an object's properties. 
+*   The JavaScript for...in loop is a variant of the for loop
+------
+Syntax|
+------
+
+for (variableName in object) {
+   statement or block to execute
+}
+
+*   variableName − It is a property name (key) of the object.
+
+*   in − It is an 'in' operator in JavaScript.
+
+*   object − It is the object to traverse.
+-->
+
+<html>
+<head>
+   <title> JavaScript - for...in loop </title>
+</head>
+<body>
+   <p id = "output"> </p>
+   <script>
+      let output = document.getElementById("output");
+      let car = {
+         brand: "OD",
+         model: "Q7",
+         color: "Black",
+      }
+      for (key in car) {
+         output.innerHTML += key + " -> " + car[key] + "<br>";
+      }
+    </script>
+</body>
+</html>
+
+<!------------------------------------------------------------->
+
+<!--Iterating over a string-->
+
+<html>
+<head>
+   <title> JavaScript - for...in loop </title>
+</head>
+<body>
+   <p id = "output"> </p>
+   <script>
+      let outputs = document.getElementById("output");
+      let str = "Hello";
+      for (key in str) {
+         outputs.innerHTML += key + " -> " + str[key] + "<br>";
+      }
+   </script>
+</body>
+</html>
+
+
+<!-------------------------------------------------------------->
+
+<!--Iterating over an array-->
+
+<html>
+<head>
+   <title> JavaScript - for...in loop </title>
+</head>
+<body>
+   <p id = "output"> </p>
+   <script>
+      let outputz = document.getElementById("output");
+      let array = ["Hi", "Hello", 900, 23, true, "JavaScript"];
+      for (key in array) {
+         outputz.innerHTML += key + " -> " + array[key] + "<br>";
+      }
+   </script>
+</body>
+</html>
+
+<!-------------------------------------------------------------->
+
+<!--Update value of each property of an object-->
+
+<html>
+<head>
+    <title> JavaScript - for...in loop </title>
+</head>
+<body>
+    <p id = "output"> </p>
+    <script>
+        let outputk = document.getElementById("output");
+        let car1= {
+            brand: "OD",
+            model: "Q7",
+            color: "Black",
+        }
+        for (key in car1) {
+            car1[key] = null;
+        }
+        output.innerHTML += "The updated object is - " + JSON.stringify(car);
+    </script>
+</body>
+</html>
+
+

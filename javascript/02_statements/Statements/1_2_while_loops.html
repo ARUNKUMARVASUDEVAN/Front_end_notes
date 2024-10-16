@@ -1,0 +1,70 @@
+<!--
+while statement  creates a loop that executes a block of code repeatedly, as long as the specified condition is true
+
+* The condition is evaluated before the execution of the block of code.
+--------------------------------
+There are 2 kinds of while loops|
+---------------------------------
+Entry-controlled loops − The loop checks whether the looping condition is valid first and enters into the body of the loop to execute the loop statements.
+
+Exit-controlled loops − The loop enters into the body and executes the loop statements without checking the condition. After completing the iteration, it checks the condition.
+
+
+The purpose of a while loop is to execute a statement or code block repeatedly as long as an expression is true. Once the expression becomes false, the loop terminates.
+
+Syntax:
+
+while (expression) {
+   Statement(s) to be executed if expression is true
+}
+
+
+-->
+
+<html>
+<body>
+    <div id = 'output'></div>
+    <script type="text/javascript">
+        let output = document.getElementById("output");
+        var count = 0;
+        output.innerHTML="Starting Loop <br>";
+        while (count < 10) {
+            output.innerHTML+="Current Count : " + count + "<br>";
+            count++;
+        }
+        output.innerHTML+="Loop stopped!";
+    </script>
+    <p> Set the variable to a different value and then try... </p>
+</body>
+</html>
+
+
+<!--
+Do while
+
+do...while loop is similar to the while loop except that the condition check happens at the end of the loop. 
+This means that the loop will always be executed at least once, even if the condition is false.
+
+do {
+   Statement(s) to be executed;
+} while (expression);
+
+-->
+
+<html>
+<body>
+    <div id="output"></div>
+    <script type="text/javascript">
+        let output = document.getElementById("output");
+        var count = 0;
+        output.innerHTML += "Starting Loop" + "<br />";
+        do {
+            output.innerHTML += "Current Count : " + count + "<br />";
+            count++;
+        }
+        while (count < 5);
+        output.innerHTML += "Loop stopped!";
+    </script>
+    <p>Set the variable to a different value and then try...</p>
+</body>
+</html>

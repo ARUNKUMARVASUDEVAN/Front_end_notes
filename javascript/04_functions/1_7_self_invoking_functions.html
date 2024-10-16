@@ -1,0 +1,69 @@
+<!--
+Self-Invoking Functions
+
+The self-invoking functions are JavaScript functions that execute immediately as they are defined. 
+To define a self-invoking function, you can enclose an anonymous function within parentheses followed by another set of parentheses.
+
+Syntax:
+
+(function () {
+   // function body
+})();
+-->
+
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      (function () {
+	     document.getElementById("output").innerHTML = 
+	     "Self-invoked function is executed!";
+      }());
+   </script>
+</body>
+</html>
+
+<!--Self-Invoking Functions with Parameters-->
+
+<!--
+(function (paras) {
+   // function body
+})(args);
+-->
+
+<html>
+<body>
+   <div id = "demo"></div>
+   <script>
+      const output = document.getElementById("demo");
+      (function (name) {
+         output.innerHTML = `Welcome to ${name}`;
+      })("Tutorials Point !");
+   </script>
+</body>
+</html>
+
+<!--Private Scope of Self-Invoking Functions-->
+
+<!--
+Whatever code is defined inside the self-executing function
+remains in the private scope and doesn't pollute the global scope.
+-->
+
+<html>
+<body>
+   <div id = "output"> </div>
+   <script>
+      const outputz = document.getElementById("output");
+      let a = 10;
+         (function () {
+            outputz.innerHTML += "Entering to the function <br/>";
+            var a = 20;
+            outputz.innerHTML += "The value of a is " + a + "<br>";
+            outputz.innerHTML += "Exiting to the function <br/>";
+         }());
+         outputz.innerHTML += "The value of the outside the function is " + a;
+    </script>
+</body>
+</html>

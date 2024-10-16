@@ -1,0 +1,65 @@
+<!--
+ease: The animation will start slow, then fast, then end slowly (The default value).
+linear: Animation with the same speed from start to end.
+ease-in: Animation with a slow start.
+ease-out: Animation with a slow end.
+ease-in-out: Animation with a slow start and end.
+cubic-bezier(n,n,n,n): This lets us to define our own values for speed. To know more check out Cubic Bezier Function article.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            border-radius: 50%;
+            position: relative;
+            left:0;
+            
+            animation-name: moveRight ;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes moveRight {
+            to {
+                left: calc(100% - 50px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>linear</h2>
+    <div class="ball" 
+         style="animation-timing-function: linear;">
+    </div>
+
+    <h2>ease</h2>
+    <div class="ball" 
+         style="animation-timing-function: ease;">
+    </div>
+
+    <h2>ease-in</h2>
+    <div class="ball" 
+         style="animation-timing-function: ease-in;">
+    </div>
+
+    <h2>ease-out</h2>
+    <div class="ball" 
+         style="animation-timing-function: ease-out;">
+    </div>
+    
+    <h2>ease-in-out</h2>
+    <div class="ball" 
+         style="animation-timing-function: ease-in-out;">
+    </div>
+    
+    <h2>cubic-bezier(0.8, 0.9, 0.25, 1)</h2>
+    <div class="ball" 
+         style="animation-timing-function: cubic-bezier(1, 0.9, 0.5,0);">
+    </div>
+</body>
+</html>   

@@ -1,0 +1,69 @@
+<!--
+JavaScript object methods are object properties that contains function definitions.
+An object is a collection of properties, and a property is an association between a name (or key) and a value. 
+A property's value can be a function; in that case the property is known as a method.
+
+Syntax:
+
+const obj = {
+	sum: function () {
+		// Method body
+	}
+}
+obj.sum();
+-->
+
+<html>
+<body>
+	<p>Company Information</p>
+	<p id = "output"> </p>
+	<script>
+		const company = {
+		   companyName: "Ether infotech",
+			companyWebsite: "www.etherinfotech.com",
+
+			getInfo: function () {
+				return "Comapny Name: " + this.companyName +"<br>Website: " + this.companyWebsite;
+			},
+		}
+		document.getElementById("output").innerHTML = company.getInfo();
+	</script>
+</body>
+</html>
+
+<!------------------------>
+
+<html>
+<body>
+	<p id = "output">The sum of 2 and 3 is  </p>
+	<script>
+		const nums = {
+			getSum(a, b) {
+				return a + b;
+			}
+		}
+		document.getElementById("output").innerHTML += nums.getSum(2, 3);
+	</script>
+</body>
+</html>
+
+
+<!------------Updating or Adding a Method to the Object---->
+
+<html>
+<body>
+	<p id = "output">The multiplication of 2 and 3 is </p>
+	<script>
+		const numz = {
+			getSum(a, b) {
+			return a + b;
+			}
+		}
+		numz.getMul = function (a, b) {
+			return a * b;
+		}
+    
+		document.getElementById("output").innerHTML += numz.getMul(2, 3);
+	</script>
+</body>
+</html>

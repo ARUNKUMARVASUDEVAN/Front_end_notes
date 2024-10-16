@@ -1,0 +1,65 @@
+<!--
+*   Boolean object represents two values, either "true" or "false".
+*   You can create a boolean object using the Boolean() constructor with a 'new' keyword It takes a value as parameter and returns a boolean object.
+
+Syntax
+
+const val = new Boolean(value);
+-->
+
+<!--Boolean Properties
+
+    constructor - Returns a reference to the Boolean function that created the object.
+
+    prototype - The prototype property allows you to add properties and methods to an object
+    
+
+-->
+
+<!--
+JavaScript boolean constructor() method returns a reference to the Boolean function that created the instance's prototype.
+
+boolean.constructor()
+-->
+<html>
+   <head>
+      <title>JavaScript constructor() Method</title>
+   </head>
+   
+   <body>      
+      <script type = "text/javascript">
+         var bool = new Boolean( );
+         document.write("bool.constructor() is:"+bool.constructor); 
+      </script>      
+   </body>
+</html>
+
+<!--
+The JavaScript Object prototype property allows you to add properties and methods to any object (Number, Boolean, String and Date etc.)
+
+
+object.prototype.name = value
+-->
+
+
+<html>
+<head>
+<title>JavaScript String length Property</title>
+</head>
+<body>
+<script>
+   function student(name, age){
+      this.name = name;
+      this.age = age;
+   }
+   const obj = new student("Rahul Verma", 22);
+   //using prototype property to set a property
+   document.write("Before adding the city property: ", obj.city);
+   String.prototype.city = null;
+   obj.city = "Lucknow";
+   document.write("<br>Name: ", obj.name);
+   document.write("<br>Age: ", obj.age);
+   document.write("<br>After adding City: ", obj.city);
+</script>
+</body>
+</html>

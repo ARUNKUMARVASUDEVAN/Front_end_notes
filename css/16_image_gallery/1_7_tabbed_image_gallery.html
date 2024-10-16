@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+   .image-gallery {
+      display: flex;
+      justify-content: space-between;
+      float: center;
+   }
+   .image-container { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      height: 250px;
+   }
+   .image-container img {
+      width: 200px;
+      height: 150px;
+      cursor: pointer; 
+   }
+   .gallery-tab {
+      display: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+   }
+   .tab-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      height: 80%;
+   }
+   .tab-content img {
+      width: 100%;
+      height: auto;
+   }
+</style>
+</head>
+<body>
+   <div class="image-gallery">
+      <div class="image-container" onclick="opentab('red')">
+         <img src="https://blog.raynatours.com/wp-content/uploads/2014/11/Dubai-Dolphinarium-1024x682.jpg" alt="Red Flower" id="red">
+      </div>
+      <div class="image-container" onclick="opentab('white')">
+         <img src="https://avatars.mds.yandex.net/get-altay/2068435/2a0000016f96bd815bcfed5e40fc27f8f094/XXL" alt="White Flower" id="white">
+      </div>
+      <div class="image-container" onclick="opentab('orange')">
+         <img src="https://ay-danil.com/upload/medialibrary/1e4/1e43968385c96478892e994c5478b274.jpg" alt="Orange Flower" id="orange">
+      </div>
+   </div>
+
+   <div id="tab" class="gallery-tab">
+      <img class="tab-content" id="tabImg">
+   </div>
+
+   <script>
+      function opentab(imageId) {
+         var tab = document.getElementById("tab");
+         var tabImg = document.getElementById("tabImg");
+   
+         tab.style.display = "block";
+         tabImg.src = document.getElementById(imageId).src;
+      }
+   </script>
+</body>
+</html>

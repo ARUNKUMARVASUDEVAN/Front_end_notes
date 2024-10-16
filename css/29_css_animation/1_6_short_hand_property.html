@@ -1,0 +1,40 @@
+<!--
+animation-name: Sets name for animation.
+animation-duration: Sets duration of animation.
+animation-timing-function: Define speed curve of animation.
+animation-delay: Sets delay before which animation starts.
+animation-iteration-count: Sets number of time animation repeats.
+animation-direction: Defines direction of execution of animation.
+animation-fill-mode: Describes the pre-run and post-run styling.
+animation-play-state: Describes play/pause nature of animation
+-->
+
+<html lang="en">
+<head>
+    <style>
+    .box {
+        padding: 20px;
+        background-color: #3498db;
+        color: white;
+        font-size: 16px;
+        /* Name, duration, timing function, delay, repeat, direction, fill mode */
+        animation: changeColor 2s ease-in-out 1s infinite alternate both;
+    }
+
+    /* Animation Definition */
+    @keyframes changeColor {
+        0% {
+            background-color: #3498db;
+        }
+        100% {
+            background-color: #e74c3c;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">Animate Me!</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!--
+The concept of closures in JavaScript allows nested functions to access variables defined in the scope of the parent function, even if the execution of the parent function is finished. 
+In short, you can make global variables local or private using the closures.
+-->
+
+<html>
+<body>
+   <p id = "demo"> </p>
+   <script>
+      const output = document.getElementById("demo");
+      function outer() {
+         output.innerHTML += "The outer function is executed! <br>";
+         function inner() {
+            output.innerHTML += "The inner function is executed! <br>";
+         }
+         inner();
+      }
+      outer();
+   </script>
+</body>
+</html>
+
+<!--------------->
+<html>
+<head>
+   <title> JavaScript - Returning function </title>
+</head>
+<body>
+   <p id = "demo"> </p>
+   <script>
+      const outputs = document.getElementById("demo");
+      function outer() {
+         outputs.innerHTML += "The outer function is executed! <br>";
+         return function inner() {
+            outputs.innerHTML += "The inner function is executed! <br>";
+         }
+      }
+      const func = outer();
+      func();
+      func();
+   </script>
+</body>
+</html>
+
+<!------------>
+
+<html>
+<body>
+   <p id = "demo"> </p>
+   <script>
+      const outputz = document.getElementById("demo");
+      function counter() {
+         let cnt = 100; // Works as a global variable for the decrement function.
+         return function decrement() {
+            cnt = cnt - 1;
+            outputz.innerHTML += "The value of the cnt is: " + cnt + "<br>";
+         }
+      }
+      const funcz = counter(); // Returns the decrement() function expression
+      func();
+      func();
+      func();
+   </script>
+</body>
+</html>

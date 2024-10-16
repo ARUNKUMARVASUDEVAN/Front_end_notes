@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f0f0f0;
+            }
+
+            form {
+                width: 600px;
+                background-color: #fff;
+                padding: 40px;
+                border-radius: 60px;
+                box-shadow: 10 10 10px rgba(27, 25, 25, 0.178);
+            }
+
+            fieldset {
+                border: 1px solid black;
+                padding: 10px;
+                margin: 0;
+            }
+
+            legend {
+                font-weight: bold;
+                margin-bottom: 0px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            textarea {
+                width: calc(100% - 20px);
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 10px;
+            }
+            input[type="submit"] {
+                padding: 10px 20px;
+                margin-left: 170px;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: #04af2f;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>
+                    Registration Form
+                </legend>
+                <label>First Name</label>
+                <input type="text" />
+                <label>Last Name</label>
+                <input type="text" name="LastName" />
+                <label>Email id</label>
+                <input type="email" name="email"/>
+                <label>Enter your password</label>
+                <input type="password" name="password"/>
+                <label>Confirm your password</label>
+                <input type="password"name="confirmPass"/>
+                <label>Address</label>
+                <textarea name="address"></textarea>
+                <input type="submit" value="Submit"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+<!--
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+-->

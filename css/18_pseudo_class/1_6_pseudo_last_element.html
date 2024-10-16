@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      div{
+         border: solid;
+      }
+      /* Selects all last child paragraphs */
+      p:last-child {
+         color: blue;
+      }
+    </style>
+</head>
+<body>
+   <p>This paragraph will not be affected.</p>
+   <p>Another paragraph that won't be affected.</p>
+
+   <div>
+      <p>This paragraph will not be affected.</p>
+      <p>Another paragraph that won't be affected.</p>
+      <p>
+         This paragraph is last child of div 
+         element will be blue.
+      </p>
+   </div>
+
+   <p>
+      This paragraph is last child of body 
+      element, will be blue.
+   </p>
+</body>
+</html>

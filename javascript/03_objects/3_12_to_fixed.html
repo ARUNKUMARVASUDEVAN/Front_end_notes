@@ -1,0 +1,56 @@
+<!--
+Number toFixed() method returns the representation of a numerical value with or without decimal places
+
+toFixed(digits)
+-->
+
+<html>
+<head>
+<title>JavaScript toFixed() Method</title>
+</head>
+<body>
+<script>
+   const val = 123.44;
+   document.write("Given value = ", val);
+   document.write("<br>Result = ", val.toFixed());
+</script>
+</body>
+</html>
+
+
+<!---->
+
+<html>
+<head>
+<title>JavaScript toFixed() Method</title>
+</head>
+<body>
+<script>
+   const valx = 4553.4321343;
+   const digits = 3;
+   document.write("Given value = ", valx);
+   document.write("<br>Digits = ", digits);
+   document.write("<br>Result = ", val.toFixed(digits));
+</script>
+</body>
+</html>
+
+<!---->
+<html>
+<head>
+<title>JavaScript toFixed() Method</title>
+</head>
+<body>
+<script>
+   const valk = 123.321123;
+   const digitsk = -1;
+   document.write("Given value = ", valk);
+   document.write("<br>Digits = ", digitsk);
+   try {
+      document.write("<br>Result = ", valk.toFixed(digits));
+   } catch (error) {
+      document.write("<br>", error);
+   }
+</script>
+</body>
+</html>

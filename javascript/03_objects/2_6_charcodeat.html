@@ -1,0 +1,57 @@
+<!--
+charCodeAt() method returns an integer between 0 to 65535 at the specified index. That integer value is considered as a Unicode of the individual character.
+
+charCodeAt(index)
+-->
+
+<html>
+<head>
+<title>JavaScript String charCodeAt() Method</title>
+</head>
+<body>
+<script>
+   const str = "Ether infotech";
+   document.write("String value = ", str);
+   document.write("<br>The character code ", str.charCodeAt(), " is equal to ", str.charAt());
+</script>
+</body>
+</html>
+
+<!------------------------->
+
+<html>
+<head>
+<title>JavaScript String charCodeAt() Method</title>
+</head>
+<body>
+<script>
+   const strs = "Hello World";
+   document.write("String value = ", str);
+   let index = 6;
+   document.write("<br>Index value = ", index);
+   document.write("<br>The character at ", index, "th position is: ", str.charAt(index));
+   document.write("<br>The Unicode of a character '", str.charAt(index), "' is: ", str.charCodeAt(index));
+</script>
+</body>
+</html>
+
+<!-----------codePointAt() ------------>
+
+<!--
+codePointAt(index)
+-->
+
+<html>
+<head>
+<title>JavaScript String codePointAt() Method</title>
+</head>
+<body>
+<script>
+   const strk = "Ethwer";
+   document.write("String: ", str);
+   const indexk = 0;
+   document.write("<br>Index: ", index);
+   document.write("<br>The Uni code point value of the first character '", str.at(index), "' is: ", str.codePointAt(index));
+</script>
+</body>
+</html>

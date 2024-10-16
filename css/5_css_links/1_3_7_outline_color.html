@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Outline Color Examples</title>
+    <style>
+        body {
+            margin: 20px;
+            font-size: 18px;
+        }
+        .box {
+            width: 150px;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: 10px;
+            display: inline-block;
+        }
+        .outline-color-hex { outline: 2px solid #f92525; }
+        .outline-color-rgb { outline: 2px solid rgb(30, 222, 121); }
+        .outline-color-blue { outline: 2px solid blue; }
+        .outline-color-inherit { outline: 2px solid inherit; }
+        .outline-color-initial { outline: 2px solid initial; }
+        .outline-color-revert { outline: 2px solid revert; }
+        .outline-color-revert-layer { outline: 2px solid revert-layer; }
+        .outline-color-unset { outline: 2px solid unset; }
+    </style>
+</head>
+<body>
+    <div class="box outline-color-hex">Hex Color</div>
+    <div class="box outline-color-rgb">RGB Color</div>
+    <div class="box outline-color-blue">Named Color</div>
+    <div class="box outline-color-inherit">Inherit</div>
+    <div class="box outline-color-initial">Initial</div>
+    <div class="box outline-color-revert">Revert</div>
+    <div class="box outline-color-revert-layer">Revert Layer</div>
+    <div class="box outline-color-unset">Unset</div>
+</body>
+</html>

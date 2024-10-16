@@ -1,0 +1,194 @@
+<!--
+object property in JavaScript is a key: value pair, where key is a string and value can be anything. 
+The key in key: value pair is also called property name. So the properties are association between key (or name) and value.
+
+An object is in other terms a collection of properties (key: value pairs). However, key: value pairs are not stored in the specific order in the object. 
+To write an object syntax, the curly braces are used. Each key: value pair is written within curly braces separated by a comma.
+
+
+Syntax
+
+const fruit = {
+    name: "Apple",
+    price: 100,
+}
+-->
+
+<!--Accessing Object Properties-->
+<!--
+Using the dot notation
+
+Using the square bracket notation
+
+Using the expression
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p id = "output"> </p>
+	<script>
+		const fruit = {
+			name: "Banana",
+			price: 20,
+		}
+		document.getElementById("output").innerHTML = 
+		"The price of the " + fruit.name + " is " + fruit.price;
+	</script>
+</body>
+
+
+<!------------------------>
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p id = "output"> </p>
+	<script>
+		const fruits = {
+			name: "Banana",
+			price: 20,
+		}
+		document.getElementById("output").innerHTML = 
+      "The price of the " + fruits["name"] + " is " + fruits["price"];
+	</script>
+</body>
+</html>
+
+<!------------------------->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p id = "output"> </p>
+	<script>
+		const num = {
+			10: "ten",
+			20: "Twenty",
+		}
+		const x = 10;
+		document.getElementById("output").innerHTML =  num[x + 10];
+  </script>
+</body>
+</html>
+
+
+<!---------------------->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p id = "output1"> </p>
+	<p id = "output2"> </p>
+	<script>
+		const cars = {
+			totalBrands: 50,
+			audi: {
+				model: "Q7",
+				price: 10000000,
+			},
+			bmw: {
+				model: "S20D",
+				price: 8000000,
+			}
+		}
+		document.getElementById("output1").innerHTML = 
+		"The model of Audi is " + cars.audi.model + 
+		" and its price is " + cars.audi.price;
+
+		document.getElementById("output2").innerHTML = 
+		"The model of BMW is " + cars["bmw"]["model"] + 
+		" and its price is " + cars["bmw"]["price"];
+	</script>
+</body>
+</html>
+
+
+<!-------Adding or Updating the Object ------------->
+<!--
+    Obj.prop = new_value;
+OR
+Obj["prop"] = new_value;
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p id = "output"> </p>
+	<script>
+		const fruitz = {
+			name: "Watermealon",
+			price: 150,
+		}
+		fruitz.name = "Apple"; // Updating using the dot notation
+		fruitz["price"] = 200; // Updating using the bracket notation
+		fruitz.expiry = "5 days"; // Adding new property to the object.
+
+		document.getElementById("output").innerHTML += 
+		"The price of " + fruitz.name + 
+		" is " + fruitz.price + 
+		" and it expires in " + fruitz.expiry;
+    
+	</script>
+</body>
+</html>
+
+
+<!----------Deleting the Object Properties---------------->
+
+<!--
+
+Syntax:
+
+delete obj.prop;
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p> The object after deleting the "name" property: </p>
+	<p id = "output"> </p>
+	<script>
+		const fruitx = {
+			name: "Watermealon",
+			price: 150,
+		}
+		delete fruitx.name;
+		document.getElementById("output").innerHTML = JSON.stringify(fruitx);
+	</script>
+</body>
+</html>
+
+<!--Enumerating Objects Properties-->
+
+<!--
+The Object.keys() method returns the object's keys in the array.
+However, we will use the for…in loop to traverse through each property of the object.
+
+Syntax:
+
+for (let key in table) {
+   // Use the key to access its value
+}
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p> Iterating the obejct properties</p>
+	<p id = "output"> </p>
+	<script>
+  
+		const table = {
+			color: "brown",
+			shape: "round",
+			price: 10000,
+		}
+
+		for (let key in table) {
+			document.getElementById("output").innerHTML += key + ": " + table[key] + "<br>";
+		}
+	</script>
+</body>
+</html>

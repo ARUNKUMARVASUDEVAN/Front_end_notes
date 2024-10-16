@@ -1,0 +1,76 @@
+<!--
+Basic navbar is built using .navbar class. For responsive collapsing wrap the class .navbar with .navbar-expand{-sm|-md|-lg|-xl|-xxl} (arranging the navbar vertically on small, medium, large, extra large or xxlarge screens).
+
+Utilizing aria-current="page" indicates the current item or aria-current="true" indicates current item in a set.
+
+Ensure availability by employing an <nav> element or, in case using a more generic element such as a <div> include a role="navigation" to each navbar to expressly distinguish it as a point of interest locale for clients of assistive advances.
+
+New in v5.2.0: Navbars can be themed with CSS variables themed using CSS variables restricted to the .navbar base class. .navbar-light has been deplored and the .navbar-dark has been rewritten to abrogate CSS factors rather than including extra styles.
+-->
+
+<!--
+Use class .navbar-brand for a company, product, or project name.
+
+Use .navbar-nav for full-height, lightweight navigation (includes support for dropdowns).
+
+Use class .navbar-toggler with collapse plugin for navigational toggling behavior.
+
+Use class .navbar-text for adding vertically centered strings of text..
+
+Use .collapse.navbar-collapse to the group and collapse the navbar content by a parent breakpoint.
+
+Use .navbar-scroll to set the maximum height and scroll the expanded content of the navbar.
+-->
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Bootstrap - Navbar</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ether</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog 1</a></li>
+                <li><a class="dropdown-item" href="#">Blog 2</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search Here" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </body>
+  </html>

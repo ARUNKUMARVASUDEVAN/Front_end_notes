@@ -1,0 +1,40 @@
+<!--
+JavaScript String includes() method searches for the part of the string and determines whether the specified string is found in the original string.
+
+Syntax:
+includes(searchString, position)
+-->
+
+<html>
+<head>
+<title>JavaScript String includes() Method</title>
+</head>
+<body>
+<script>
+   const str = "Welcome to Ether infotech";
+   const searchString = "Ether infotech";
+   document.write("Original string: ", str);
+   document.write("<br>Search string: ", searchString);
+   document.write("<br>Is string '", searchString,"' found in '", str, "' or not? ", str.includes(searchString));
+</script>    
+</body>
+</html>
+
+<!----------------------------------------->
+
+<html>
+<head>
+<title>JavaScript String includes() Method</title>
+</head>
+<body>
+<script>
+   const strz = "Hypertext Markup Language";
+   const searchStringz = "text";
+   let position = 12;
+   document.write("Original string: ", str);
+   document.write("<br>Search string: ", searchString);
+   document.write("<br>Position: ", position);
+   document.write("<br>Is string '", searchString,"' found in '", str, "' or not? ", str.includes(searchString, position));
+</script>    
+</body>
+</html>

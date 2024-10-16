@@ -1,0 +1,78 @@
+<!--
+    Array .of()
+
+
+Creates a new Array instance with a variable number of arguments, regardless of their datatype    
+
+Array.of(5) − Creates a new array with a single element of value 5.
+Array(5) − Creates an empty array with a lenght of 5.
+
+------------------------------------------------------------------
+Array.of(1, 2, 3) − Creates a new array with three elements: 1, 2, and 3.
+Array(1, 2, 3) − Also creates a new array with three elements: 1, 2, and 3.
+
+------------------------------------------------------------------
+Array.of() − Creates a new empty array.
+Array() − Also creates a new empty array.
+------------------------------------------------------------------
+
+Syntax: 
+-------
+Array.of(element1, element2, ..., elementN)
+-->
+
+<!------------------------------------------------------------------>
+
+<html>
+<body>
+   <script>
+      const numbers = Array.of(1, 2, 3, 4, 5);
+      document.write(numbers);
+   </script>
+</body>
+</html>
+
+<!------------------------------------------------------------------>
+
+<html>
+<body>
+   <script>
+      const fruits = Array.of('apple', 'banana', 'cherry');
+      document.write(fruits);
+   </script>
+</body>
+</html>
+
+<!---------------------------------------------------------------->
+
+<html>
+<body>
+   <script>
+      const arr1 = Array.of(5); //[5]
+      const arr2 = Array(5); // array of 5 empty slots
+   </script>
+</body>
+</html>
+
+<!---------------------------------------------------------------->
+
+<html>
+<body>
+   <script>
+      const arr3 = Array.of(1, 2, 3);
+      const arr4 = Array(1, 2, 3);
+      document.write(arr1, "<br>", arr2)
+   </script>
+</body>
+</html>
+
+<!----------------------------------------------------------------->
+
+<html>
+<body>
+   <script>
+      const arr5 = Array.of(); //[]
+      const arr6 = Array(); //[]
+   </script>
+</body>
+</html>

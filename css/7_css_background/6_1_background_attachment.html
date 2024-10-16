@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Attachment Examples</title>
+    <style>
+        .scroll {
+            background-image: url('https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=0&k=20&c=vwbyywizQ3ofQFUL9-OPXJyu6A44t9oJ6ZSDqeql6Yw=');
+            background-attachment: scroll;
+            background-size: cover;
+            height: 300px;
+            overflow: auto;
+        }
+        .fixed {
+            background-image: url('https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=0&k=20&c=vwbyywizQ3ofQFUL9-OPXJyu6A44t9oJ6ZSDqeql6Yw=');
+            background-attachment: fixed;
+            background-size: cover;
+            height: 300px;
+            overflow: auto;
+        }
+        .local {
+            background-image: url('https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=0&k=20&c=vwbyywizQ3ofQFUL9-OPXJyu6A44t9oJ6ZSDqeql6Yw=');
+            background-attachment: local;
+            background-size: cover;
+            height: 300px;
+            overflow: auto;
+        }
+        .inherit {
+            background-image: url('https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=0&k=20&c=vwbyywizQ3ofQFUL9-OPXJyu6A44t9oJ6ZSDqeql6Yw=');
+            background-attachment: inherit;
+            background-size: cover;
+            height: 300px;
+            overflow: auto;
+        }
+        .initial {
+            background-image: url('https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=0&k=20&c=vwbyywizQ3ofQFUL9-OPXJyu6A44t9oJ6ZSDqeql6Yw=');
+            background-attachment: initial;
+            background-size: cover;
+            height: 300px;
+            overflow: auto;
+        }
+        .revert {
+            background-image: url('https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=0&k=20&c=vwbyywizQ3ofQFUL9-OPXJyu6A44t9oJ6ZSDqeql6Yw=');
+            background-attachment: revert;
+            background-size: cover;
+            height: 300px;
+            overflow: auto;
+        }
+        .revert-layer {
+            background-image: url('https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=0&k=20&c=vwbyywizQ3ofQFUL9-OPXJyu6A44t9oJ6ZSDqeql6Yw=');
+            background-attachment: revert-layer;
+            background-size: cover;
+            height: 300px;
+            overflow: auto;
+        }
+        .unset {
+            background-image: url('https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=0&k=20&c=vwbyywizQ3ofQFUL9-OPXJyu6A44t9oJ6ZSDqeql6Yw=');
+            background-attachment: unset;
+            background-size: cover;
+            height: 300px;
+            overflow: auto;
+        }
+        .box {
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Attachment Examples</h1>
+    <div class="box scroll">Background Attachment: Scroll</div>
+    <div class="box fixed">Background Attachment: Fixed</div>
+    <div class="box local">Background Attachment: Local</div>
+    <div class="box inherit" style="background-attachment: scroll;">Global Value: Inherit</div>
+    <div class="box initial">Global Value: Initial</div>
+    <div class="box revert">Global Value: Revert</div>
+    <div class="box revert-layer">Global Value: Revert-Layer</div>
+    <div class="box unset">Global Value: Unset</div>
+</body>
+</html>

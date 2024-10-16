@@ -1,0 +1,52 @@
+<!--
+What are Media Queries?
+Media queries are a feature of CSS that enable you to tailor the appearance of your content to different devices and screen sizes.
+
+Syntax
+The basic syntax of a media query is as follows:
+
+@media media-type and (media-feature: value) {
+  /* CSS rules here */
+}
+
+media-type (optional): Specifies the type of device (e.g., screen, print).
+media-feature: Specifies the characteristic to be checked (e.g., max-width, min-height).
+value: Specifies the value of the media feature to test for.
+
+Common Media Types
+all: Suitable for all devices.
+print: Intended for paged material and documents viewed on a screen in print preview mode.
+screen: Intended primarily for screens.
+
+
+Common Media Features
+width / height: The width and height of the viewport.
+min-width / max-width: Minimum and maximum width of the viewport.
+min-height / max-height: Minimum and maximum height of the viewport.
+orientation: Orientation of the device (e.g., landscape, portrait).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example 1</title>
+    <style>
+        body {
+          background-color: lightblue;
+            }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lightgreen;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Resize the browser window to see the effect!</h1>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!--
+fromCharCode()	---- Converts the sequence of UTF-16 code units into the string.
+fromCodePoint()----- Creates a string from the given sequence of ASCII values.
+-->
+
+<!--
+The JavaScript String fromCharCode() method is a static method that converts a Unicode value (or a sequence of Unicode values) to the character(s) and returns a new string.
+
+String.fromCharCode(num1, num2, /*..., */ numN)
+-->
+
+<html>
+<head>
+<title>JavaScript String fromCharCode() Method</title>
+</head>
+<body>
+<script>
+   let unicode = 100;
+   document.write("Unicode value: ", unicode);
+   document.write("<br>The unicode value ", unicode ," represents to character: ", String.fromCharCode(unicode));
+</script>    
+</body>
+</html>
+
+<!-------------------------------------->
+<html>
+<head>
+<title>JavaScript String fromCharCode() Method</title>
+</head>
+<body>
+<script>
+   let u1 = 190;
+   let u2 = 43;
+   let u3 = 190;
+   document.write("Unicode values are: ", u1, ", ", u2, ", ", u3);
+   document.write("<br>New string: ", String.fromCharCode(u1, u2, u3));
+</script>    
+</body>
+</html>
+
+<!----------------------------------------->
+
+<html>
+<head>
+<title>JavaScript String fromCharCode() Method</title>
+</head>
+<body>
+<script>
+   let unicode_value = 65;//unicode of char 'A'
+   document.write("Unicode value: ", unicode_value);
+   try {
+      document.write("<br>Unicode ", unicode_value, " represents to character: ", unicode_value.fromCharCode(unicode_value));
+   } catch (error) {
+      document.write("<br>", error);
+   }
+</script>    
+</body>
+</html>
+
+<!----------------------------------------------->
+
+<!--
+JavaScript String fromCodePoint() method returns a string created by a specified sequence of code point values. 
+You can pass one or more Unicode code point values to this method. If the value passed is not an integer, 
+less than 0 (or negative), or greater than 0x10FFFF, it will throw a RangeError exception
+
+Syntax:
+
+String.fromCodePoint(num1, num2, /*..., */ numN)
+
+-->
+
+<html>
+<head>
+<title>JavaScript String fromCodePoint() Method</title>
+</head>
+<body>
+<script>
+   const unicodepoint = 65;
+   document.write("Uni code point: ", unicodepoint);
+   document.write("<br>The uni code point ", unicodepoint, " represents ", String.fromCodePoint(unicodepoint));
+</script>
+</body>
+</html>
+
+<!------------------------------------------->
+<html>
+<head>
+<title>JavaScript String fromCodePoint() Method</title>
+</head>
+<body>
+<script>
+   const num1 = 84;
+   const num2 = 117;
+   const num3 = 116;
+   const num4 = 111;
+   const num5 = 114;
+   const num6 = 105;
+   const num7 = 97;
+   const num8 = 108;
+   const num9 = 115;
+   const num10 = 80;
+   const num11 = 111;
+   const num12 = 105;
+   const num13 = 110;
+   const num14 = 116;
+   document.write("Uni code point values are: ", num1, ", ", num2, ", ", num3, ", ", num4, ", ", num5, ", ", num6, ", ", num7, ", ", num7, ", ", num8, ", ", num9, ", ", num10, ", ", num11, ", ", num12, ", ", num13, ", ", num14);
+   document.write("<br>Created string: ", String.fromCodePoint(num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, num12, num13, num14));
+</script>
+</body>
+</html>
+
+<!------------------------------------------->
+
+<html>
+<head>
+<title>JavaScript String fromCodePoint() Method</title>
+</head>
+<body>
+<script>
+   const unicodepointz = -2;
+   document.write("Uni code point: ", unicodepoint);
+   try {
+      document.write("Created string: ", String.fromCodePoint(unicodepointz));
+   } catch (error) {
+      document.write("<br>", error);
+   }
+</script>
+</body>
+</html>

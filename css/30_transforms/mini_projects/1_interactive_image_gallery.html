@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .gallery img:active {
+            transform: scale(1.5) translate(-50%, -50%);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://www.formacar.com/storage/images_news/00/18/31/90/B73PAwgD9wjH.jpg" alt="Image 1">
+        <img src="https://avatars.mds.yandex.net/i?id=15481ce89c8ea827663e125af183f15d6b13fb61-5491350-images-thumbs&n=13" alt="Image 2">
+        <img src="https://4kwallpapers.com/images/wallpapers/porsche-911-sport-classic-2022-5k-2560x1440-7991.jpeg" alt="Image 3">
+        <img src="https://cdn.motor1.com/images/mgl/z23Jq/s1/porsche-911-turbo-s.jpg" alt="Image 4">
+        <img src="https://paultan.org/image/2020/03/992-Porsche-911-Turbo-S-Coupe-13-e1583246419231.jpeg" alt="Image 5">
+    </div>
+</body>
+</html>

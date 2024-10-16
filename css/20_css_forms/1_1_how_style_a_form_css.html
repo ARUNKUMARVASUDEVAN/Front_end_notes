@@ -1,0 +1,51 @@
+<!--
+Use Containers: Containers can be used to wrap all the form elements like text input, radio buttons, submit buttons in a single container and apply common style to it.
+For Text Input: For text input you can add padding, margin and background color according to your color theme. Also you can use focus pseudo-class to style selected state of an input element.
+Hover Effect: By using pseudo-class :hover, you can style mouse over the element state of elements like submit button. This gives user a dynamic experience.
+Responsive Design: By using Media Queries you can adjust form style for different screen widths
+Transition Effect Further more you can use transition effect for smooth interaction with input tags and buttons
+-->
+
+<!--
+padding, margin and background-color. Apart from that we can also alter border, border-radius, text color and focus states.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* CSS styles for input fields */
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            border-color: #66afe9;
+            outline: none;
+            box-shadow: 
+                0 0 5px rgba(102, 175, 233, 0.5);
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Styled Input Tags</h3>
+    Name:
+    <input type="text">
+    
+    Email:
+    <input type="email">
+    
+    Password:
+    <input type="password">
+</body>
+</html>

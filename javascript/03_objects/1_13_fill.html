@@ -1,0 +1,48 @@
+<!------------
+Array.fill() method is used to fill all the elements of an array with a specified value. 
+The fill() method modifies the original array in place and returns the modified array
+
+
+If "start" is negative, it is treated as array.length + start.
+If "end" is negative, it is treated as array.length + end.
+If "start" is greater than or equal to end, the array will not be modified.
+
+* array.fill(value, start, end);
+
+value − The value to fill the array with.
+start (optional) − The index from which to start filling the array. If not provided, the default value is 0.
+end (optional)− The index at which to stop filling the array. If not provided, the array is filled up to its last index.
+-->
+
+<html>
+<body>
+   <p id="demo"></p>
+   <script>
+      const animals = ["Lion", "Cheetah", "Tiger", "Elephant"];
+      document.getElementById("demo").innerHTML = animals.fill("Dinosaur");
+   </script>
+</body>
+</html>
+
+<!--------------------------------------->
+<html>
+<body>
+   <p id="demo"></p>
+   <script>
+      const animalz = ["Lion", "Cheetah", "Tiger", "Elephant"];
+      document.getElementById("demo").innerHTML = animals.fill("Dinosaur", 2);
+   </script>
+</body>
+</html>
+
+<!-------------------------------------->
+
+<html>
+<body>
+   <p id="demo"></p>
+   <script>
+      const animalk = ["Lion", "Cheetah", "Tiger", "Elephant"];
+      document.getElementById("demo").innerHTML = animals.fill("Dinosaur", 1, 4);
+   </script>
+</body>
+</html>

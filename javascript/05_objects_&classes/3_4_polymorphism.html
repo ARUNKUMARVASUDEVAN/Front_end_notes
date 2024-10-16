@@ -1,0 +1,72 @@
+<!--
+polymorphism in JavaScript allows you to define multiple methods with the same name and different functionalities.
+
+ Method overriding allows a subclass or child class to redefine a method of superclass or parent class.
+
+
+-->
+
+<html>
+<body>
+   <div id = "output1"> </div>
+   <div id = "output2"> </div>
+   <script>
+      class Shape {
+         area(a, b) {
+            return "The area of each Geometry is different! <br>";
+         }
+      }
+
+      class Circle extends Shape {
+         area(r) { // Overriding the method of the Shape class
+            return "The area of Circle is " + (3.14 * r * r) + "<br>";
+         }
+      }
+
+      class Rectangle extends Shape {
+         area(l, b) { // Overriding the method of the Shape class
+            return "The area of Rectangle is " + (l * b) + "<br>";
+         }
+      }
+
+      const circle = new Circle();
+      // Calling area() method of Circle class
+      document.getElementById("output1").innerHTML = circle.area(5); 
+ 
+      const rectangle = new Rectangle();
+      // Calling area() method of Rectangle class
+      document.getElementById("output2").innerHTML = rectangle.area(5, 10); 
+   </script>
+</body>
+</html>
+
+<!----------------------------------->
+
+<html>
+<body>
+<p id = "output1"> </p>
+<p id = "output2"> </p>
+<script>
+class Math {
+    mathOperations(a, b) {
+       document.getElementById("output1").innerHTML =  "Addition: " + (a+b) + "<br>";
+       document.getElementById("output1").innerHTML += "Subtraction: " + (a-b);
+    }
+}
+
+class AdvanceMath extends Math {
+    mathOperations(a, b) {
+       super.mathOperations(a, b);
+       document.getElementById("output2").innerHTML += "Multiplication: " + (a*b) + "<br>";
+       document.getElementById("output2").innerHTML += "Division: " + (a/b);
+    }
+}
+
+const A_math = new AdvanceMath();
+A_math.mathOperations(10, 5); // Calls method of AdvanceMath class
+
+</script>
+</body>
+</html>
+
+<!-------------------------------------->

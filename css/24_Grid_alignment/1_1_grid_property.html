@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      .grid-container {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         gap: 10px;
+         width: 100%;
+         background-color: lightblue;
+      }
+      .inline-grid-container {
+         display: inline-grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         gap: 10px;
+         background-color: lightgreen;
+      }
+      .grid-item {
+         background-color: lightcoral;
+         padding: 20px;
+         text-align: center;
+      }
+   </style>
+</head>
+
+<body>
+   <h3>Inline Grid Example</h3>
+   <p>
+         Here is an example of 
+         <span class="inline-grid-container">
+            <span class="grid-item">1</span>
+            <span class="grid-item">2</span>
+            <span class="grid-item">3</span>
+         </span> 
+         inline grid.
+   </p>
+   
+   <h3>Grid Example</h3>
+      <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+   </div>
+</body>
+</html>

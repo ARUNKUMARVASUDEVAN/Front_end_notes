@@ -1,0 +1,28 @@
+<!--
+
+The Function call() method allows us to invoke a function given a specific value for this and arguments provided individually.
+When a normal function is called, the value of this inside the function is the object that the function was accessed on
+
+Syntax
+
+funcName.call(thisArg, arg1, arg2, ... argN);
+
+-->
+
+<html>
+<head>
+   <title> JavaScript - Function call() method </title>
+</head>
+<body>
+   <p id = "output1"> </p>
+   <p id = "output2"> </p>
+   <script>    
+      function test(x) {
+         return "The function is invoked!";
+      }
+        
+      document.getElementById("output1").innerHTML = test();
+      document.getElementById("output2").innerHTML = test.call(2,3);
+   </script>
+</body>
+</html>

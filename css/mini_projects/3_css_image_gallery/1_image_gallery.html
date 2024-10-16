@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://avatars.mds.yandex.net/i?id=3ffeba934a1d37e94eb3f3ac77c5394dc085d3e5-12524916-images-thumbs&n=13" alt="Image 1">
+        <img src="https://avatars.mds.yandex.net/i?id=07531a3a9f54aee856201769e7ec5a39321ab74b-12633068-images-thumbs&n=13" alt="Image 2">
+        <img src="https://www.cinejosh.com/newsimg/newsmainimg/priyanka-mohan_b_1102211149.jpg" alt="Image 3">
+        <img src="https://moviegalleri.net/wp-content/gallery/priyanka-arul-mohan-hd-images-gang-leader-press-meet/actress-priyanka-arul-mohan-hd-images-gang-leader-press-meet-9d50ff2.jpg" alt="Image 4">
+        <img src="https://southindianactress.in/wp-content/uploads/2019/08/Priyanka-Arul-Mohan-photos-Gang-Leader-Movie-Press-Meet-10.jpg" alt="Image 5">
+        <img src="https://d2e1hu1ktur9ur.cloudfront.net/wp-content/uploads/2021/03/priyanka-arul-mohan4.jpg" alt="Image 6">
+    </div>
+</body>
+</html>

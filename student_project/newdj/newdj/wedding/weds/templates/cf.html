@@ -1,0 +1,57 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'cf.css' %}">
+    <title>Catering form</title>
+</head>
+
+<body class="main_bg" style="background-color: black;">
+    <div class="form">
+        <div class="form-text">
+            <h1>Book Now</h1>
+            <p>Catering is the dishes of turning ordinary ingredients into extraordinary dishes.</p>
+        </div>
+        <div class="main-form">
+            <form action="index.php" method="get">
+                <div>
+                    <span>Name</span>
+                    {{ cat_form.name}}
+                </div>
+                <div>
+                    <span>Email</span>
+                    {{ cat_form.email}} 
+                </div>
+                <div>
+                    
+                    <span>How Many People</span>
+                    {{ cat_form.people}}
+                    
+                </div>
+                <div>
+                    <span>Time</span>
+                    {{ cat_form.time }}
+                </div>
+                <div>
+                    <span>Date</span>
+                    {{ cat_form.date}}
+                </div>
+                <div>
+                    <span>Phone Number</span>
+                    {{ cat_form.number}}
+                </div>
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

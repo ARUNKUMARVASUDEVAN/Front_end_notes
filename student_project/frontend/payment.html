@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .payment-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .payment-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .payment-header h2 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .payment-option {
+            margin-bottom: 20px;
+        }
+
+        .payment-option label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .payment-option input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .payment-details {
+            display: none;
+            margin-bottom: 20px;
+        }
+
+        .payment-logo {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+
+        .payment-logo img {
+            width: 50px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        .payment-logo img.selected {
+            border-color: #007BFF;
+        }
+
+        .payment-details input[type="text"],
+        .payment-details textarea {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .payment-details textarea {
+            height: 80px;
+        }
+
+        .submit-btn {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-container">
+    <div class="payment-header">
+        <h2>Payment</h2>
+        <p>Select your payment method</p>
+    </div>
+
+    <div class="payment-option">
+        <label>
+            <input type="radio" name="payment-method" value="online" onclick="togglePaymentDetails()"> Online Payment
+        </label>
+        <label>
+            <input type="radio" name="payment-method" value="offline" onclick="togglePaymentDetails()"> Offline Payment
+        </label>
+    </div>
+
+    <div id="online-payment-details" class="payment-details">
+        <div class="payment-logo">
+            <img src="https://1000logos.net/wp-content/uploads/2023/03/Google-Pay-logo.png" alt="GPay" onclick="selectPaymentLogo(this)">
+            <img src="https://i.pinimg.com/736x/2a/cf/b6/2acfb6fb41f7fcb82c3230afdecff714.jpg"alt="PhonePe" onclick="selectPaymentLogo(this)">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/305388/1707892437147.png" alt="Paytm" onclick="selectPaymentLogo(this)">
+        </div>
+        <input type="text" placeholder="Enter UPI ID" required>
+    </div>
+
+    <div id="offline-payment-details" class="payment-details">
+        <textarea placeholder="Enter payment details (e.g., Cheque number, Bank details, etc.)" required></textarea>
+    </div>
+
+    <button class="submit-btn">Submit Payment</button>
+</div>
+
+<script>
+    function togglePaymentDetails() {
+        var onlinePaymentDetails = document.getElementById('online-payment-details');
+        var offlinePaymentDetails = document.getElementById('offline-payment-details');
+        var paymentMethod = document.querySelector('input[name="payment-method"]:checked').value;
+
+        if (paymentMethod === 'online') {
+            onlinePaymentDetails.style.display = 'block';
+            offlinePaymentDetails.style.display = 'none';
+        } else if (paymentMethod === 'offline') {
+            onlinePaymentDetails.style.display = 'none';
+            offlinePaymentDetails.style.display = 'block';
+        }
+    }
+
+    function selectPaymentLogo(element) {
+        var logos = document.querySelectorAll('.payment-logo img');
+        logos.forEach(function(logo) {
+            logo.classList.remove('selected');
+        });
+        element.classList.add('selected');
+    }
+</script>
+
+</body>
+</html>

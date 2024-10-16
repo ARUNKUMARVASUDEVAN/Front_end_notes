@@ -1,0 +1,27 @@
+<!--
+The hoisting behaviors of JavaScript 
+move the declaration of the variables at the top of the code.
+-->
+
+<html>
+<head>
+   <title> Variable hoisting </title>
+</head>
+<body>
+   <script>
+      function test() {
+         // Hoisiting is not supported by let keyword
+         x=100;
+         let x;
+         
+         document.write(x);
+         m = 100;
+         document.write("m = " + m + "<br/>");
+         n = 50;
+         document.write("n = " + n + "<br/>");
+         var n;
+      }
+      test();
+   </script>
+</body>
+</html>

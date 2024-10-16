@@ -1,0 +1,46 @@
+<!--
+getDate() ----  Returns the day of the month for the specified date according to local time.
+
+
+
+Date.getDate() method is used to retrieve the "day of month"
+
+Syntax
+
+getDate();
+-->
+
+<html>
+<body>
+<script>
+   const CurrentDate = new Date();
+   const DayOfMonth = CurrentDate.getDate();
+   document.write(DayOfMonth);
+</script>
+</body>
+</html>
+
+<!----->
+
+<html>
+<body>
+<script>
+   const SpecificDate = new Date('2023-12-25');
+   const DayOfMonths = SpecificDate.getDate();
+   document.write(DayOfMonths);
+</script>
+</body>
+</html>
+
+<!---->
+
+<html>
+<body>
+<script>
+   const currentDate = new Date();
+   currentDate.setDate(currentDate.getDate() + 10);
+   const result = currentDate.getDate();
+   document.write(result);
+</script>
+</body>
+</html>

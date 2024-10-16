@@ -1,0 +1,18 @@
+<!--
+Using the undefined with the 'number' or 'boolean' value always gives the NaN in the output.
+Here, NaN means not a number.
+-->
+
+<html>
+<head>
+   <title> Using undefined with a number and boolean value </title>
+</head>
+<body>
+   <script>
+      let num = 100 + undefined; // Prints NaN
+      document.write("The value of the num is: " + num + "<br>");
+      num = false * undefined; // Prints NaN
+      document.write("The value of the num is: " + num + "<br>");
+   </script>
+</body>
+</html>

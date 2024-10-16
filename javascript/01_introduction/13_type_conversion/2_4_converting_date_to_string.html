@@ -1,0 +1,27 @@
+<!--
+ Date object's Number() constructor or getTime() method to convert the date string into the number
+---------------
+Number(date);
+OR
+date.getTime();
+
+----------------
+String(date);
+OR
+date.toString();
+-->
+
+<html>
+<head>
+   <title> Coverting date to string / number </title>
+</head>
+<body>
+   <script>
+      let date = new Date();
+      let numberDate = date.getTime();
+      document.write("The Numeric date is: " + numberDate + "<br/>");
+      let dateString = date.toString();
+      document.write("The string date is: " + dateString + "<br/>");
+   </script>
+</body>
+</html>

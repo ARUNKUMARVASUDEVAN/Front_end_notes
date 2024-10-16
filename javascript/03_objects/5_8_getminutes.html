@@ -1,0 +1,33 @@
+<!--
+Date.getMinutes() method in JavaScript is used to retrieve the minutes component of a date object,
+representing the minutes of the hour as a number between 0 and 59.
+It extracts the minutes portion of a date object, based on the system's local time zone.
+
+Syntax
+
+getMinutes();
+-->
+
+<html>
+<body>
+<script>
+   const currentDate = new Date();
+   const minutes = currentDate.getMinutes();
+
+   document.write("Current Minutes:", minutes);
+</script>
+</body>
+</html>
+
+<!-------------->
+
+<html>
+<body>
+<script>
+   const specificDate = new Date('2023-12-25 12:45:30');
+   const minutez = specificDate.getMinutes();
+
+   document.write("Minutes of provided Date:", minutez);
+</script>
+</body>
+</html>

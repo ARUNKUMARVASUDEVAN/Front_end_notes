@@ -1,0 +1,67 @@
+<!--
+Date.UTC() method is a static method of the Date object that allows you
+to create a date object based on Coordinated Universal Time (UTC) values, rather than local time.
+
+This method accepts seven parameters representing the date and time components similar to "Date" constructor
+and number of milliseconds since January 1, 1970, 00:00:00 UTC, for the specified date and time.
+
+
+Syntax:
+
+Date.UTC(year, month, day, hour, minute, second, millisecond);
+
+
+
+yearValue An integer represents a new year (four digits).
+
+*   month (optional) An integer between 0 and 11, where 0 is January and 11 is December.
+If -1 is provided, it will result in the last month of the previous year.
+If 12 is provided, it will result in the first month of the next year.
+
+*   hour (optional) An integer representing the hour (0 to 23).
+If -1 is provided, it will result in the last hour of the previous day.
+If 24 is provided, it will result in the first hour of the next day.
+
+*   minute (optional) An integer representing the minutes (0 to 59). If not provided, minutes will be set to 0.
+If -1 is provided, it will result in the last minute of the previous hour.
+If 60 is provided, it will result in the first minute of the next hour.
+
+*   second (optional) An integer representing the seconds (0 to 59). If not provided, seconds will be set to 0.
+If -1 is provided, it will result in the last second of the previous minute.
+If 60 is provided, it will result in the first second of the next minute.
+
+*   millisecond (optional) An integer representing the milliseconds (0 to 999). If not provided, milliseconds will be set to 0.
+If -1 is provided, it will result in the last millisecond of the previous second.
+If 1000 is provided, it will result in the first millisecond of the next second.
+-->
+
+<html>
+<body>
+<script>
+   const utcDate = Date.UTC(2024);
+   document.write(utcDate);
+</script>
+</body>
+</html>
+
+<!----------------------->
+
+<html>
+<body>
+<script>
+   const utcDates = Date.UTC(2023, 1, 15, 12, 30, 0);
+   document.write(utcDate);
+</script>
+</body>
+</html>
+
+<!--------------------->
+
+<html>
+<body>
+<script>
+   const utcDatez = new Date(Date.UTC(2023, 0, 15, 12, 30, 0));
+   document.write(utcDate);
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Blend Mode Examples</title>
+    <style>
+        .normal { 
+            background-image: url('https://images.alphacoders.com/124/1243110.jpg'), linear-gradient(black, white); 
+            background-blend-mode: normal; 
+            background-size: cover; 
+        }
+        .darken-luminosity { 
+            background-image: url('https://images.alphacoders.com/124/1243110.jpg'), linear-gradient(black, white); 
+            background-blend-mode: darken, luminosity; 
+            background-size: cover; 
+        }
+        .inherit { 
+            background-image: url('https://images.alphacoders.com/124/1243110.jpg'), linear-gradient(rgb(111, 7, 7), white); 
+            background-blend-mode: inherit; 
+            background-size: cover; 
+        }
+        .initial { 
+            background-image: url('https://images.alphacoders.com/124/1243110.jpg'), linear-gradient(black, white); 
+            background-blend-mode: initial; 
+            background-size: cover; 
+        }
+        .revert { 
+            background-image: url('https://images.alphacoders.com/124/1243110.jpg'), linear-gradient(black, white); 
+            background-blend-mode: revert; 
+            background-size: cover; 
+        }
+        .revert-layer { 
+            background-image: url('https://images.alphacoders.com/124/1243110.jpg'), linear-gradient(black, white); 
+            background-blend-mode: revert-layer; 
+            background-size: cover; 
+        }
+        .unset { 
+            background-image: url('https://images.alphacoders.com/124/1243110.jpg'), linear-gradient(black, white); 
+            background-blend-mode: unset; 
+            background-size: cover; 
+        }
+        .box {
+            height: 200px;
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Blend Mode Examples</h1>
+    <div class="box normal">Blend Mode: Normal</div>
+    <div class="box darken-luminosity">Blend Mode: Darken, Luminosity</div>
+    <div class="box inherit" style="background-blend-mode: normal;">Global Value: Inherit</div>
+    <div class="box initial">Global Value: Initial</div>
+    <div class="box revert">Global Value: Revert</div>
+    <div class="box revert-layer">Global Value: Revert-Layer</div>
+    <div class="box unset">Global Value: Unset</div>
+</body>
+</html>

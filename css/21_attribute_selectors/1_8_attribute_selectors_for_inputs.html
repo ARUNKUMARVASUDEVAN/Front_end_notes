@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+   input {
+      display: block;
+      margin: 10px;
+   }
+   input[type="text"] {
+      border: 1px solid #e0dd29;
+   }
+   input[placeholder="Password"] {
+      border: 1px solid #f00;
+   }
+   input[name|="emailid"] {
+      background-color: rgb(236, 178, 233);
+   }
+   input[type~="submit"] {
+      background-color: rgb(88, 241, 88);
+      padding: 10px;
+   }
+   input[value^="But"] {
+      background-color: rgb(236, 149, 68);
+      padding: 10px;
+   }
+   input[type$="box"] {
+      border-radius: 5px;
+      height: 50px;
+      width: 20px;
+   }
+   input[type*="adi"] {
+      height: 50px;
+      width: 20px;
+   }
+</style>
+</head>
+<body>
+   <input type="text" placeholder="Username">
+   <input type="password" placeholder="Password">
+   <input type="email" placeholder="Email" name="emailid">
+   <input type="submit" placeholder="Submit">
+   <input type="button" value="Button">
+   <input type="checkbox" placeholder="Checkbox">
+   <input type="radio" placeholder="Radio">
+</body>
+</html>

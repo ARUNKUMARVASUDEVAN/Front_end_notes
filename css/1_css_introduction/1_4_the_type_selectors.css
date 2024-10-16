@@ -1,0 +1,93 @@
+/* Type selectors */
+h1 {
+    color: #36CFFF; 
+ }
+
+/* Universal Selectors */
+
+* { 
+    color: #000000; 
+ }
+
+/* Descedant Selectors 
+
+Suppose you want to apply a style rule to a particular element only when it lies inside a particular element.*/
+ul em {
+    color: #000000; 
+ }
+
+
+/*Class Selectors */
+
+.black {
+    color: #000000; 
+ }
+
+ h1.black {
+    color: #000000; 
+ }
+
+
+/* ID Selectors */
+#black {
+    color: #000000; 
+ }
+
+ h1#black {
+    color: #000000; 
+ }
+
+
+ #black h2 {
+    color: #000000; 
+ }
+
+ 
+
+
+/* Child Selectors */
+body > p {
+    color: #000000; 
+ }
+
+/*Attribute Selectors */
+
+input[type = "text"] {
+    color: #000000; 
+ }
+
+
+/* Example 
+p[lang] − Selects all paragraph elements with a lang attribute.
+
+p[lang="fr"] − Selects all paragraph elements whose lang attribute has a value of exactly "fr".
+
+p[lang~="fr"] − Selects all paragraph elements whose lang attribute contains the word "fr".
+
+p[lang|="en"] − Selects all paragraph elements whose lang attribute contains values that are exactly "en", or begin with "en-".*/
+
+
+/* Multiple Style Rules */
+
+h1 {
+    color: #36C;
+    font-weight: normal;
+    letter-spacing: .4em;
+    margin-bottom: 1em;
+    text-transform: lowercase;
+ }
+
+/* Grouping Selectors  */
+h1, h2, h3 {
+    color: #36C;
+    font-weight: normal;
+    letter-spacing: .4em;
+    margin-bottom: 1em;
+    text-transform: lowercase;
+ }
+
+ #content, #footer, .supplement,table {
+    position: absolute;
+    left: 510px;
+    width: 200px;
+ }

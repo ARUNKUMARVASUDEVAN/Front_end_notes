@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Radius</title>
+    <style>
+        .all-sides {
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .opposite-corners {
+            border-radius: 10px 5%;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .three-values {
+            border-radius: 10px 10px 20px;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .four-values {
+            border-radius: 1px 0 3px 4px;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .first-radius-second-radius {
+            border-radius: 10px / 20px;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .two-values-first-radius-second-radius {
+            border-radius: 10px 5% / 20px 30px;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .three-values-first-radius-second-radius {
+            border-radius: 10px 5px 2em / 20px 25px 30%;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .four-values-first-radius-second-radius {
+            border-radius: 10px 5% / 20px 25em 30px 35em;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .inherit-radius {
+            border-radius: inherit;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .initial-radius {
+            border-radius: initial;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .revert-radius {
+            border-radius: revert;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .revert-layer-radius {
+            border-radius: revert-layer;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .unset-radius {
+            border-radius: unset;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all-sides">All Sides</div>
+    <div class="opposite-corners">Opposite Corners</div>
+    <div class="three-values">Three Values</div>
+    <div class="four-values">Four Values</div>
+    <div class="first-radius-second-radius">First/Second Radius</div>
+    <div class="two-values-first-radius-second-radius">Two/First/Second Radius</div>
+    <div class="three-values-first-radius-second-radius">Three/First/Second Radius</div>
+    <div class="four-values-first-radius-second-radius">Four/First/Second Radius</div>
+    <div class="inherit-radius">Inherit</div>
+    <div class="initial-radius">Initial</div>
+    <div class="revert-radius">Revert</div>
+    <div class="revert-layer-radius">Revert Layer</div>
+    <div class="unset-radius">Unset</div>
+</body>
+</html>

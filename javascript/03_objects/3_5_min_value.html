@@ -1,0 +1,62 @@
+<!--
+
+    The JavaScript Number MIN_VALUE property returns the minimum (or smallest) numeric value possible in JavaScript.
+    If a value is smaller than the MIN_VALUE, it will be converted to zero (0).
+
+
+    Number.MIN_VALUE
+-->
+
+<html>
+<head>
+<title>JavaScript MIN_VALUE</title>
+</head>
+<body>
+<script>
+   document.write("MIN_VALUE = ", Number.MIN_VALUE);
+</script>
+</body>
+</html>
+
+<!----->
+<html>
+<head>
+<title>JavaScript MIN_VALUE</title>
+</head>
+<body>
+<script>
+   let x = 15;
+   document.write("Variable value = ", x);
+   document.write("<br>MIN_VALUE = ", x.MIN_VALUE);
+</script>
+</body>
+</html>
+
+<!-------------->
+
+<html>
+<head>
+<title>JavaScript MAX_VALUE</title>
+</head>
+<body>
+<script>
+   function greater(){
+      document.write("Greater function called...!");
+   }
+   function smaller(){
+      document.write("Smaller function called...!");
+   }
+   let n1 = 5e-324;
+   let n2 = 20;
+   document.write("Values are: ", n1 , " and ", n2, "<br>");
+   let result = n1 / n2;
+   document.write("Result is: ", result, "<br>");
+   if(result >= Number.MIN_VALUE){
+      greater();
+   }
+   else{
+      smaller();
+   }
+</script>
+</body>
+</html>

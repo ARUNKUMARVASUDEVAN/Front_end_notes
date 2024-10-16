@@ -1,0 +1,32 @@
+<!--
+linear-gradient(to right, red 10%, pink 30%, blue 60%)
+-->
+
+<!--
+to right: Specifies the direction of gradient.
+red 10%: Sets the red color to stop at 10% of the gradient
+pink 30%: Sets the pink color to stop at 30% of the gradient.
+blue 60%: Sets the blue color to stop at 60% of the gradient.
+-->
+
+<html>
+<head>
+   <style>
+      div {
+         height: 100px;
+         width: 100%;
+      }
+
+      .linear-position {
+         background: linear-gradient(to right, 
+                        blue 15px, magenta 33%, 
+                        red 66%, yellow 60%, 
+                        orange 100%);
+      }
+   </style>
+</head>
+
+<body>
+   <div class="linear-position"></div>
+</body>
+</html>

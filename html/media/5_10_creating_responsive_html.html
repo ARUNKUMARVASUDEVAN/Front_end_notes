@@ -1,0 +1,69 @@
+<!--
+There are several ways by which we can make our webpage responsive. A general practice is to make use of inbuilt CSS or bootstrap frameworks that provide pre-designed components and grid systems. Here are some general steps to ensure responsiveness of a webpage.
+
+Use Responsive Grid Layouts
+
+Always design your layout with a flexible grid structure, so when the size of screen increases grid will extend accordingly.
+
+Flexible Images and Media
+
+Ensure that the images in webpage as properly scaled within their containers. You can use CSS properties like "max-width: 100%;" and "height: auto;".
+
+Use Media Query
+
+You can use CSS media queries to apply different styles for different screen sizes. This allows you to adjust the layout, font sizes, and other design elements based on the device's width. You can know about media query here.
+
+Include Meta Tag with viewport
+
+The viewport meta tag inside HTML head to ensures proper scaling and rendering on mobile devices.
+
+Use Relative Units
+
+Use relative units like em, rem, or percentages for font sizes, padding, and margins to ensure that text scales appropriately.
+-->
+
+<!--
+The following attributes of <meta> viewport tag are used for responsiveness:
+
+Attribute	    Description
+width	        It controls the width of the virtual viewport.
+height	        It controls the height of the virtual viewport.
+initial-scale	It specifies the initial zoom level of the viewport when a web page is first loaded.
+minimum-scale	It specifies the minimum zoom level to which the user can zoom the page.
+maximum-scale	It defines the maximum zoom level to which the user can zoom the page.
+user-scalable	It specifies whether the user can zoom in or out.
+interactive-widget	It defines how the interactive UI widgets affect the viewport.   
+-->
+
+<html>
+<head>
+   <meta name="viewport" 
+         content="width=device-width, initial-scale=1.0">
+   <style>
+      .container {
+         background-color: #f1f1f1;
+         display: flex;
+         flex-direction: row;
+      }
+      .col {
+         width: 47%;
+         margin: auto 1%;
+         background-color: #4CAF50;
+         color: white;
+         text-align: center;
+         line-height: 100px;
+         font-size: 10px;
+      }
+   </style>
+</head>
+<body>
+   <h2>
+      Setting up dimensions in percentage 
+      for the HTML element 
+   </h2>
+   <div class="container">
+      <div class="col"> Column 1 </div>
+      <div class="col"> Column 2 </div>
+   </div>
+</body>
+</html>

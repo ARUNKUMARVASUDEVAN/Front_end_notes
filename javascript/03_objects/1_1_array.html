@@ -1,0 +1,51 @@
+<!--
+Array object lets you store multiple values in a single variable.
+An array is used to store a sequential collection of multiple elements of same or different data types.
+In JavaScript, arrays are dynamic, so you don’t need to specify the length of the array while defining the array.
+
+Syntax:
+
+const arr = new Array(val1, val2, val3, ..., valN)
+
+const fruits = [ "apple", "orange", "mango"];
+-->
+
+<html>
+<head>
+   <title> JavaScript - Array() constructor </title>
+</head>
+<body>
+   <p id = "demo"> </p>
+   <script>
+      const output = document.getElementById("demo");
+
+      let strs = new Array("Hello", "World!", "1",23);
+      
+      output.innerHTML += "strs ==> " + strs + "<br>";
+
+      let cars = new Array(20);
+      output.innerHTML += "cars ==> " + cars + "<br>";
+   </script>
+</body>
+</html>
+<!------------------------------------------------------->
+
+<html>
+<head>
+   <title> JavaScript - Array literals </title>
+</head>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const outputs = document.getElementById("output");
+
+      const arr1 = [10, 40, 50, 60, 80, 90];  // Array of numbers
+      const arr2 = ["Hello", "Hi", "How", "are", "you?"]; // Array of strings
+      const arr3 = [true, false, true, true]; // Array of booleans
+
+      output.innerHTML += "arr1 ==>  " + arr1 + "<br>";
+      output.innerHTML += "arr2 ==>  " + arr2 + "<br>";
+      output.innerHTML += "arr3 ==>  " + arr3 + "<br>";
+   </script>
+</body>
+</html>

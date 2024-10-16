@@ -1,0 +1,80 @@
+<!--
+
+We use the enctype attribute to specify how the browser encodes the data before it sends it to the server. Its possible values are
+
+Values	Description
+application/x-www-form-urlencoded	This is the standard method most forms use in simple scenarios.
+mutlipart/form-data	This is used when you want to upload binary data in the form of files like image, word file etc.
+text/plain	It only encodes the spaces into + symbol.  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>HTML 'enctype' Attribute</title>
+   <style>
+      form {
+         width: 300px;
+         padding: 10px;
+         border-radius: 10px;
+         background-color: rgb(9, 109, 190);
+      }
+
+      form h1 {
+         font-family: sans-serif;
+         letter-spacing: 2px;
+         color: white;
+         text-align: center;
+         position: relative;
+         top: -20px;
+      }
+
+      form input {
+         padding: 12px;
+         width: 80%;
+         border: 1px solid white;
+         border-radius: 5px;
+         outline: none;
+      }
+
+      form label {
+         font-size: 20px;
+         color: white;
+         padding: 5px 5px;
+      }
+
+      form button {
+         padding: 12px;
+         width: 100px;
+         cursor: pointer;
+         background-color: white;
+         border: 1px solid white;
+         border-radius: 5px;
+      }
+   </style>
+</head>
+<body>
+   <!--HTML 'enctype' attribute-->
+   <h3>Example of the HTML 'enctype' attribute</h3>
+   <p>
+       We are assigning the "text/plain" value to the 
+       enctype attribute which means the data is being
+       sent as plain text.
+   </p>
+   <form action="index.js" enctype="text/plain" method="POST">
+      <h1>Login</h1>
+      <label for="">Username</label>
+      <br>
+      <input type="text" id='uname' placeholder="Username">
+      <br>
+      <br>
+      <label for="">Password</label>
+      <br>
+      <input type="password" id='psw' placeholder="Password">
+      <br>
+      <br>
+      <button type='submit' onclick="Login()">Login</button>
+   </form>
+   <script src="index.js"></script>
+</body>
+</html>

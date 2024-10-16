@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Shadow Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            margin-bottom: 40px;
+        }
+
+        .text {
+            font-size: 36px;
+            margin: 20px;
+            display: block;
+            color: #333;
+        }
+
+        .text-shadow-1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-shadow-2 {
+            text-shadow: 4px 4px 10px rgba(0, 0, 255, 0.5);
+        }
+
+        .text-shadow-3 {
+            text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.5), -3px -3px 5px rgba(0, 255, 0, 0.5);
+        }
+
+        .text-shadow-4 {
+            text-shadow: 1px 1px 0 #000, 2px 2px 0 #555, 3px 3px 0 #aaa;
+        }
+
+        .text-shadow-5 {
+            text-shadow: 2px 2px 3px #ff0000;
+        }
+
+        .text-shadow-6 {
+            text-shadow: 2px 2px 2px #0000ff, -2px -2px 2px #ff0000;
+        }
+
+        .text-shadow-7 {
+            text-shadow: 2px 3px 4px #000, 0 0 25px #00f, 0 0 5px #ff0;
+        }
+
+        .text-shadow-8 {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            background-color: #fff;
+            display: inline-block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Text Shadow Examples</h2>
+        <span class="text text-shadow-1">Shadow 1</span>
+        <span class="text text-shadow-2">Shadow 2</span>
+        <span class="text text-shadow-3">Shadow 3 (Multiple)</span>
+        <span class="text text-shadow-4">Shadow 4 (Layered)</span>
+        <span class="text text-shadow-5">Shadow 5 (Red)</span>
+        <span class="text text-shadow-6">Shadow 6 (Red & Blue)</span>
+        <span class="text text-shadow-7">Shadow 7 (Glow)</span>
+        <span class="text text-shadow-8">Shadow 8 (Subtle)</span>
+    </div>
+</body>
+</html>

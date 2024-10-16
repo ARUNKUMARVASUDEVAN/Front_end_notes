@@ -1,0 +1,38 @@
+<!--
+Color band that flows in a single direction
+-->
+
+<!--
+linear-gradient(direction, color1, color2, ...);
+
+/* Gradient from bottom right to top left */
+linear-gradient(to top left, color1, color2, ...);
+
+/* Gradient at an angle 45 degree */
+linear-gradient(45deg, red, yellow);
+-->
+
+<html>
+<head>
+   <style>
+      div {
+         height: 70px;
+         width: 100%;
+      }
+      .topBottom {
+         background: linear-gradient(green, yellow);
+      }
+      .RightLeft{
+         background: linear-gradient(to right, rgb(221, 121, 6), yellow);
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Linear gradient</h1>
+   <h3>Top to Bottom ( Default )</h3>
+         <div class="topBottom"></div>
+   <h3>Right to left</h3>
+         <div class="RightLeft"></div>
+</body>
+</html>

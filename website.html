@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample HTML document with various elements and tags">
+    <title>HTML</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; }
+        header, footer { background: #f0f0f0; padding: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> My HTML </h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="section1">
+            <h2>Section 1: Text Elements</h2>
+            <p>This is a paragraph. <strong>This text is bold.</strong> <em>This text is italicized.</em></p>
+            <p><a href="https://www.example.com">This is a link to an external website.</a></p>
+            <p>This is a <abbr title="HyperText Markup Language">HTML</abbr> example.</p>
+            <blockquote cite="https://www.example.com">
+                This is a blockquote. It's used for quotations.
+            </blockquote>
+            <p>This is a <code></code> example.</p>
+            <pre>This is preformatted text.
+        It preserves whitespace and line breaks.</pre>
+        </section>
+
+        <section id="section2">
+            <h2>Section 2: Lists and Tables</h2>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+
+            <h3>Unordered List</h3>
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+
+            <h3>Definition List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+
+            <h3>Table</h3>
+            <table border="1">
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                        <td>Row 1, Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                        <td>Row 2, Cell 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="section3">
+            <h2>Section 3: Forms, Multimedia, and More</h2>
+
+            <h3>Form</h3>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+
+            <h3>Multimedia</h3>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                <figcaption>Sample Image</figcaption>
+            </figure>
+
+            <video controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+
+            <h3>Other Elements</h3>
+            <details>
+                <summary>Click to see more details</summary>
+                <p>Here are some additional details.</p>
+            </details>
+
+            <progress value="70" max="100"></progress> 70%
+            
+            <meter value="2" min="0" max="10">2 out of 10</meter>
+
+            <div id="canvas-container">
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My HTML Document</p>
+    

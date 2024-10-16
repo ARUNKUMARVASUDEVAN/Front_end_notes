@@ -1,0 +1,103 @@
+<!--
+JavaScript if...else statement executes a block of code when the specified condition is true. When the condition is false the else block will be executed. 
+
+The if-else statements can be used to control the flow of execution of a program based on different conditions
+
+--------------------------------------------------------
+JavaScript supports the following forms of if...else statement
+
+if statement
+
+if...else statement
+
+if...else if... statement.
+
+if condition
+
+else if condition
+
+else if condition
+-->
+
+<!--
+If statements is the fundamental control statement that allows JavaScript to make decisions and execute statements conditionally.
+
+Syntax:
+
+if (expression) {
+   Statement(s) to be executed if expression is true
+}
+
+-->
+<!--
+<html>
+<body>     
+   <div id ='output'> </div>
+   <script type = "text/javascript">
+      let result;
+      let age = 20;
+      if( age > 18 ) {
+         result = "Qualifies for driving";
+      }
+	  document.getElementById("output").innerHTML = result;
+   </script>      
+<p> Set the variable to a different value and then try... </p>
+</body>
+</html>
+
+-->
+<!--
+    if else staement
+
+if (expression) {
+   Statement(s) to be executed if expression is true
+} else {
+   Statement(s) to be executed if expression is false
+}
+-->
+
+
+
+
+<!--
+if...else if... statement
+
+The if...else if... statement (also called as if...else ladder)is an advanced form of if…else
+that allows JavaScript to make a correct decision out of several conditions.
+
+
+Syntax
+
+if (expression 1) {
+   Statement(s) to be executed if expression 1 is true
+} else if (expression 2) {
+   Statement(s) to be executed if expression 2 is true
+} else if (expression 3) {
+   Statement(s) to be executed if expression 3 is true
+} else {
+   Statement(s) to be executed if no expression is true
+}
+
+
+
+-->
+
+<html>
+<body>
+   <div id ="demo" style="background-color: aqua;"></div>
+   <script type="text/javascript">
+	  const output = document.getElementById("demo")
+      let book = "biology";
+      if (book == "history") {
+         output.innerHTML="<b>History Book</b>";
+      } else if (book == "maths") {
+         output.innerHTML="<b>Maths Book</b>";
+      } else if (book == "economics") {
+         output.innerHTML="<b>Economics Book</b>";
+      } else {
+         output.innerHTML="<big>Unknown Book</big>";
+      }
+    </script>
+    <p> Set the variable to a different value and then try... </p>
+</body>
+<html>

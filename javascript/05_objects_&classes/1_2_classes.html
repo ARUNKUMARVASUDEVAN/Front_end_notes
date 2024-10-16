@@ -1,0 +1,105 @@
+<!--
+The JavaScript classes are a blueprint or template for object creation.
+They encapsulate the data and functions to manipulate that data.
+We can create the object using classes.
+Creating an object from a class is referred to as instantiating the class.
+-->
+
+<!--
+// class declaration
+class ClassName {
+   // Class body
+}
+--------------------------
+//Class expression
+const ClassName = class {
+   // class body
+}
+-->
+
+<!--Type of classes-->
+<!--JavaScript class is a type of function-->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p id = "output"> The type of the car class is: </p>
+	<script>
+		class Car {
+			// Class body
+		}
+		document.getElementById("output").innerHTML += typeof Car;
+	</script>
+</body>
+</html>
+
+<!--constructor() Method-->
+<!--
+When you use the function as an object blueprint, you can initialize the object properties inside the function body. 
+Similarly, you need to use the constructor() method with the class to initialize the object properties.
+
+class Car {
+	constructor(brand) {// Defining the constructor
+		this.brand = brand;
+	}
+}
+-->
+
+
+<!--Creating JS Objects-->
+
+
+<!--
+    const myCar = new Car("Audi");
+-->
+
+<!--Creating class Obects without arguements-->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p id = "output"> </p>
+	<script>
+		// creating Car class
+		class Car {
+			constructor() {
+				this.brand = "BMW";
+				this.model = "X5";
+				this.year = 2019;
+			}
+		}
+		// instantiate myCar object
+		const myCar = new Car();
+		// display the properties
+		document.getElementById("output").innerHTML = 
+      "Car brand is : " + myCar.brand + "<br>"
+      +"Car model is : " + myCar.model + "<br>"
+      +"Car year is : " + myCar.year + "<br>";
+	</script>
+</body>
+</html>
+
+<!--Creating class objects with arguments-->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<p id = "output"> </p>
+	<script>
+		class Car {
+			constructor(brand, model, price, year) {
+				this.brand = brand;
+				this.model = model;
+				this.price = price;
+				this.year = year;
+			}
+		}
+		const carObj = new Car("BMW", "X5", 9800000, 2019);
+		document.getElementById("output").innerHTML += 
+		"Car brand : " + carObj.brand + "<br>"
+		+ "Car model : " + carObj.model + "<br>"
+		+ "Car price : " + carObj.price + "<br>"
+		+ "Car year : " + carObj.year + "<br>"
+	</script>
+</body>
+</html>

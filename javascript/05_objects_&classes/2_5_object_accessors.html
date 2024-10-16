@@ -1,0 +1,65 @@
+<!--
+    object accessor properties in JavaScript are methods that get or set the value of an object. They are defined using the get and set keywords
+
+
+get − The get keyword is used to define a method to get the object property value.
+
+set − The set keyword is used to define a method to update the object property value.
+-->
+
+<!--JS Getters-->
+
+<!--
+get methodName() {
+     // Method body
+}
+obj.methodName;
+-->
+
+<html>
+<body>
+  <p id = "output">The color of the wall is : </p>
+  <script>
+    const wall = {
+      color: "brown",
+      get getColor() {
+        return this.color;
+      }
+    }
+    document.getElementById("output").innerHTML += wall.getColor;
+  </script>
+</body>
+</html>
+
+
+<!------------------->
+
+<!--
+In the above syntax, the 'set' keyword is used to define the setter method.
+
+The method_name can be any valid identifier.
+
+The setter method always takes a single parameter. If you don't pass a parameter or multiple parameters, it will give you an error.
+
+You can assign value to the setter method as you assign value to the property.
+-->
+
+<html>
+<body>
+  <p id = "output"> </p>
+  <script>
+    const wallz = {
+      color: "brown",
+      set setColor(color) {
+        return this.color = color;
+      }
+    }
+    document.getElementById("output").innerHTML += 
+    "The color of the wall before update is : " + wallz.color + "<br>";
+    //updating the color of wall
+    wallz.setColor = "Red";
+    document.getElementById("output").innerHTML += 
+    "The color of the wall after update is : " + wallz.color;
+  </script>
+</body>
+</html>

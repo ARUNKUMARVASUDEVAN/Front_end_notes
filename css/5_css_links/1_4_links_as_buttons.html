@@ -1,0 +1,74 @@
+<!--
+Beyond the conventions of link styling, designers may improve user interaction
+and aesthetic appeal by using CSS to transform links into button-like objects.
+
+Links may blend in with other website elements with ease by using characteristics like background-color,
+padding, and border-radius.
+
+This makes for user experiences that are both engaging and navigational.
+-->
+
+<html>
+<head>
+<style>
+   body,
+   html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+   }
+   .container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+   }
+   .btn-link {
+      flex: 1;
+      text-decoration: none;
+      outline-color: transparent;
+      text-align: center;
+      line-height: 3;
+      color: white;
+      background-color: #007bff;
+      border: 1px solid #0a1118;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      padding: 10px 20px;
+      margin: 0 5px;
+   }
+   .btn-link:hover {
+      background-color: #0056b3;
+   }
+   .btn-link:active {
+      background-color: #003366;
+   }
+   header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+   }
+   h1 {
+      margin: -1;
+   }
+   p {
+      margin-top: 20px;
+      text-align: center;
+   }
+</style>
+</head>
+<body>
+<header>
+   <h1>Welcome to Demo Website</h1>
+</header>
+  <nav class="container">
+   <a href="D:\Ether\html_and_css\css\5_css_links\1_3_8_line-height.html" class="btn-link">Home</a>
+   <a href="#" class="btn-link">Technologies</a>
+   <a href="#" class="btn-link">Services</a>
+   <a href="#" class="btn-link">Gallery</a>
+   <a href="#" class="btn-link">Contact Us</a>
+</nav>
+<p>This is a demonstration website showcasing various features.</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!--
+    let statement is used to declare a variable.
+    With the let statement, we can declare a variable that is block-scoped. 
+-->
+
+<script>
+    let name = "John";
+    let age = 35;
+    let x = true;
+</script>
+
+
+<!--
+Block Scope vs. Function Scope
+
+The scope of the variable declared with the let keyword is a block-scope.
+It means if you define the variable with the let keyword in the specific block, 
+you can access the variable inside that particular block only,
+ and if you try to access the variable outside the block, it raises an error like 'variable is not defined'.
+
+function foo(){
+   if (true){
+      let x = 5
+      var y = 10
+   }
+   
+   
+   // here x can't be accessed while y is accessible
+}
+
+-->
+
+<html>
+<head>
+   <title> Variable declaration with let keyword </title>
+</head>
+<body>
+   <script>
+      let i = 10;
+	  var y = 20;
+	  function test() {
+	     let x = 50;
+	     var y = 100;
+	     document.write("x = " + x + ", y = " + y + "<br/>");
+	  }
+	  test();
+   </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!--
+toSource() --- Returns a string containing the source of the Boolean object; you can use this string to create an equivalent object.
+
+toString() --- Returns a string of either "true" or "false" depending upon the value of the object.
+
+valueOf() --- Returns the primitive value of the Boolean object.
+-->
+
+<!--
+toSource()- toSource() method returns a string representing the source code of the object.
+
+boolean.toSource()
+
+In modern browsers, it is not widely supported, so you might not get any output in most browsers.
+
+-->
+<html>
+   <head>
+      <title>JavaScript toSource() Method</title>
+   </head>   
+   <body>   
+      <script type = "text/javascript">
+         function book(title, publisher, price) {
+            this.title = title;
+            this.publisher = publisher;
+            this.price = price;
+         }         
+         var newBook = new book("Perl","Leo Inc",200); 
+         document.write(newBook.toSource()); 
+      </script>      
+   </body>
+</html>
+
+<!--
+    toString() - This method returns a string of either "true" or "false" depending upon the value of the object
+
+    boolean.toString()
+
+
+-->
+
+<html>
+   <head>
+      <title>JavaScript toString() Method</title>
+   </head>
+   
+   <body>   
+      <script type = "text/javascript">
+         var flag = new Boolean(false); 
+         document.write( "flag.toString is : " + flag.toString() ); 
+      </script>      
+   </body>
+</html>
+
+
+<!--
+    valueOf() - valueOf() method returns the primitive value of the specified boolean object.
+
+boolean.valueOf()
+-->
+<html>
+   <head>
+      <title>JavaScript valueOf() Method</title>
+   </head>
+   
+   <body>   
+      <script type = "text/javascript">
+         var flag = new Boolean(false); 
+         document.write( "flag.valueOf is : " + flag.valueOf() ); 
+      </script>      
+   </body>
+</html>
+
+
+
+
+
+<!--Creating a Boolean Object-->
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const boolObj = new Boolean('true'); 
+      document.getElementById("output").innerHTML = "typof boolObj == " + typeof boolObj;
+   </script>
+</body>
+</html>
+
+
+<!--JavaScript Boolean() Function-->
+<!-- Boolean(Expression); -->
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      let res = Boolean(100 > 90);
+      document.getElementById("output").innerHTML = "Boolean(100 > 90) : " + res + "<br>";
+      res = Boolean(100 < 90);
+      document.getElementById("output").innerHTML = "Boolean(100 < 90) : " + res + "<br>";
+      res = 100 == 90;
+      document.getElementById("output").innerHTML = "100 == 90 : " + res + "<br>";
+   </script>
+</body>
+</html>
+
+<!--Falsy Boolean Values-->
+
+<html>
+<body>
+   <p id = "demo"> </p>
+   <script>
+      document.getElementById("demo").innerHTML = 
+      "Boolean(0) : " + Boolean(0) + "<br>" +
+      "Boolean(-0) : " + Boolean(-0) + "<br>" +
+      "Boolean(null) : " + Boolean(null) + "<br>" +
+      "Boolean(undefined) : " + Boolean(undefined) + "<br>" +
+      "Boolean('') : " + Boolean('') + "<br>" +
+      "Boolean(NaN) : " + Boolean(NaN) + "<br>" +
+      "Boolean(false) : " + Boolean(false);
+  </script>
+</body>
+</html>

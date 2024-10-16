@@ -1,0 +1,49 @@
+<!--
+function hoisting in JavaScript is a default behavior in which function declarations are moved at the top of their local scope before execution of the code.
+
+add(5,10); // 15
+function add(x, y){
+   return x + y;
+}
+
+
+function add(x, y){
+   return x + y;
+}
+add(5,10); // 15
+-->
+
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      printMessage("Top");        
+      function printMessage(pos) {
+         document.getElementById("output").innerHTML += 
+         "The function is called from the " + pos + "<br/>";
+      }        
+      printMessage("Bottom");
+   </script>
+</body>
+</html>
+
+
+<!--we have defined the function inside the 'if' block. 
+    So, the function is hoisted at the top of the 'if' block-->
+
+    <html>
+        <body>
+           <p id = "output"> </p>
+           <script>
+              // test("Top"); // Out of scope
+              if (1) {
+                 test("Top"); // In the same scope
+                 function test(pos) {
+                    document.getElementById("output").innerHTML += 
+                    "The function is called from the " + pos + "<br/>";
+                 }
+                 test("Bottom"); // In the same scope
+              }
+           </script>
+        </body>
+        </html>

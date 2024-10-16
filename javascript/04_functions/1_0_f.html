@@ -1,0 +1,17 @@
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      function merge() {
+         let final = "";
+         for (let p = 0; p < arguments.length; p++) {
+            final += arguments[p] + " ";
+         }
+         return final;
+      }
+      let anw = merge("Hi", "I", "am", "John!");
+      document.getElementById("output").innerHTML = 
+	  "The merged string is: " + anw;
+   </script>
+</body>
+</html>

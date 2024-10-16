@@ -1,0 +1,32 @@
+<!--
+ Number() constructor to convert a string into a number. 
+ We can also use unary plus (+) operator to convert a string to number
+
+Number('100'); // Converts '100' to 100
+Number(false); // Converts false to 0
+Number(null); // Converts null to 0
+num = +"200"; // Using the unary operator
+
+also use the below methods and variables to convert the string into numbers
+
+* parseFloat()	To extract the floating point number from the string.
+*	parseInt()	To extract the integer from the string.
+*	+	It is an unary operator.
+
+-->
+
+<html>
+<head>
+   <title> Converting to string explicitly </title>
+</head>
+<body>
+   <script>
+      document.write(Number("200") + "<br/>");
+      document.write(Number("1000e-2") + "<br/>");
+      document.write(Number(false) + "<br/>");
+      document.write(Number(null) + "<br/>");
+      document.write(Number(undefined) + "<br/>");
+      document.write(+"200" + "<br/>");
+   </script>
+</body>
+</html>
